@@ -1,0 +1,1381 @@
+Multichar_Symbols
+ rr rd rdd dj bb kk dd djdj
+ ng rn rl rr nj
+ [N] [V] [NonPst] [PstPerf] [PstImperf] [Irr] [Imp]
+ [3pl.3pl] [3pl.3sg] [3pl.2] [3pl.1]
+ [3sg.1] [3sg.2] [3sg.3sg] [3sg.3pl]
+ [2sg.1] [2sg.3]
+ [2pl.1] [2pl.3sg] [2pl.3pl]
+ [1pl.2] [1pl.3sg] [1pl.3pl]
+ [1sg.2] [1sg.3]
+ @R.VALENCE.INTR@ @R.TENSE.NP@
+ @P.VALENCE.INTR@ @P.TENSE.NP@
+ @R.VALENCE.TRNS@ @R.TENSE.P@
+ @P.VALENCE.TRNS@ @P.TENSE.P@
+ @P.PERS.T@ @R.PERS.T@
+ @P.VALENCE.AUGM@ @R.VALENCE.AUGM@
+ @P.TYPE.N@ @R.TYPE.N@
+ @P.TYPE.V@ @R.TYPE.V@
+ (ku) (rr) (r) (~~)
+ [GUESS] 
+ [VerbRootGuess]
+
+LEXICON Root
+@P.TYPE.V@ TSOPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   General Incorporable Nouns        !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON NounBase
+0:barrarn^ PostNominal ; 
+0:berd^ PostNominal ;
+0:bim^ PostNominal ;
+0:bili^ PostNominal ;
+0:birli^ PostNominal ;
+0:bo^ PostNominal ;
+0:boy^ PostNominal ;                                            ! antbed
+0:bodahkenboy^ PostNominal ;
+0:bolh^ PostNominal ;
+0:bolk^ PostNominal ;
+0:bong^ PostNominal ;
+0:bule^ PostNominal ;
+0:bunj^ PostNominal ;
+0:dabu^ PostNominal ;
+0:dalk^ PostNominal ;
+0:deleng^ PostNominal ;
+0:djalk^ PostNominal ;
+0:djalkno^ PostNominal ;
+0:dolng^ PostNominal ;
+0:dule^ PostNominal ;
+0:dulk^ PostNominal ;
+0:(rr)ulk^ PostNominal ;
+0:dung^ PostNominal ;
+0:(rr)ung^ PostNominal ;
+0:dorrh^ PostNominal ;
+0:djorrh^ PostNominal ;
+0:djurle^ PostNominal ;
+0:djurrk^ PostNominal ;
+0:kabo^ PostNominal ;
+0:galh^ PostNominal ;
+0:galhno^ PostNominal ;
+0:kanj^ PostNominal ;
+0:kunj^ PostNominal ;                                   ! kangaroo
+0:karre^ PostNominal ;
+0:kayinj^ PostNominal ;
+0:keb^ PostNominal ;                                            ! beak
+0:kebmayh^ PostNominal ;                             ! bird's beak
+0:korle^ PostNominal ;                                        ! bamboo spear
+0:go^ PostNominal ;
+0:gono^ PostNominal ;
+0:ngolek^ PostNominal ;                                      ! breath
+0:kod^ PostNominal ;
+0:kole^ PostNominal ;
+0:golk^ PostNominal ;
+0:karrk^ PostNominal ;
+0:korrk^ PostNominal ;
+0:kuk^ PostNominal ;
+0:kurlah^ PostNominal ;
+0:kurlk^ PostNominal ;
+0:labbal^ PostNominal ;                                      ! billabong
+0:lod^ PostNominal ;
+0:madj^ PostNominal ;
+0:mala^ PostNominal ;
+0:marrwe^ PostNominal ;
+0:malayi^ PostNominal ;
+0:mayhmayh^ PostNominal ;                                   ! birds
+0:me^ PostNominal ;
+0:moken^ PostNominal ;
+0:mudda^ PostNominal ;
+0:ngale^ PostNominal ;
+0:ngey^ PostNominal ;
+0:bolkngey^ PostNominal ;
+0:ngui^ PostNominal ;
+0:red^ PostNominal ;
+0:rerrng^ PostNominal ;
+0:njilk^ PostNominal ;
+0:rak^ PostNominal ;
+0:rud^ PostNominal ;
+0:rurrk^ PostNominal ;
+0:wabban^ PostNominal ;
+0:wardde^ PostNominal ;
+0:wok^ PostNominal ;
+0:yahwurd^ PostNominal ;
+0:yau^ PostNominal ;
+0:yaw^ PostNominal ;
+0:yerrng^ PostNominal ;
+0:yiwk^ PostNominal ;
+
+LEXICON PostNominal
+@R.TYPE.V@ BPINPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   PRONOMINALS                       !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON TSOPreBase 
+!!   Singular - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ SingleIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ SingleIntransNonPastTSO ;
+!!  Dual - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ DualIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ DualIntransNonPastTSO ;
+!!  Trial - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ TrialIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ TrialIntransNonPastTSO ;
+!!  Plural - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ PluralIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ PluralIntransNonPastTSO ; 
+
+!!  Transitives - 3 Single obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3pObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3pObjTSO ; 
+!! Transitives - 3 Dual Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3pDualObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3pDualObjTSO ; 
+!! Transitives - 3 Plural Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3PlObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3PlObjTSO ; 
+!! Transitives - 2 Person Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast2Obj ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast2Obj ; 
+!! Transitives - 1 person obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast1Obj ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast1Obj ; 
+
+LEXICON SingleIntransPastTSO
+[V][1sg.past]:nga^ DirPreBase  "weight: 5.627834499628365" ;
+[V][2sg.past]:yi^ DirPreBase  "weight: 6.021829713025271" ;
+[V][3sg.past]:0^ DirPreBase  "weight: 3.8945527056453217" ;
+[V][3sg.past]:bi^ DirPreBase  "weight: 3.8945527056453217" ;
+
+LEXICON SingleIntransNonPastTSO
+[V][1sg.nonpast]:nga^ DirPreBase  "weight: 5.466271861113757" ;
+[V][2sg.nonpast]:yi^ DirPreBase  "weight: 6.035609458623289" ;
+[V][3sg.nonpast]:ka^ DirPreBase  "weight: 4.343829129153874" ;
+
+LEXICON DualIntransPastTSO
+[V][12m.past]:ngar(r)^ DirPreBase  "weight: 9.774270648628951" ;
+[V][1ua.excl.past]:ngane^ DirPreBase  "weight: 8.270193251852678" ;
+[V][2ua.past]:ngune^ DirPreBase  "weight: 8.595615652287306" ;
+[V][3ua.past]:bene^ DirPreBase  "weight: 6.43909436806459" ;
+
+LEXICON DualIntransNonPastTSO
+[V][12m.nonpast]:ngar(r)^ DirPreBase  "weight: 6.2652158711103825" ;
+[V][1ua.excl.nonpast]:ngane^ DirPreBase  "weight: 8.825190093931806" ;
+[V][2ua.nonpast]:ngune^ DirPreBase  "weight: 8.545605231712644" ;
+[V][3ua.nonpast]:kabene^ DirPreBase  "weight: 7.810660922474238" ;
+
+LEXICON TrialIntransPastTSO
+[V][12ua.past]:kane^ DirPreBase  "weight: 12.259177298416953" ;
+
+LEXICON TrialIntransNonPastTSO
+[V][12ua.nonpast]:kane^ DirPreBase  "weight: 12.952324478976898" ;
+
+LEXICON PluralIntransPastTSO
+[V][1pl.excl.past]:ngarri^ DirPreBase  "weight: 6.640589669823983" ;
+[V][1pl.incl.past]:karri^ DirPreBase  "weight: 6.497125915636775" ;
+[V][2pl.past]:ngurri^ DirPreBase  "weight: 5.557831371757859" ;
+[V][3pl.past]:birri^ DirPreBase  "weight: 4.51894777365377" ;
+
+LEXICON PluralIntransNonPastTSO
+[V][1pl.excl.nonpast]:ngarri^ DirPreBase  "weight: 7.017430283357309" ;
+[V][1pl.incl.nonpast]:karri^ DirPreBase  "weight: 6.171266853040718" ;
+[V][2pl.nonpast]:ngurri^ DirPreBase  "weight: 5.228319822300832" ;
+[V][3pl.nonpast]:kabirri^ DirPreBase  "weight: 4.961070549136699" ;
+
+LEXICON TransPast3pObjTSO
+[V][1sg.3sg.past]:nga^ DirPreBase  "weight: 6.059682837804808" ;
+[V][2sg.3sg.past]:yi^ DirPreBase  "weight: 6.357911019227119" ;
+[V][3sg.3sg.past]:0^ DirPreBase  "weight: 4.614736536860386" ;
+[V][3sg.3Hsg.past]:bi^ DirPreBase  "weight: 4.912522135240414" ;
+[V][12m.3sg.past]:ngarr^ DirPreBase  "weight: 11.160565009748842" ;
+[V][2ua.3sg.past]:ngune^ DirPreBase  "weight: 9.396976417487483" ;
+[V][1ua.excl.3sg.past]:ngane^ DirPreBase  "weight: 9.214654860693528" ;
+[V][3ua.3sg.past]:bene^ DirPreBase  "weight: 7.202931493068644" ;
+[V][12ua.3sg.past]:kane^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.excl.3sg.past]:ngarri^ DirPreBase  "weight: 7.27215186995983" ;
+[V][1pl.incl.3sg.past]:karri^ DirPreBase  "weight: 7.430863561114651" ;
+[V][2pl.3sg.past]:ngurri^ DirPreBase  "weight: 5.818230757784032" ;
+[V][3pl.3sg.past]:birri^ DirPreBase  "weight: 4.682311416703111" ;
+
+LEXICON TransNonPast3pObjTSO
+[V][1sg.3sg.nonpast]:nga^ DirPreBase  "weight: 5.237647005175971" ;
+[V][2sg.3sg.nonpast]:yi^ DirPreBase  "weight: 5.962067978483017" ;
+[V][3sg.3sg.nonpast]:ka^ DirPreBase  "weight: 5.1910052980289105" ;
+[V][3sg.3Hsg.nonpast]:kabi^ DirPreBase  "weight: 6.135588598381929" ;
+[V][12m.3sg.nonpast]:ngarr^ DirPreBase  "weight: 10.007885499810456" ;
+[V][1ua.excl.3sg.nonpast]:ngane^ DirPreBase  "weight: 9.123683082487803" ;
+[V][2ua.3sg.nonpast]:ngune^ DirPreBase  "weight: 8.747631859585931" ;
+[V][3ua.3sg.nonpast]:kabene^ DirPreBase  "weight: 8.486416360322314" ;
+[V][12ua.3sg.nonpast]:kane^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.excl.3sg.nonpast]:ngarri^ DirPreBase  "weight: 6.928876886015865" ;
+[V][1pl.incl.3sg.nonpast]:karri^ DirPreBase  "weight: 6.143285172933918" ;
+[V][2pl.3sg.nonpast]:ngurri^ DirPreBase  "weight: 5.025360934113919" ;
+[V][3pl.3sg.nonpast]:kabirri^ DirPreBase  "weight: 5.128278468120605" ;
+
+LEXICON TransPast3pDualObjTSO
+[V][1sg.3ua.past]:ngabenbene^ DirPreBase  "weight: 11.342886566542797" ;
+[V][2sg.3ua.past]:yibenbene^ DirPreBase  "weight: 9.486588576177171" ;
+[V][3sg.3ua.past]:benbene^ DirPreBase  "weight: 7.518602475422657" ;
+[V][3sg.3ua.past]:benmene^ DirPreBase  "weight: 7.518602475422657" ;
+[V][12m.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][3ua.3ua.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
+[V][2ua.3ua.past]:ngunebenbene^ DirPreBase  "weight: 10.119111134920681" ;
+[V][2ua.3ua.past]:ngurrbenbene^ DirPreBase  "weight: 10.119111134920681" ;
+[V][1ua.excl.3ua.past]:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1ua.excl.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][12ua.3ua.past]:kanebenbene^ DirPreBase  "weight: 12.259177298416953" ;
+[V][12ua.3ua.past]:karrbenbene^ DirPreBase  "weight: 12.259177298416953" ;
+[V][1pl.excl.3ua.past]:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.excl.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.incl.3ua.past]:karribenbene^ DirPreBase  "weight: 12.259177298416953" ;
+[V][1pl.incl.3ua.past]:karrbenbene^ DirPreBase  "weight: 12.259177298416953" ;
+[V][2pl.3ua.past]:ngurribenbene^ DirPreBase  "weight: 10.119111134920681" ;
+[V][2pl.3ua.past]:ngurrbenbene^ DirPreBase  "weight: 10.119111134920681" ;
+[V][3pl.3ua.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
+
+LEXICON TransNonPast3pDualObjTSO
+[V][1sg.3ua.nonpast]:ngabenbene^ DirPreBase  "weight: 10.179735756737117" ;
+[V][2sg.3ua.nonpast]:yibenbene^ DirPreBase  "weight: 9.907802041253474" ;
+[V][3sg.3ua.nonpast]:kabenbene^ DirPreBase  "weight: 9.694227940955415" ;
+[V][12m.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][3ua.3ua.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
+[V][2ua.3ua.nonpast]:ngunebenbene^ DirPreBase  "weight: 9.861282025618582" ;
+[V][2ua.3ua.nonpast]:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
+[V][1ua.excl.3ua.nonpast]:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1ua.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][12ua.3ua.nonpast]:kanebenbene^ DirPreBase  "weight: 11.853712190308787" ;
+[V][12ua.3ua.nonpast]:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
+[V][1pl.excl.3ua.nonpast]:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
+[V][1pl.incl.3ua.nonpast]:karribenbene^ DirPreBase  "weight: 11.853712190308787" ;
+[V][1pl.incl.3ua.nonpast]:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
+[V][2pl.3ua.nonpast]:ngurribenbene^ DirPreBase  "weight: 9.861282025618582" ;
+[V][2pl.3ua.nonpast]:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
+[V][3pl.3ua.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
+
+LEXICON TransPast3PlObjTSO
+[V][1sg.3pl.past]:ngaben^ DirPreBase  "weight: 7.430863561114651" ;
+[V][2sg.3pl.past]:yiben^ DirPreBase  "weight: 7.091538255511032" ;
+[V][3sg.3pl.past]:ben^ DirPreBase  "weight: 5.2488654311097225" ;
+[V][12m.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
+[V][3ua.3pl.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
+[V][2ua.3pl.past]:nguneben^ DirPreBase  "weight: 7.44293614234892" ;
+[V][2ua.3pl.past]:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
+[V][1ua.excl.3pl.past]:nganeben^ DirPreBase  "weight: 9.368805540520787" ;
+[V][1ua.excl.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
+[V][12ua.3pl.past]:kaneben^ DirPreBase  "weight: 9.733448654108697" ;
+[V][12ua.3pl.past]:karrben^ DirPreBase  "weight: 9.733448654108697" ;
+[V][1pl.excl.3pl.past]:ngarriben^ DirPreBase  "weight: 9.368805540520787" ;
+[V][1pl.excl.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
+[V][1pl.incl.3pl.past]:karriben^ DirPreBase  "weight: 9.733448654108697" ;
+[V][1pl.incl.3pl.past]:karrben^ DirPreBase  "weight: 9.733448654108697" ;
+[V][2pl.3pl.past]:ngurriben^ DirPreBase  "weight: 7.44293614234892" ;
+[V][2pl.3pl.past]:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
+[V][3pl.3pl.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
+
+LEXICON TransNonPast3PlObjTSO
+[V][1sg.3pl.nonpast]:ngaben^ DirPreBase  "weight: 6.5002755245396715" ;
+[V][2sg.3pl.nonpast]:yiben^ DirPreBase  "weight: 6.563763073431268" ;
+[V][3sg.3pl.nonpast]:kaben^ DirPreBase  "weight: 5.858089633052142" ;
+[V][12m.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
+[V][3ua.3pl.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
+[V][2ua.3pl.nonpast]:nguneben^ DirPreBase  "weight: 6.670057732080891" ;
+[V][2ua.3pl.nonpast]:ngurrben^ DirPreBase  "weight: 6.670057732080891" ;
+[V][1ua.excl.3pl.nonpast]:nganeben^ DirPreBase  "weight: 8.545605231712644" ;
+[V][1ua.excl.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
+[V][12ua.3pl.nonpast]:kaneben^ DirPreBase  "weight: 8.337203962135638" ;
+[V][12ua.3pl.nonpast]:karrben^ DirPreBase  "weight: 8.337203962135638" ;
+[V][1pl.excl.3pl.nonpast]:ngarriben^ DirPreBase  "weight: 8.545605231712644" ;
+[V][1pl.excl.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
+[V][1pl.incl.3pl.nonpast]:karriben^ DirPreBase  "weight: 8.337203962135638" ;
+[V][1pl.incl.3pl.nonpast]:karrben^ DirPreBase  "weight: 8.337203962135638" ;
+[V][2pl.3pl.nonpast]:ngurriben^ DirPreBase  "weight: 6.668190317906095" ;
+[V][2pl.3pl.nonpast]:ngurrben^ DirPreBase  "weight: 6.668190317906095" ;
+[V][3pl.3pl.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
+
+LEXICON TransPast2Obj
+[V][3sg.2.past]:ngun^ DirPreBase  "weight: 6.941057304572736" ;
+[V][1sg.2ua.past]:benbene^ DirPreBase  "weight: 7.518602475422657" ;
+[V][3sg.2ua.past]:ngunbene^ DirPreBase  "weight: 12.259177298416953" ;
+[V][1sg.2.past]:0^ DirPreBase  "weight: 4.614736536860386" ;
+[V][3pl.2pl.past]:ngundi^ DirPreBase  "weight: 7.3801704467991325" ;
+[V][1pl.2.past]:ngundi^ DirPreBase  "weight: 7.3801704467991325" ;
+[V][1pl.2pl.past]:bi^ DirPreBase  "weight: 4.912522135240414" ;
+
+LEXICON TransNonPast2Obj
+[V][3sg.2.nonpast]:ngun^ DirPreBase  "weight: 6.204737952147582" ;
+[V][1sg.2ua.nonpast]:benbene^ DirPreBase  "weight: 9.861282025618582" ;
+[V][3sg.2ua.nonpast]:ngunbene^ DirPreBase  "weight: 11.006414329921585" ;
+[V][1sg.2.nonpast]:0^ DirPreBase  "weight: 2.963852602535772" ;
+[V][3pl.2pl.nonpast]:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
+[V][1pl.2.nonpast]:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
+[V][1pl.2pl.nonpast]:bi^ DirPreBase  "weight: 7.335553381310326" ;
+
+LEXICON TransPast1Obj
+[V][2sg.1.past]:kan^ DirPreBase  "weight: 5.967608158858632" ;
+[V][3sg.1pl.past]:kan^ DirPreBase  "weight: 5.967608158858632" ;
+[V][3sg.1.past]:ngan^ DirPreBase  "weight: 6.749788961788975" ;
+[V][2sg.1ua.past]:kanbene^ DirPreBase  "weight: 10.872882937297062" ;
+[V][3sg.1ua.past]:kanbene^ DirPreBase  "weight: 10.467417829188896" ;
+[V][3sg.1ua.past]:nganbene^ DirPreBase  "weight: 10.467417829188896" ;
+[V][2pl.1.past]:kandi^ DirPreBase  "weight: 7.222224696003323" ;
+[V][3pl.1ua.past]:kandi^ DirPreBase  "weight: 6.747766716408207" ;
+[V][3pl.1sg.past]:ngandi^ DirPreBase  "weight: 7.72121586212231" ;
+[V][3pl.1ua.past]:ngandi^ DirPreBase  "weight: 6.747766716408207" ;
+
+LEXICON TransNonPast1Obj
+[V][2sg.1.nonpast]:kan^ DirPreBase  "weight: 5.6153875652692795" ;
+[V][3sg.1pl.nonpast]:kan^ DirPreBase  "weight: 5.6153875652692795" ;
+[V][3sg.1.nonpast]:ngan^ DirPreBase  "weight: 7.123378861366691" ;
+[V][2sg.1ua.nonpast]:kanbene^ DirPreBase  "weight: 10.755099901640678" ;
+[V][3sg.1ua.nonpast]:kanbene^ DirPreBase  "weight: 10.649739385982851" ;
+[V][3sg.1ua.nonpast]:nganbene^ DirPreBase  "weight: 10.649739385982851" ;
+[V][2pl.1.nonpast]:kandi^ DirPreBase  "weight: 6.843076896212532" ;
+[V][3pl.1ua.nonpast]:kandi^ DirPreBase  "weight: 6.2454621423741505" ;
+[V][3pl.1sg.nonpast]:ngandi^ DirPreBase  "weight: 7.044241540807967" ;
+[V][3pl.1ua.nonpast]:ngandi^ DirPreBase  "weight: 6.2454621423741505" ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   PREBASE SLOTS                     !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON DirPreBase
+[DIR.towards]:(ku)m^ AspPreBase  "weight: 4.75011604254045" ;
+[DIR.away]:bal^ AspPreBase  "weight: 6.218922587139538" ;
+0:0 AspPreBase ;
+
+LEXICON AspPreBase
+[IMM]:h^ Misc1PreBase  "weight: 4.334743113529392" ;
+0:0 Misc1PreBase ;
+
+LEXICON Misc1PreBase
+[ADV.again]:yawoyh^ Misc1PreBase  "weight: 6.089566565925496" ;              ! again
+[ADV.again]:yawoh^ Misc1PreBase  "weight: 6.089566565925496" ;               ! again
+[ADV.together]:djorrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
+[ADV.together]:djarrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
+[ADV.again][ADV.together]:yawoyhdjarrk^ Misc1PreBase "weight: 12.952324478976898" ; ! again together
+[ADV.a.bit]:woh^ Misc1PreBase  "weight: 6.9608599318689155" ;                 ! a bit
+[ADV.at.night]:kak^ Misc1PreBase  "weight: 9.620119968801694" ;              ! at night
+[ADV.differently]:barrkid^ Misc1PreBase  "weight: 12.952324478976898" ;       ! differently
+[ADV.properly]:wernh^ Misc1PreBase  "weight: 6.170132422970106" ;            ! properly
+[ADV.vigorously]:ngudj^ Misc1PreBase  "weight: 8.486416360322314" ;          ! vigorously
+[ADV.in.fear]:kele^ Misc1PreBase  "weight: 7.852458051152699" ;              ! in fear
+[ADV.wrong]:warrebu^ Misc1PreBase  "weight: 12.952324478976898" ;             ! wrong
+[ADJ.wounded]:ngoreng^ Misc1PreBase  "weight: 10.872882937297062" ;           ! do V while wounded
+[ADJ.similar]:rohrouk^ Misc1PreBase  "weight: 9.733448654108697" ;           ! similar
+[ADJ.similar]:rohrok^ Misc1PreBase  "weight: 9.733448654108697" ;            ! similar (alternate spelling)
+[ADJ.cooked]:djoleng^ Misc1PreBase  "weight: 10.755099901640678" ;
+[ASP.now]:bad^ Misc1PreBase  "weight: 8.982032565424776" ;                   ! now
+[ASP.now][ADV.again]:badyawoyh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
+[ASP.now][ADV.again]:badyawoh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
+[ASP.before]:yingkih^ Misc1PreBase  "weight: 6.356543965015586" ;            ! before
+[ASP.almost]:kuyin^ Misc1PreBase  "weight: 9.368805540520787" ;              ! almost
+[ASP.nearly]:barlanh^ Misc1PreBase  "weight: 10.554429206178527" ;            ! nearly
+[QUANT.each]:bebbeh^ Misc1PreBase  "weight: 6.735718377892033" ;             ! bebbeh
+[QUANT.only]:djal^ Misc1PreBase  "weight: 4.36132336041594" ;               ! only
+[QUANT.only][ADV.a.bit]:djalwoh^ Misc1PreBase  "weight: 12.952324478976898" ;      ! only a bit
+[QUANT.many]:mirnde^ Misc1PreBase  "weight: 6.9608599318689155" ;             ! many
+0:0 BenefactPreBase ;
+
+LEXICON BenefactPreBase                         ! benefactive infix makes the verb transitive
+0:0 Misc2PreBase ;
+@P.VALENCE.AUGM@[BEN]:@P.VALENCE.AUGM@marne^ Misc2PreBase  "weight: 3.584809432628716" ;
+
+LEXICON Misc2PreBase
+[QUANT.only]:djal^ AspPreBase2  "weight: 4.36132336041594" ;
+[QUANT.close.up]:darnh^ GINPreBase  "weight: 8.762669736950471" ;
+[QUANT.small]:yaw^ AspPreBase2  "weight: 6.950909601015748" ;
+[QUANT.each]:bebbeh^ AspPreBase2  "weight: 6.735718377892033" ;             ! bebbeh
+[QUANT.many]:mirnde^ AspPreBase2  "weight: 6.9608599318689155" ;             ! many
+0:0 GINPreBase ;
+
+LEXICON AspPreBase2
+[IMM]:h^ GINPreBase  "weight: 4.334743113529392" ;
+0:0 GINPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   INCORPORATED NOUNS                !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON GINPreBase
+[GIN]:0 NounBase  "weight: 3.424549076399586" ;
+0 BPINPreBase ;
+
+LEXICON BPINPreBase ! names also fall into this category: any attributes of the person.
+[BPIN]:balem^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:bard^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:berd^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:berl^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:berre^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:bodme^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:bid^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:bininj^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:dad^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:dang^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:dedj^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:denge^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:rrenge^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:dile^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:djen^ AdjPreBase  "weight: 4.704842474691205" ;                                          ! tongue
+[BPIN]:djikka^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kanem^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:keb^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kodj^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kom^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kord^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kuk^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kurlah^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:kurlh^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:milh^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:mim^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:murrng^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:njam^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:nuk^ AdjPreBase  "weight: 4.704842474691205" ;
+[BPIN]:rrulkki^ AdjPreBase  "weight: 4.704842474691205" ;                                    ! internal.sick
+[BPIN]:yidme^ AdjPreBase  "weight: 4.704842474691205" ;
+0:0 SPAPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   POST-NOMINAL SLOTS                !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON AdjPreBase
+[ADJ.tight]:djokko^ SPAPreBase  "weight: 12.952324478976898" ;
+[ADJ.big]:kimuk^ SPAPreBase  "weight: 12.952324478976898" ;
+[QUANT.many]:wern^ SPAPreBase  "weight: 6.9608599318689155" ;
+0:0 SPAPreBase ;
+
+LEXICON SPAPreBase
+0:0 COMPreBase ;    ! Spatial slot in Evans' grammar had no examples in Kunwinjku, so this is a pass-through for now
+
+LEXICON COMPreBase
+0:0 VerbValencyCheck ;
+@P.VALENCE.AUGM@[COM]:@P.VALENCE.AUGM@yi^ VerbValencyCheck  "weight: 4.568205641786002" ;
+
+LEXICON VerbValencyCheck
+@R.VALENCE.AUGM@ AllVerbs ;
+@R.VALENCE.INTR@ IntransitiveVerbs ;
+@R.VALENCE.TRNS@ TransitiveVerbs ; 
+
+LEXICON AllVerbs
+0:0 IntransitiveVerbs ;
+0:0 TransitiveVerbs ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   VERB BASES - Inransitives         !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON IntransitiveVerbs
+
+0:0 IrregularVerbsIntr ;                                ! there are a couple irregular intransitive^ Verbs to treat explicitly 
+[VerbRootGuess][GUESS]:[VerbRootGuess] anyVerbPostBase  "weight: 12.952324478976898" ;
+babng:babang^ V1PostBase  "weight: 12.952324478976898" ;
+bakme:bakme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! break (intr)
+balewo:balewo^ V3cPostBase  "weight: 12.952324478976898" ;                                    ! clean
+balhme:balhme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! block
+bal:bal^ ReVerbs "weight: 12.952324478976898" ;
+bame:bame^ V1PostBase  "weight: 12.952324478976898" ;
+bang:bang^ V11PostBase  "weight: 12.952324478976898" ;                                      ! become aggressive or violent    
+barlid:barlid^ V9PostBase  "weight: 12.952324478976898" ;
+barlida:barlida^ V6aPostbase "weight: 12.952324478976898" ; 
+barlme:barlme^ V1PostBase  "weight: 12.952324478976898" ;
+barlungme:barlungme^ V1PostBase  "weight: 12.952324478976898" ;
+barndi:barndi^ V7aPostBase  "weight: 12.952324478976898" ;                                    ! climb (hill)
+barrhbu:barrhbu^ V4bPostBase  "weight: 12.952324478976898" ;
+barrhme:barrhme^ V1PostBase  "weight: 12.952324478976898" ;
+baru:baru^ V4bPostBase  "weight: 12.952324478976898" ;                                       ! rub
+bebme:bebme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! appear, arrive 2. go out come out 
+bekka:bekka^ V3aPostBase  "weight: 12.952324478976898" ;                                     ! listen, hear, feel, touch, (sense)
+bekkarre:bekkarre^ V10PostBase  "weight: 12.952324478976898" ;
+beleyerrka:beleyerrka^ V3aPostBase  "weight: 12.952324478976898" ;
+belngda:belngda^ V6aPostbase "weight: 12.952324478976898" ;                                   ! subside, deflate, go flat
+bengdayhme:bengdayhme^ V1PostBase  "weight: 12.952324478976898" ;                             ! remember, realize
+bengdi:bengdi^ V7aPostBase  "weight: 12.952324478976898" ;                                    ! sit waiting for word, for something to happen
+bengka:bengka^ V3aPostBase  "weight: 12.952324478976898" ;                                    ! understand, comprehend
+bengkoka:bengkoka^ V3aPostbase "weight: 12.952324478976898" ;                                 ! be confused , get lost
+bengmayahme:bengmayahme^ V1PostBase  "weight: 12.952324478976898" ;                           ! 
+bengwarr:bengwarr^ V11PostBase  "weight: 12.952324478976898" ;                                ! go crazy, develop dementia, become mentally unstable
+bidjibme:bidjibme^ V1PostBase  "weight: 12.952324478976898" ;                                 ! turn, screw, spin, wind
+birrhme:birrhme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! sweep, rake up, clear the ground
+bobidbu:bobidbu^ V4bPostBase  "weight: 12.952324478976898" ;
+bodahkendo:bodahkendo^ V5aPostBase  "weight: 12.952324478976898" ;                            ! fill a container with liquid, refuel vehicle
+bodda:bodda^ V6aPostbase "weight: 12.952324478976898" ;                                       ! crouch down, hunch over, bend
+bodowe:bodowe^ V2PostBase  "weight: 12.952324478976898" ;
+bolbme:bolbme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! become accustomed to
+bolkdowe:bolkdowe^ V2PostBase  "weight: 12.952324478976898" ;
+bolkmadde:bolkmadde^ V5bPostBase  "weight: 12.952324478976898" ;
+bolkngeyyo:bolkngeyyo^ V8PostBase  "weight: 12.952324478976898" ;
+bo:bo^ ReVerbs "weight: 12.952324478976898" ;                                             ! flow 
+borlbme:borlbme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! learn, 2. get used to
+borledme:borledme^ V1PostBase  "weight: 12.952324478976898" ;                                 ! rotate, turn around
+borrkke:borrkke^ V2PostBase  "weight: 12.952324478976898" ;                                   ! dance
+borrkkirri:borrkkirri^ V7aPostbase "weight: 12.952324478976898" ;                             ! jump around playfull, frolic 
+borrme:borrme^ V1PostBase  "weight: 12.952324478976898" ;
+boyboyyo:boyboyyo^ V8PostBase  "weight: 12.952324478976898" ;
+bu:bu^ V4bPostBase  "weight: 12.952324478976898" ;                                           ! hit, kill (intr)
+bukme:bukme^ V3dPostBase  "weight: 12.952324478976898" ;                                     ! dry up
+burlurlhme:burlurlhme^ V1PostBase "weight: 12.952324478976898" ;                             ! Swell up
+burnbu:burnbu^ V4bPostBase  "weight: 12.952324478976898" ;
+burre:burre^ V10PostBase  "weight: 12.952324478976898" ;                                     ! fight
+burriwe:burriwe^ V2PostBase  "weight: 12.952324478976898" ;                                  ! throw, chuck, push down, throw away (INTR)
+da:da^ V6aPostBase  "weight: 12.952324478976898" ;                                           ! stand, come live in a place
+dadjme:dadjme^ V1PostBase  "weight: 12.952324478976898" ;                                    ! cut, 2 cease, stop
+dahkendi:dahkendi^ V7aPostBase  "weight: 12.952324478976898" ;
+dahkendo:dahkendo^ V5aPostBase  "weight: 12.952324478976898" ;                               ! place in a container
+daleh:daleh^ V11PostBase  "weight: 12.952324478976898" ;                                     ! dry up, get dry
+dangbalhme:(rr)angbalhme^ V1PostBase  "weight: 12.952324478976898" ;                         ! close door, close window, shut mouth
+dange:dange^ V10Postbase "weight: 12.952324478976898" ;                                      ! stand, come to live in a place, be in a sibling relationship
+dangwerre:dangwerre^ V10PostBase  "weight: 12.952324478976898" ;                             ! argue with each other
+darlka:darlka^ V3aPostBase  "weight: 12.952324478976898" ;                                   ! swim
+darrhme:darrhme^ V1PostBase "weight: 12.952324478976898" ;                                   ! Poke out
+dayo:dayo^ V8Postbase "weight: 12.952324478976898" ;                                         ! lie in the sun
+dedjdjingma:dedjdjingma^ V5cPostBase  "weight: 12.952324478976898" ;
+dedjdo:dedjdo^ V5aPostBase  "weight: 12.952324478976898" ;                                   ! copulate (vulg)
+deldelme:deldelme^ V1PostBase  "weight: 12.952324478976898" ;
+denghme:denghme^ V1PostBase  "weight: 12.952324478976898" ;
+derrehme:derrehme^ V1PostBase  "weight: 12.952324478976898" ;                                ! move, make forward progress
+di:(rr)i^ V7aPostBase  "weight: 12.952324478976898" ;                                        ! be, be standing
+di:di^ V7aPostBase  "weight: 12.952324478976898" ;                                           ! be, be standing
+dilebu:dilebu^ V4bPostBase  "weight: 12.952324478976898" ;                                   ! urinate
+dilhme:dilhme^ V1PostBase  "weight: 12.952324478976898" ;
+dimhme:dimhme^ V1PostBase  "weight: 12.952324478976898" ;
+dingihdi:dingihdi^ V7aPostBase  "weight: 12.952324478976898" ;
+dirri:dirri^ V7aPostBase  "weight: 12.952324478976898" ;                                      ! play
+djabd:djabd^ V9PostBase  "weight: 12.952324478976898" ;
+djabda:djabda^ V6aPostBase  "weight: 12.952324478976898" ;                                    ! stick up
+djabdi:djabdi^ V7aPostBase  "weight: 12.952324478976898" ;
+djadku:djakdu^ V5aPostBase  "weight: 12.952324478976898" ;                                    ! rain fall down, fall down (rain)
+djalre:djal^ ReVerbs "weight: 12.952324478976898" ; 
+djamunme:djamunme^ V1PostBase  "weight: 12.952324478976898" ;
+djandi:djandi^ V7aPostbase "weight: 12.952324478976898" ; 
+djangdi:djangdi^ V7aPostBase  "weight: 12.952324478976898" ;
+djangka:djangka^ V3aPostbase "weight: 12.952324478976898" ;                                   ! Go hunting
+djangwe:djangwe^ V2PostBase  "weight: 12.952324478976898" ;
+djardahme:djardahme^ V1PostBase  "weight: 12.952324478976898" ;
+djekme:djekme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! laugh
+djerrkda:djerrkda^ V6aPostbase "weight: 12.952324478976898" ; 
+djihbu:djihbu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! sneeze
+djobke:djobke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! cut (intr)
+djobme:djobme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! cut (intr)
+djohme:djohme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! cough
+djolengme:djolengme^ V1PostBase  "weight: 12.952324478976898" ;                               ! get cooked
+djongburre:djongburre^ V10PostBase  "weight: 12.952324478976898" ;                            ! get dressed
+djord:djord^ V11PostBase  "weight: 12.952324478976898" ;                                      ! grow up
+djorlkme:djorlkme^ V1PostBase  "weight: 12.952324478976898" ;
+djudme:djudme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! stick in
+djuhme:djuhme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! be in water, get into water, shower, bathe
+djurrhbume:djurrhbume^ V1PostBase  "weight: 12.952324478976898" ;
+djurrkdjurrkme:djurrkdjurrkme^ V1PostBase  "weight: 12.952324478976898" ;
+djurrkwo:djurrkwo^ V3cPostBase  "weight: 12.952324478976898" ;                                  ! get excited, be enthousiastic
+dokme:(rr)okme^ V1PostBase  "weight: 12.952324478976898" ;                             ! get going, set off, 2. go ahead, go first
+dolhme:(rr)olhme^ V1PostBase  "weight: 12.952324478976898" ;
+dolka:(rr)olka^ V3aPostBase  "weight: 12.952324478976898" ;                            ! get up
+dolkka:(rr)olkka^ V3aPostBase  "weight: 12.952324478976898" ;                                    ! jump up, rise up, fly
+dombu:(rr)ombu^ V4aPostBase  "weight: 12.952324478976898" ;                            ! extinguish, put out
+dowe:(rr)owe^ V2PostBase  "weight: 12.952324478976898" ;                               ! be sick, die, break down
+dowe:dowe^ V2PostBase  "weight: 12.952324478976898" ;                                       ! be sick, die
+dowerre:dowerre^ V10PostBase  "weight: 12.952324478976898" ;
+dowime:dowime^ V1PostBase  "weight: 12.952324478976898" ;                                     ! 
+dowkme:dowkme^ V1PostBase  "weight: 12.952324478976898" ;
+dubbe:dubbe^ V1PostBase  "weight: 12.952324478976898" ;                                      ! block
+dubbedo:dubbedo^ V5aPostbase "weight: 12.952324478976898" ;                             ! be blocked, stuck, unable to pass
+dubberra:dubberra^ V10PostBase  "weight: 12.952324478976898" ;
+dudjendi:dudjendi^ V7aPostBase  "weight: 12.952324478976898" ;
+duhme:duhme^ V1PostBase  "weight: 12.952324478976898" ;
+dukkayindi:dukkayindi^ V7aPostBase  "weight: 12.952324478976898" ;
+dulkkimanka:(rr)ulkimanka^ V3aPostBase  "weight: 12.952324478976898" ;
+dulubu:(rr)ulubu^ V4aPostBase  "weight: 12.952324478976898" ;                          ! shoot, spear, penetrate, puncture, 2. flow into, intersect INTR
+dungbang:dungbang^ V11PostBase  "weight: 12.952324478976898" ;
+dungbidbu:dungbidbu^ V4bPostBase  "weight: 12.952324478976898" ;
+dungre:dung^ ReVerbs "weight: 12.952324478976898" ; 
+dungwarre:dungwarre^ V11PostBase  "weight: 12.952324478976898" ;
+dungyibme:dungyibme^ V1PostBase  "weight: 12.952324478976898" ;
+durnde:durnde^ V5bPostBase  "weight: 12.952324478976898" ;                             ! return, go back
+durnde:rdurnde^ V5bPostBase  "weight: 12.952324478976898" ;                                   ! return, go back (alternate pelling)
+durnde:rrurnde^ V5bPostBase  "weight: 12.952324478976898" ;                                   ! return, go back (alternate spelling)
+durre:durre^ V10PostBase  "weight: 12.952324478976898" ;                               ! abuse or curse each other
+durrkmirri:(rr)urrkmirri^ V7aPostBase  "weight: 12.952324478976898" ;  ! work
+gerremadbu:gerremadbu^ V4aPostBase  "weight: 12.952324478976898" ;                     ! wait for something to cook
+ka:ka^ V3aPostBase  "weight: 12.952324478976898" ;                                     ! take, carry along
+kakre:kak^ ReVerbs "weight: 12.952324478976898" ;                                    ! travel at night
+kangebarrhme:kangebarrhme^ V1PostBase "weight: 12.952324478976898" ;
+kare:kare^ V11PostBase  "weight: 12.952324478976898" ;                                 ! become old
+karrikme:karrikme^ V1PostBase  "weight: 12.952324478976898" ;
+karrme:karrme^ V1PostBase  "weight: 12.952324478976898" ;                              ! have, own posess, 2. keep, 3. hold onto, 4. have offspring, 5. win
+karu:karu^ V5aPostBase  "weight: 12.952324478976898" ;                                      ! dig (intr)
+kawo:kawo^ V3cPostBase  "weight: 12.952324478976898" ;                                      ! disturb
+kayhme:kayhme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! call out, yell
+kele:kele^ V11PostBase  "weight: 12.952324478976898" ;                                ! be afraid
+kelewawme:kelewawme^ V1PostBase "weight: 12.952324478976898" ; 
+kerlk:kerlk^ V11PostBase  "weight: 12.952324478976898" ;
+kerlkda:kerlkda^ V6aPostbase "weight: 12.952324478976898" ;                            ! become soft
+kerremadbu:kerremadbu^ V4aPostBase  "weight: 12.952324478976898" ;                     ! wait for something to cook (alternate spelling)
+kewkme:kewkme^ V1PostBase "weight: 12.952324478976898" ; 
+keyo:keyo^ V8PostBase  "weight: 12.952324478976898" ;                                  ! lie down
+kimuk:kimuk^ V10PostBase  "weight: 12.952324478976898" ;                               ! get big
+kodjbordehme:kodjbordehme^ V1PostBase  "weight: 12.952324478976898" ;
+kodjbulume:kodjbulume^ V1PostBase  "weight: 12.952324478976898" ;                      ! have grey hair
+kodjdjobme:kodjdjobme^ V1PostBase  "weight: 12.952324478976898" ;
+kodjdukme:kodjdukme^ V1PostBase "weight: 12.952324478976898" ; 
+kodjngalme:kodjngalme^ V1PostBase  "weight: 12.952324478976898" ;
+kodjukme:kodjdukme^ V1PostBase  "weight: 12.952324478976898" ;
+kolu:kolu^ V5aPostBase  "weight: 12.952324478976898" ;                                ! go down, descend, 2. return after ceremony
+kombukdowe:kombukdowe^ V2PostBase  "weight: 12.952324478976898" ;
+kongibu:kongibu^ V4bPostBase  "weight: 12.952324478976898" ;                          ! feel compassion
+kukborledme:kukborledme^ V1PostBase  "weight: 12.952324478976898" ;
+kukyime:kukyime^ V1PostBase  "weight: 12.952324478976898" ;
+kunidi:kunidi^ V7aPostBase  "weight: 12.952324478976898" ;
+kurduyime:kurduyime^ V1PostBase  "weight: 12.952324478976898" ;
+kurlbare:kurlba^ ReVerbs "weight: 12.952324478976898" ;                             ! bleed
+kurre:kurre^ V10PostBase  "weight: 12.952324478976898" ;                              ! decieve, trick
+kuwa:kuwa^ V4aPostBase  "weight: 12.952324478976898" ;
+lad:lad^ V11PostBase  "weight: 12.952324478976898" ;                                  ! become hot
+lirrhmerre:lirrhmerre^ V10PostBase  "weight: 12.952324478976898" ;                    ! scratch oneself
+lobme:lobme^ V1PostBase  "weight: 12.952324478976898" ;                               ! drive, run, function
+lobme:rlobme^ V1PostBase  "weight: 12.952324478976898" ;
+lorrhmiyo:lorrhmiyo^ V8Postbase "weight: 12.952324478976898" ; 
+lurlme:lurlme^ V1PostBase  "weight: 12.952324478976898" ;
+ma:ma^ V5cPostBase  "weight: 12.952324478976898" ;                                    ! get, obtain, collect (INTR)
+madbu:madbu^ V4bPostBase  "weight: 12.952324478976898" ;                              ! wait around
+mahme:mahme^ V1PostBase  "weight: 12.952324478976898" ;
+mak:mak^ V11PostBase  "weight: 12.952324478976898" ;                                  ! become good
+manka:manka^ V3aPostBase  "weight: 12.952324478976898" ;                              ! fall, land
+marnedi:marnedi^ V7aPostBase  "weight: 12.952324478976898" ;                          ! pray
+marnenalkbu:marnenalkbu^ V4bPostBase  "weight: 12.952324478976898" ;
+marre:marre^ V10PostBase  "weight: 12.952324478976898" ;                              ! marry
+marrmarr:marrmarr^ V11PostBase  "weight: 12.952324478976898" ;
+marrwe:marrwe^ V2PostBase  "weight: 12.952324478976898" ;
+mayahme:mayahme^ V1PostBase  "weight: 12.952324478976898" ;                           ! get lost, become confused, 2. be unaware
+medda:medda^ V6aPostbase "weight: 12.952324478976898" ;                               ! turn head, turn around
+melme:melme^ V1PostBase  "weight: 12.952324478976898" ;
+menmenyime:menmenyime^ V1PostBase  "weight: 12.952324478976898" ;
+merre:merre^ V10PostBase  "weight: 12.952324478976898" ;
+mikme:mikme^ V1PostBase  "weight: 12.952324478976898" ;
+mimbi:mimbi^ V7aPostBase     "weight: 12.952324478976898" ;                            ! alive
+mimbime:mimbime^ V4bPostBase  "weight: 12.952324478976898" ;                          ! be alive
+mimke:mimke^ V2PostBase  "weight: 12.952324478976898" ;
+mirrhmirrhme:mirrhmirrhme^ V1PostBase  "weight: 12.952324478976898" ;                 ! get sharp, get hot
+modme:modme^ V1PostBase  "weight: 12.952324478976898" ;
+mokdowe:mokdowe^ V5bPostbase "weight: 12.952324478976898" ;                           ! to have a sore heal
+mok:mok^ V11PostBase "weight: 12.952324478976898" ;                                   ! develop a sore, get an infection
+moname:moname^ V1PostBase  "weight: 12.952324478976898" ;                             ! assemble
+morneni:morneni^ V7aPostBase  "weight: 12.952324478976898" ;
+na:na^ V3bPostBase  "weight: 12.952324478976898" ;                                    ! see (trns)
+nalkbu:nalkbu^ V4bPostbase "weight: 12.952324478976898" ; 
+ngadduhke:ngadduhke^ V2Postbase "weight: 12.952324478976898" ;                        ! make trouble, start a fight
+ngadjihbu:ngadjihbu^ V4bPostbase "weight: 12.952324478976898" ; 
+ngakme:ngakme^ V1PostBase  "weight: 12.952324478976898" ;
+ngalkbu:ngalkbu^ V4bPostBase  "weight: 12.952324478976898" ;                                   ! cry, weep
+ngalme:ngalme^ V1PostBase  "weight: 12.952324478976898" ;
+ngamka:ngamka^ V3bPostBase  "weight: 12.952324478976898" ;                                    ! swim 
+ngarrnghma:ngarrnghma^ V5cPostbase "weight: 12.952324478976898" ; 
+ngayke:ngayke^ V2Postbase "weight: 12.952324478976898" ; 
+ngehme:ngehme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! take a breath
+ngeybu:ngeybu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! be named
+ngeydi:ngeydi^ V7aPostBase  "weight: 12.952324478976898" ;
+ngeyhme:ngeyhme^ V1PostBase "weight: 12.952324478976898" ;                            ! moan
+ngeyyo:ngeyyo^ V8PostBase  "weight: 12.952324478976898" ;
+ngi:ngi^ V11PostBase  "weight: 12.952324478976898" ;                                       ! go inside
+ngime:ngime^ V1PostBase  "weight: 12.952324478976898" ;                                      ! enter
+ngiwkme:ngiwkme^ V1PostBase  "weight: 12.952324478976898" ;
+ngokda:ngokda^ V6aPostbase "weight: 12.952324478976898" ;                                     ! become dark, nightfall
+ngokme:ngokme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! bark (of dogs) (evans grammar spelling)
+ngolekwarre:ngolekwarre^ V11PostBase  "weight: 12.952324478976898" ;
+ngomka:ngomka^ V3bPostBase  "weight: 12.952324478976898" ;                                    ! swim 
+ngu:ngu^ V3IrrPostBase  "weight: 12.952324478976898" ;                                     ! eat (intrans)
+ngud:ngud^ V11PostBase  "weight: 12.952324478976898" ;                                      ! be quiet
+ngudjwarre:ngudjwarre^ V11PostBase  "weight: 12.952324478976898" ;
+ngukde:ngukde^ V5bPostBase  "weight: 12.952324478976898" ;                                    ! defecate
+ngurdme:ngurdme^ V1PostBase  "weight: 12.952324478976898" ;
+ngurdulme:ngurdulme^ V1PostBase  "weight: 12.952324478976898" ;
+nguybu:nguybu^ V4bPostbase "weight: 12.952324478976898" ; 
+ni:ni^ V7aPostBase  "weight: 12.952324478976898" ;                                        ! be, be sitting, 2. stay, live, be
+ningihni:ningihni^ V7aPostBase  "weight: 12.952324478976898" ;
+njaknjakme:njaknjakme^ V1PostBase "weight: 12.952324478976898" ; 
+njokme:njokme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! bark (of dogs)
+njudjme:njudme^ V1PostBase  "weight: 12.952324478976898" ;                                     !
+nud:nud^ V11PostBase  "weight: 12.952324478976898" ;
+rayekme:rayekme^ V11PostBase "weight: 12.952324478976898" ;                               ! to harden, solidify, turn to stone
+0:0^ ReVerbs "weight: 12.952324478976898" ; 
+rerrka:rerrka^ V3aPostBase  "weight: 12.952324478976898" ;
+rlobme:rlobme^ V1PostBase "weight: 12.952324478976898" ; 
+rohrokme:rohrokme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! try out, attempt, have a go, 2. investigate, 3. estimate, 4. count, 5. group together
+roka:roka^ V3aPostBase  "weight: 12.952324478976898" ;
+rra:rra^ V6aPostBase  "weight: 12.952324478976898" ;                                       ! stand, come live in a place
+ru:ru^ V5aPostBase  "weight: 12.952324478976898" ;                                        ! be hot, burn, 2. cook, 3 ripen        
+wabme:wabme^ V1PostBase  "weight: 12.952324478976898" ;
+wage:wage^ V2PostBase  "weight: 12.952324478976898" ;                                       ! crawl, walk
+wakbu:wakbu^ V4bPostBase  "weight: 12.952324478976898" ;                                     ! pass around, turn, circle
+wake:wake^ V2PostBase  "weight: 12.952324478976898" ;                                       ! crawl, walk
+wakwa:wakwa^ V4aPostBase  "weight: 12.952324478976898" ;                                     ! be unaware, not know, forget to undertake
+wareyo:wareyo^ V8PostBase  "weight: 12.952324478976898" ;
+warlbu:warlbu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! hunt, gather
+warnamyo:warnamyo^ V8PostBase  "weight: 12.952324478976898" ;
+warre:warre^ V11PostBase  "weight: 12.952324478976898" ;                                     ! go bad
+warrewo:warrewo^ V3cPostBase  "weight: 12.952324478976898" ;                                   ! make a mistake
+warrhme:warrhme^ V1PostBase  "weight: 12.952324478976898" ;
+wayhme:wayhme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! call out 
+wayini:wayini^ V7aPostBase  "weight: 12.952324478976898" ;                                    ! sing
+weldi:weldi^ V7aPostBase  "weight: 12.952324478976898" ;
+weleberrkmen:weleberrk^ V11PostBase "weight: 12.952324478976898" ;                       ! droop, sag, wrinkle
+welebme:welebme^ V1PostBase "weight: 12.952324478976898" ; 
+welewelme:welewelme^ V1PostBase  "weight: 12.952324478976898" ;
+welhwelhme:welhwelhme^ V1PostBase  "weight: 12.952324478976898" ;                                 ! hang (intr)
+wern:wern^ V11PostBase  "weight: 12.952324478976898" ;
+wirdme:wirdme^ V1PostBase "weight: 12.952324478976898" ; 
+wohna:wohna^ V3bPostBase  "weight: 12.952324478976898" ;
+woh:woh^ ReVerbs "weight: 12.952324478976898" ;                                       ! wander, walk around
+wokdi:wokdi^ V7aPostBase  "weight: 12.952324478976898" ;                                     ! be speaking
+wokna:wokna^ V3bPostBase  "weight: 12.952324478976898" ;                                     ! speak, talk, make sound
+wokngi:wokngi^ V11PostBase  "weight: 12.952324478976898" ;
+wolebuk:wolebuk^ V11PostBase  "weight: 12.952324478976898" ;
+wolebukkiyo:wolebukkiyo^ V8PostBase  "weight: 12.952324478976898" ;
+worrhme:worrhme^ V1PostBase  "weight: 12.952324478976898" ;                                    ! to make a fire (intr)
+worrk:worrk^ V11PostBase  "weight: 12.952324478976898" ;                                     ! be full of food
+worromka:worromka^ V3aPostBase  "weight: 12.952324478976898" ;
+woybukwo:woybukwo^ V3cPostBase  "weight: 12.952324478976898" ;
+wulhke:wulhke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! start a fire (INTR)
+wurdme:wurdma^ V5cPostBase  "weight: 12.952324478976898" ;
+wurlebme:wurlebme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! swim, take a bath, shower
+wurlhme:wurlhme^ V1PostBase  "weight: 12.952324478976898" ;                                    ! flare up
+yak:yak^ V11PostBase  "weight: 12.952324478976898" ;                                       ! finish, run out
+yarlarrme:yarlarrme^ V1PostBase  "weight: 12.952324478976898" ;
+yawa:yawa^ V4aPostBase  "weight: 12.952324478976898" ;                                      ! seek
+yayme:yayme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! feel itchy
+yeme:yeme^ V1PostBase  "weight: 12.952324478976898" ;
+yerrka:yerrka^ V3aPostBase  "weight: 12.952324478976898" ;                                    ! sit
+yerrkme:yerrkme^ V1PostBase  "weight: 12.952324478976898" ;
+yibme:yibme^ V1PostBase  "weight: 12.952324478976898" ;                                       ! sink
+yiddu:yiddu^ V5aPostbase "weight: 12.952324478976898" ;                                       ! get angry
+yidduwe:yidduwe^ V2PostBase  "weight: 12.952324478976898" ;                                   ! get angry, speak harshly
+yikadjurre:yikadjurre^ V10PostBase  "weight: 12.952324478976898" ;
+yime:yime^ V1PostBase  "weight: 12.952324478976898" ;                                       ! say, call ,do, act
+yimerra:yimerra^ V10PostBase  "weight: 12.952324478976898" ;
+yimerrange:yimerrange^ V10PostBase  "weight: 12.952324478976898" ;                                ! turn into
+yirdebme:yirdebme^ V1PostBase  "weight: 12.952324478976898" ;
+yirrhma:yirrhma^ V5cPostBase  "weight: 12.952324478976898" ;                                   ! pull out
+yirriyo:yirriyo^ V8PostBase  "weight: 12.952324478976898" ;
+yirrme:yirrme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! brush
+yo:yo^ V8PostBase  "weight: 12.952324478976898" ;                                         ! lie
+yonge:yonge^ V3dPostbase "weight: 12.952324478976898" ; 
+yongen:yo^ V6aPostBase  "weight: 12.952324478976898" ;
+yorrme:yorrme^ V1PostBase "weight: 12.952324478976898" ;
+yowyowme:yowyowme^ V1PostBase "weight: 12.952324478976898" ; 
+yudyudme:yudyudme^ V1PostBase "weight: 12.952324478976898" ; 
+
+LEXICON TransitiveVerbs
+
+0:0 IrregularVerbsTrns ;                ! there are a couple irregular transitive verbs to treat explicitly 
+[VerbRootGuess][GUESS]:[VerbRootGuess]^ anyVerbPostBase  "weight: 12.952324478976898" ;
+babbulibu:babbulibu V4bPostBase  "weight: 12.952324478976898" ;
+babma:babma V5cPostBase  "weight: 12.952324478976898" ;
+baddje:baddje^ V5bPostBase  "weight: 12.952324478976898" ;                                    ! bash
+badjdje:badjdje^ V5bPostBase  "weight: 12.952324478976898" ;
+bakke:bakke^ V2PostBase  "weight: 12.952324478976898" ;                                       ! break, transgress (trns)
+balakbun:balakbu^ V4bPostBase  "weight: 12.952324478976898" ;
+balewo:balewo^ V3cPostBase  "weight: 12.952324478976898" ;                                    ! clean (something)
+balhme:balhme^ V1PostBase  "weight: 12.952324478976898" ;
+barlke:barlke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! fill
+barnname:barnname^ V1PostBase  "weight: 12.952324478976898" ;
+barrhbarrhma:barrhbarrhma^ V5cPostBase  "weight: 12.952324478976898" ;
+barrhke:barrhke^ V2PostBase  "weight: 12.952324478976898" ;
+bawo:bawo^ V3cPostBase  "weight: 12.952324478976898" ;                                        ! leave, give up (something)        
+bayahme:bayahme^ V1PostBase  "weight: 12.952324478976898" ;
+baye:baye^ V2PostBase  "weight: 12.952324478976898" ;                                         ! bite, 2. cause illness, fright
+bebke:bebke^ V2PostBase  "weight: 12.952324478976898" ;                                       ! reveal, bring out, take out, 2. produce children
+bebme:bebme^ V1PostBase  "weight: 12.952324478976898" ;                                       ! come out of (trns)
+bedjekme:bedjekme^ V1PostBase  "weight: 12.952324478976898" ;
+behke:behke^ V2PostBase  "weight: 12.952324478976898" ;
+bekka:bekka^ V3aPostBase  "weight: 12.952324478976898" ;                                      ! listen, hear, feel, touch, (sense) (transitive)
+belbme:belbme^ V1PostBase  "weight: 12.952324478976898" ;
+belenghme:belenghme^ V1PostBase  "weight: 12.952324478976898" ;
+belewo:belewo^ V3cPostbase "weight: 12.952324478976898" ; 
+bengbu:bengbu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! disturb with noise, offend
+bengdayhke:bengdayhke^ V2PostBase  "weight: 12.952324478976898" ;                             ! notify remind, let someone know
+bengka:bengka^ V3aPostbase "weight: 12.952324478976898" ; 
+bengmayahke:bengmayahke^ V2PostBase  "weight: 12.952324478976898" ;
+bengmidjda:bengmidjda^ V6aPostbase "weight: 12.952324478976898" ; 
+bengwarrewo:bengwarrewo^ V3cPostBase  "weight: 12.952324478976898" ;
+berddjobke:berddjobke^ V2PostBase  "weight: 12.952324478976898" ;
+bernelka:bernelka^ V3aPostBase  "weight: 12.952324478976898" ;
+berrebbun:berrebbu^ V4bPostbase "weight: 12.952324478976898" ;                                ! promise
+bidbu:bidbu^ V4bPostBase  "weight: 12.952324478976898" ;                                      ! climb up, get into/onto, rise, enter ceremony (intrans)
+bidbuyhwe:bidbuyhwe^ V2PostBase  "weight: 12.952324478976898" ;
+biddjuyme:biddjuyme^ V1PostBase  "weight: 12.952324478976898" ;
+bidjibme:bidjibme^ V1PostBase  "weight: 12.952324478976898" ;
+bidyikarrme:bidyikarrme^ V1PostBase  "weight: 12.952324478976898" ;
+bimbu:bimbu^ V4bPostBase  "weight: 12.952324478976898" ;                                     ! draw, paint, write
+bimma:bimma^ V5cPostBase  "weight: 12.952324478976898" ;
+bimna:bimna^ V3bPostBase  "weight: 12.952324478976898" ;
+bimngeybu:bimngeybu^ V4bPostBase  "weight: 12.952324478976898" ;
+birlika:birlika^ V3aPostBase  "weight: 12.952324478976898" ;
+birrka:birrka^ V3aPostBase  "weight: 12.952324478976898" ;
+biwke:biwke^ V2PostBase  "weight: 12.952324478976898" ;                                      !
+bokde:bokde^ V10Postbase "weight: 12.952324478976898" ; 
+bokinje:bokinje^ V2PostBase  "weight: 12.952324478976898" ;
+bokka:bokka^ V3aPostBase  "weight: 12.952324478976898" ;                                     ! track
+bolhkadju:bolhkadju^ V5aPostBase  "weight: 12.952324478976898" ;
+bolka:bolka^ V3aPostBase  "weight: 12.952324478976898" ;
+bolkbawo:bolkbawo^ V3cPostBase  "weight: 12.952324478976898" ;
+bolkbu:bolkbu^ V4bPostBase  "weight: 12.952324478976898" ;
+bolkma:bolkma^ V5cPostbase "weight: 12.952324478976898" ; 
+bolkna:bolkna^ V3bPostBase  "weight: 12.952324478976898" ;
+bolknahna:bolknahna^ V3bPostBase  "weight: 12.952324478976898" ;
+bongu:bongu^ V4bPostBase  "weight: 12.952324478976898" ;
+bonome:bonome^ V1PostBase  "weight: 12.952324478976898" ;
+borledke:borledke^ V2PostBase  "weight: 12.952324478976898" ;                                   ! turn over, change
+borna:borna^ V2PostBase  "weight: 12.952324478976898" ;                                      ! beget (eg a child)
+borna:borna^ V3bPostBase  "weight: 12.952324478976898" ;
+borndu:borndu^ V5aPostBase  "weight: 12.952324478976898" ;
+borolhme:borolhme^ V1PostBase "weight: 12.952324478976898" ; 
+borrkbu:borrkbu^ V4bPostBase  "weight: 12.952324478976898" ;
+borrkwa:borrkwa^ V4aPostbase "weight: 12.952324478976898" ;
+bowe:bowe^ V2PostBase  "weight: 12.952324478976898" ;                                       ! 
+bu:bu^ V4bPostBase  "weight: 12.952324478976898" ;                                        ! hit, kill
+buhme:buhme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! blow. play didjeridu, 2. be blown on
+bukirribu:bukirribu^ V4bPostBase  "weight: 12.952324478976898" ;                                 ! dream of
+bukka:bukka^ V3aPostBase  "weight: 12.952324478976898" ;                                     ! show, teach, demonstrate
+bukme:bukme^ V11PostBase  "weight: 12.952324478976898" ;
+bularrbu:bularrbu^ V4bPostBase  "weight: 12.952324478976898" ;
+bunjhma:bunjhma^ V5cPostBase  "weight: 12.952324478976898" ;                                   ! kiss (smth)
+burdebme:burdebme^ V1PostBase  "weight: 12.952324478976898" ;
+burlume:burlume^ V1PostBase  "weight: 12.952324478976898" ;
+burrbu:burrbu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! understand, know, think (something)
+burriwe:burriwe^ V2PostBase  "weight: 12.952324478976898" ;                                    ! throw, chuck, push down, throw away
+burriweke:burriweke^ V2PostBase  "weight: 12.952324478976898" ;                                  ! throw, chuck, push down, throw away
+burrkna:burrkna^ V3bPostBase  "weight: 12.952324478976898" ;                                   ! recognise, understand
+dabke:dabke^ V2PostBase  "weight: 12.952324478976898" ;
+dadjke:dadjke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! cut, slice, 2. divide, draw dividing line, 3. cut off, inturrupt 
+dadju:dadju^ V5aPostBase  "weight: 12.952324478976898" ;
+dahkendo:dahkendo^ V5aPostBase  "weight: 12.952324478976898" ;
+dahme:dahme^ V1PostBase  "weight: 12.952324478976898" ;
+dakurrme:dakurrme^ V1PostBase  "weight: 12.952324478976898" ;
+dangbalhme:dangbalhme^ V1PostBase  "weight: 12.952324478976898" ;
+danjbu:(rr)anjbu^ V4bPostBase  "weight: 12.952324478976898" ;                          ! spear
+darlkke:darlkke^ V2PostBase  "weight: 12.952324478976898" ;                                    ! crack
+dawe:dawe^ V5bPostbase "weight: 12.952324478976898" ; 
+dedjbu:dedjbu^ V4bPostBase  "weight: 12.952324478976898" ;
+dedjmelme:dedjmelme^ V1PostBase "weight: 12.952324478976898" ;
+delkke:delkke^ V2PostBase  "weight: 12.952324478976898" ;
+delme:(rr)elme^ V1PostBase  "weight: 12.952324478976898" ;                             ! throw
+denghke:denghke^ V2PostBase  "weight: 12.952324478976898" ;
+derrehke:derrehke^ V2PostBase  "weight: 12.952324478976898" ;                                   ! move, shift
+djabname:djabname^ V1PostBase  "weight: 12.952324478976898" ;
+djalkma:djalkma^ V5cPostBase  "weight: 12.952324478976898" ;
+djambarrhma:djambarrhma^ V5cPostBase  "weight: 12.952324478976898" ;
+djangka:djangka^ V3aPostBase  "weight: 12.952324478976898" ;                                   ! hunt
+djare:djare NonverbalPostBase  "weight: 12.952324478976898" ;                                      ! want
+djarebu:djarebu^ V4bPostBase  "weight: 12.952324478976898" ;                                   ! cause desire
+djarewo:djarewo^ V3cPostBase  "weight: 12.952324478976898" ;                                   ! be hungry for [sthg]
+djarlkkenname:djarlkkenname^ V1PostBase  "weight: 12.952324478976898" ;
+djarrangbu:djarrangbu^ V4bPostBase  "weight: 12.952324478976898" ;                                ! sort
+djarrangbu:djarrngbu^ V4bPostBase  "weight: 12.952324478976898" ;                                 ! choose
+djawa:djawa^ V4aPostBase  "weight: 12.952324478976898" ;                                     ! ask
+djawayhme:djawayhme^ V1PostBase  "weight: 12.952324478976898" ;
+djedme:djedme^ V1PostBase  "weight: 12.952324478976898" ;
+djikkawo:djikkawo^ V3cPostBase  "weight: 12.952324478976898" ;
+djirdma:djirdma^ V5cPostBase  "weight: 12.952324478976898" ;                                   ! steal
+djirridjbu:djirridjbu^ V4bPostBase  "weight: 12.952324478976898" ;
+djirrkka:djirrkka^ V3aPostbase "weight: 12.952324478976898" ; 
+djobke:djobke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! cut, 2. draw line
+djokkohmika:djokkohmika^ V3aPostbase "weight: 12.952324478976898" ; 
+djongbu:djongbu^ V4bPostBase  "weight: 12.952324478976898" ;
+djordmiwe:djordmiwe^ V2PostBase  "weight: 12.952324478976898" ;
+djorndo:djorndo^ V5aPostBase  "weight: 12.952324478976898" ;                                   ! pound
+djorrngme:djorrngme^ V1PostBase  "weight: 12.952324478976898" ;
+djowkke:djowkke^ V2PostBase  "weight: 12.952324478976898" ;                                    ! cross over
+djudbakke:djudbakke^ V2PostBase  "weight: 12.952324478976898" ;
+djudme:djudme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! stick in
+djuhke:djuhke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! immerse in water, splash
+djumdo:djumdo^ V5aPostBase  "weight: 12.952324478976898" ;
+djunjwe:djunjwe^ V2PostBase  "weight: 12.952324478976898" ;
+djurrka:djurrkka^ V3aPostBase  "weight: 12.952324478976898" ;
+djurrkka:djurrkka^ V3aPostbase "weight: 12.952324478976898" ; 
+djurrkma:djurrkma^ V5cPostBase  "weight: 12.952324478976898" ;                                  ! pull
+djuyme:djuyme^ V1PostBase  "weight: 12.952324478976898" ;
+do:do^ V5aPostBase  "weight: 12.952324478976898" ;                                        ! strike
+dokmiwe:dokmiwe^ V2PostBase  "weight: 12.952324478976898" ;
+dombu:dombu^ V4bPostbase "weight: 12.952324478976898" ; 
+dorname:dorname^ V1PostBase  "weight: 12.952324478976898" ;
+dorrorrke:dorrorrke^ V2PostBase  "weight: 12.952324478976898" ;
+dowkke:dowkke^ V2PostBase  "weight: 12.952324478976898" ;
+du:du^ V5aPostBase  "weight: 12.952324478976898" ;                                        ! swear at
+dudje:(rr)udje^ V2PostBase  "weight: 12.952324478976898" ;                             ! bury, plant
+dudma:dudma^ V5cPostBase  "weight: 12.952324478976898" ;
+duhke:duhke^ V2PostBase  "weight: 12.952324478976898" ;
+dukka:(rr)ukka^ V3aPostBase  "weight: 12.952324478976898" ;                            ! tie up, wrap up, put handcuffs on
+dukkan:dukkan^ V3aPostBase  "weight: 12.952324478976898" ;
+dulubu:dulubu^ V4bPostBase  "weight: 12.952324478976898" ;                                    ! shoot, spear, penetrate, puncture, 2. flow into, intersect
+dundiwe:dundiwe^ V5bPostBase  "weight: 12.952324478976898" ;                   ! cause to return, go back
+durndiwe:durndiwe^ V5bPostBase  "weight: 12.952324478976898" ;                   ! cause to return, go back
+durnme:durnme^ V1PostBase "weight: 12.952324478976898" ; 
+durrkma:durrkma^ V5cPostBase  "weight: 12.952324478976898" ;
+durrkme:durrkme^ V1PostBase  "weight: 12.952324478976898" ;
+gerremadbu:gerremadbu^ V4aPostBase  "weight: 12.952324478976898" ;                ! wait for something to cook
+gowe:gowe^ V2PostBase  "weight: 12.952324478976898" ;                                       ! to trick (trns)
+gurrme:gurrme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! put down
+ka:ka^ V3aPostBase  "weight: 12.952324478976898" ;                                        ! take, carry along
+kabu:kabu^ V4bPostBase  "weight: 12.952324478976898" ;                                      ! nurse
+kadju:kadju^ V5aPostBase  "weight: 12.952324478976898" ;                     ! follow
+kalika:kalika^ V3aPostBase  "weight: 12.952324478976898" ;                                    ! have sex with
+kan:kan^ V3aPostBase  "weight: 12.952324478976898" ;
+kardma:kardma^ V5cPostBase  "weight: 12.952324478976898" ;                    ! snare, catch
+kariburriwe:kariburriwe^ V2PostBase  "weight: 12.952324478976898" ;                                ! knock down
+karrme:karrme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! have, own posess, 2. keep, 3. hold onto, 4. have offspring, 5. win (trns)
+karu:karu^ V5aPostBase  "weight: 12.952324478976898" ;                      ! dig
+kawo:kawo^ V3cPostBase  "weight: 12.952324478976898" ;
+kayhme:kayhme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! call out, yell
+kebka:kebka^ V3aPostbase "weight: 12.952324478976898" ; 
+kebngu:kebngu^ V3IrrPostBase "weight: 12.952324478976898" ; 
+kelehme:kelehme^ V1PostBase  "weight: 12.952324478976898" ;
+kengeme:kengeme^ V1PostBase  "weight: 12.952324478976898" ;
+kerremadbu:kerremadbu^ V4aPostBase  "weight: 12.952324478976898" ;                ! wait for something to cook (alternate spelling)
+kerribu:kerribu^ V4bPostBase  "weight: 12.952324478976898" ;                   ! roast
+kidjikme:kidjikme^ V1PostBase "weight: 12.952324478976898" ; 
+kilekme:kilekme^ V1PostBase  "weight: 12.952324478976898" ;
+kima:kima^ V5cPostBase  "weight: 12.952324478976898" ;
+kimukmen:kimuk^ V11PostBase "weight: 12.952324478976898" ; 
+kinje:kinje^ V2PostBase  "weight: 12.952324478976898" ;                                      ! cook, burn, light up
+kodjdjobke:kodjdjobke^ V2PostBase  "weight: 12.952324478976898" ;                                 ! 
+koluyhwe:koluyhwe^ V2PostBase  "weight: 12.952324478976898" ;
+kombakke:kombakke^ V2Postbase "weight: 12.952324478976898" ; 
+kongibu:kongibu^ V4bPostBase  "weight: 12.952324478976898" ;
+kowe:kowe^ V2PostBase  "weight: 12.952324478976898" ;
+kukburrbu:kukburrbu^ V4bPostBase  "weight: 12.952324478976898" ;
+kukburriwe:kukburriwe^ V2PostBase  "weight: 12.952324478976898" ;
+kukburriweke:kukburriweke^ V2PostBase  "weight: 12.952324478976898" ;                               ! throw down, 2. hit an animal while hunting
+kukka:kukka^ V3aPostbase "weight: 12.952324478976898" ; 
+kukkan:kukkan^ V3aPostBase  "weight: 12.952324478976898" ;
+kukwarrewo:kukwarrewo^ V3cPostBase  "weight: 12.952324478976898" ;
+kurduna:kurduna^ V3bPostBase  "weight: 12.952324478976898" ;
+kurrme:kurrme^ V1PostBase  "weight: 12.952324478976898" ;                                     ! put, place
+kurrurrubun:kurrurrubu^ V4bPostBase  "weight: 12.952324478976898" ;
+kuykme:kuykme^ V1PostBase  "weight: 12.952324478976898" ;
+lakkayenwo:lakkayenwo^ V3cPostBase  "weight: 12.952324478976898" ;
+lirrhme:lirrhme^ V1PostBase  "weight: 12.952324478976898" ;
+lowkma:lowkma^ V5cPostBase  "weight: 12.952324478976898" ;
+ma:ma^ V5cPostBase  "weight: 12.952324478976898" ;                        ! get, obtain, collect
+madbu:madbu^ V4bPostBase  "weight: 12.952324478976898" ;                     ! wait around
+madde:madde^ V5bPostbase "weight: 12.952324478976898" ; 
+malaka:malaka^ V3aPostbase "weight: 12.952324478976898" ; 
+malelma:malelma^ V5cPostBase  "weight: 12.952324478976898" ;
+manjbekka:manjbekka^ V3aPostBase  "weight: 12.952324478976898" ;
+manjbu:manjbu^ V4bPostBase  "weight: 12.952324478976898" ;
+manjngu:manjngu^ V3IrrPostBase "weight: 12.952324478976898" ; 
+marnbu:marnbu^ V4aPostBase  "weight: 12.952324478976898" ;                                    ! make, build, do, complete, fix, heal, organize, arrange
+marnebebme:marnebebme^ V1PostBase  "weight: 12.952324478976898" ;
+marnedjare:marnedjare NonverbalPostBase  "weight: 12.952324478976898" ;                                 ! love, desire
+marneyime:marneyime^ V1PostBase  "weight: 12.952324478976898" ;
+marrhma:marrhma^ V5cPostBase  "weight: 12.952324478976898" ;                   ! open (smth)
+marrkma:marrkma^ V5cPostBase  "weight: 12.952324478976898" ;
+mayhke:mayhke^ V2PostBase  "weight: 12.952324478976898" ;
+melme:melme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! press
+menmenbengka:menmenbengka^ V3aPostBase  "weight: 12.952324478976898" ;
+midbu:midbu^ V4bPostBase  "weight: 12.952324478976898" ;
+mika:mika^ V3aPostbase "weight: 12.952324478976898" ; 
+milemarnbu:milemarnbu^ V4bPostBase  "weight: 12.952324478976898" ;
+milu:milu^ V5aPostBase  "weight: 12.952324478976898" ;
+mirnhke:mirnhke^ V2PostBase  "weight: 12.952324478976898" ;                                    ! bend (something)
+moname:moname^ V1PostBase  "weight: 12.952324478976898" ;                                     ! assemble
+monbuhme:monbuhme^ V1PostBase  "weight: 12.952324478976898" ;
+morneka:morneka^ V3aPostBase  "weight: 12.952324478976898" ;
+mornema:mornema^ V5cPostBase  "weight: 12.952324478976898" ;
+moyhm:moyhm^ V5cPostBase  "weight: 12.952324478976898" ;                     ! get
+moyhma:moyhma^ V5cPostBase  "weight: 12.952324478976898" ;
+mudbu:mudbu^ V4bPostBase  "weight: 12.952324478976898" ;
+mulewa:mulewa^ V4aPostBase  "weight: 12.952324478976898" ;
+munkekadju:munkekadju^ V5aPostBase  "weight: 12.952324478976898" ;
+mundika:mundika^ V3aPostBase  "weight: 12.952324478976898" ;
+munkewe:munkewe^ V2PostBase  "weight: 12.952324478976898" ;                                    ! send
+na:na^ V3bPostBase  "weight: 12.952324478976898" ;                                        ! see (trns)
+nahnan:nahna^ V3bPostBase  "weight: 12.952324478976898" ;                                     ! look after, care for
+name:name^ V1PostBase  "weight: 12.952324478976898" ;                                       ! make
+ngadbu:ngadbu^ V4bPostBase  "weight: 12.952324478976898" ;
+ngadje:ngadje^ V5bPostBase  "weight: 12.952324478976898" ;
+ngaduhge:ngaduhge^ V2PostBase  "weight: 12.952324478976898" ;                                   ! fire up, alternate spelling
+ngaduhke:ngaduhke^ V2PostBase  "weight: 12.952324478976898" ;                                   ! fire up
+ngakke:ngakke^ V2PostBase  "weight: 12.952324478976898" ;
+ngalke:ngalke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! find
+ngarrkma:ngarrkma^ V5cPostbase "weight: 12.952324478976898" ; 
+ngayawkme:ngayawkme^ V1PostBase  "weight: 12.952324478976898" ;
+ngehke:ngehke^ V2PostBase  "weight: 12.952324478976898" ;
+ngerrehme:ngerrehme^ V1PostBase  "weight: 12.952324478976898" ;                                  ! run over
+ngeybu:ngeybu^ V4bPostBase  "weight: 12.952324478976898" ;
+ngimewo:ngimewo^ V3cPostBase  "weight: 12.952324478976898" ;                                   ! put (something)
+ngimihwe:ngimihwe^ V5bPostbase "weight: 12.952324478976898" ; 
+ngimowo:ngimowo^ V3cPostbase "weight: 12.952324478976898" ; 
+ngirrbu:ngirrbu^ V4bPostBase  "weight: 12.952324478976898" ;
+ngirrihme:ngirrihme^ V1PostBase  "weight: 12.952324478976898" ;
+ngorrka:ngorrka^ V3bPostBase  "weight: 12.952324478976898" ;                                   ! carry on shoulders 
+ngorrma:ngorrma^ V5cPostBase  "weight: 12.952324478976898" ;
+ngorrme:ngorrme^ V5aPostBase  "weight: 12.952324478976898" ;                   ! pick up on shoulders
+ngorrowke:ngorrowke^ V2Postbase "weight: 12.952324478976898" ; 
+ngu:ngu^ V3IrrPostBase  "weight: 12.952324478976898" ;                                     ! eat (something)
+ngudjbawo:ngudjbawo^ V3cPostBase  "weight: 12.952324478976898" ;
+ngudjkadju:ngudjkadju^ V5aPostBase  "weight: 12.952324478976898" ;
+ngukde:ngukde^ V5bPostBase  "weight: 12.952324478976898" ;
+ngunjdjikka:ngunjdjikka^ V3aPostBase  "weight: 12.952324478976898" ;
+ngurdke:ngurdke^ V2PostBase  "weight: 12.952324478976898" ;                                    ! stop
+njabke:njabke^ V2Postbase "weight: 12.952324478976898" ; 
+njirrke:njirrke^ V2Postbase "weight: 12.952324478976898" ; 
+njonjme:njonjme^ V1PostBase "weight: 12.952324478976898" ; 
+njonjwo:njonjwo^ V3cPostbase "weight: 12.952324478976898" ; 
+nome:nome^ V1PostBase  "weight: 12.952324478976898" ;                                       ! smell
+rawo:rawo^ V3dPostBase  "weight: 12.952324478976898" ;                                      ! combine, mix, add
+rayekwo:rayekwo^ V3cPostbase "weight: 12.952324478976898" ; 
+rohrokme:rohrokme^ V1PostBase  "weight: 12.952324478976898" ;
+rokayhwo:rokayhwo^ V3cPostbase "weight: 12.952324478976898" ; 
+royhme:royhme^ V1PostBase  "weight: 12.952324478976898" ;
+rrundiwe:rrundiwe^ V5bPostBase  "weight: 12.952324478976898" ;                  ! cause to return, go back
+rrurndiwe:rrurndiwe^ V5bPostBase  "weight: 12.952324478976898" ;                 ! cause to return, go back
+wabun:wabu^ V4bPostBase  "weight: 12.952324478976898" ;
+warlbu:warlbu^ V4aPostBase  "weight: 12.952324478976898" ;                                    ! hunt, gather
+warlkka:warlkka^ V3aPostBase  "weight: 12.952324478976898" ;                                   ! hide (something)
+warnamkurrme:warnamkurrme^ V1PostBase  "weight: 12.952324478976898" ;
+warrewo:warrewo^ V3cPostBase  "weight: 12.952324478976898" ;                                   ! ruin, damage
+warrhke:warrhke^ V2PostBase  "weight: 12.952324478976898" ;                                    ! drop
+warrke:warrke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! drop TRNS
+wayhke:wayhke^ V2PostBase  "weight: 12.952324478976898" ;                                     ! lift
+we:we^ V2PostBase  "weight: 12.952324478976898" ;
+wehme:wehme^ V1PostBase  "weight: 12.952324478976898" ;
+welengname:welengname^ V1PostBase  "weight: 12.952324478976898" ;
+wernwo:wernwo^ V3cPostBase  "weight: 12.952324478976898" ;
+werrhme:werrhme^ V1PostBase  "weight: 12.952324478976898" ;
+weyka:weyka^ V3aPostBase  "weight: 12.952324478976898" ;
+widjung:widju^ V5aPostbase "weight: 12.952324478976898" ;
+widnan:widna^ V3bPostBase  "weight: 12.952324478976898" ;                                     ! hate, dislike
+wilkde:wilkde^ V5bPostBase  "weight: 12.952324478976898" ;
+wilkde:wilkde^ V7aPostBase  "weight: 12.952324478976898" ;
+wilkdi:wilkdi^ V7aPostBase  "weight: 12.952324478976898" ;                                ! put in ashes
+winhme:winhme^ V1PostBase  "weight: 12.952324478976898" ;
+wirlarrkngukde:wirlarrkngukde^ V5bPostBase "weight: 12.952324478976898" ; 
+wirrkme:wirrkme^ V1PostBase  "weight: 12.952324478976898" ;                               ! scratch
+wo:wo^ V3cPostBase  "weight: 12.952324478976898" ;                                        ! give
+wodbu:wodbu^ V4bPostBase  "weight: 12.952324478976898" ;
+wodjorrhme:wodjorrhme^ V1PostBase "weight: 12.952324478976898" ; 
+wokma:wokma^ V5cPostBase  "weight: 12.952324478976898" ;
+wokmadbu:wokmadbu^ V4bPostBase  "weight: 12.952324478976898" ;
+wolka:wolka^ V3aPostBase  "weight: 12.952324478976898" ;
+wolngwo:wolngwo^ V3cPostBase  "weight: 12.952324478976898" ;                              ! smoke, cure (bark), heat up
+worrhme:worrhme^ V1PostBase  "weight: 12.952324478976898" ;
+worrumbokka:worrumbokka^ V3aPostBase  "weight: 12.952324478976898" ;
+wukme:wukme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! swallow
+wungme:wungme^ V1PostBase  "weight: 12.952324478976898" ;                                 ! suck, 2. inhale, smoke
+wurlebke:wurlebke^ V2PostBase  "weight: 12.952324478976898" ;                             ! wash, take someone to swim
+wurlhke:wurlhke^ V2PostBase  "weight: 12.952324478976898" ;                               ! start a fire, ignite, 2. switch a light on
+wurrkme:wurrkme^ V1PostBase  "weight: 12.952324478976898" ;
+yakarrbun:yakarrbu^ V4bPostBase  "weight: 12.952324478976898" ;
+yakbu:yakbu^ V4bPostBase  "weight: 12.952324478976898" ;                                  ! empty out
+yakwo:yakwo^ V3cPostBase  "weight: 12.952324478976898" ;                                  ! finish
+yame:yame^ V1PostBase  "weight: 12.952324478976898" ;                                     ! spear
+yarlarrke:yarlarrke^ V2PostBase  "weight: 12.952324478976898" ;
+yawa:yawa^ V4aPostBase  "weight: 12.952324478976898" ;                                    ! search for, look for
+yawkan:yawka^ V3aPostBase  "weight: 12.952324478976898" ;
+yerrke:yerrke^ V2PostBase  "weight: 12.952324478976898" ;                                 ! detach, pull off, undo
+yerrkke:yerrkke^ V2PostBase  "weight: 12.952324478976898" ;
+yibbun:yibbu^ V4bPostBase  "weight: 12.952324478976898" ;
+yibke:yibke^ V2PostBase  "weight: 12.952324478976898" ;
+yibme:yibme^ V1PostBase  "weight: 12.952324478976898" ;                                   ! sink (TRNS)
+yika:yika^ V3aPostBase  "weight: 12.952324478976898" ;
+yika:yika^ V3bPostBase  "weight: 12.952324478976898" ;
+yilka:yilka^ V3aPostBase  "weight: 12.952324478976898" ;
+yilkbu:yilkbu^ V4bPostBase  "weight: 12.952324478976898" ;
+yirrkebakke:yirrkebakke^ V2PostBase  "weight: 12.952324478976898" ;
+yirrme:yirrme^ V1PostBase  "weight: 12.952324478976898" ;
+yolyolme:yolyolme^ V1PostBase  "weight: 12.952324478976898" ;
+yolyolme:yolyolme^ V1PostBase  "weight: 12.952324478976898" ;                              ! tell a story, talk about
+yorrke:yorrke^ V2Postbase "weight: 12.952324478976898" ;                                   ! gather a group
+yurrhke:yurrhke^ V2PostBase  "weight: 12.952324478976898" ;
+yurrmiwo:yurrmiwo^ V3cPostBase  "weight: 12.952324478976898" ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   VERB BASES - Transitives          !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   TAM INFLECTION, VERB POST-BASE    !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON anyVerbPostBase
+0:0 V1PostBase ;
+0:0 V2PostBase ;
+0:0 V3aPostBase ;
+0:0 V3bPostBase ;
+0:0 V3cPostBase ;
+0:0 V3dPostBase ;
+0:0 V4aPostBase ;
+0:0 V4bPostBase ;
+0:0 V5aPostBase ;
+0:0 V5bPostBase ;
+0:0 V5cPostBase ;
+0:0 V6aPostBase ;
+0:0 V7aPostBase ;
+0:0 V8PostBase ;
+0:0 V9PostBase ;
+0:0 V10PostBase ;
+0:0 V11PostBase ;
+0:0 ReVerbs ;
+0:0 NonverbalPostBase ;
+
+LEXICON V1PostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:~iyindi^ PERSISTSConj  "weight: 5.73561499226744" ;   
+0:0 V1Conj ;
+
+LEXICON V1Conj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@~i^ #  "weight: 3.5563347601140856" ;
+[Imp]:n^ #  "weight: 2.6723201402884977" ;
+[Irr]:+ninj^ #  "weight: 4.711939363460562" ;
+[Irr]:ninj^ #  "weight: 4.711939363460562" ;
+
+LEXICON V2PostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V2Conj ;
+
+LEXICON V2Conj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:men^ #  "weight: 2.6723201402884977" ;
+[Irr]:meninj^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V3aPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V3aConj ;
+
+LEXICON V3aConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V3bPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ;
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V3cPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ;
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V3dPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V3dConj ;
+
+LEXICON V3dConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V3IrrPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@neng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yi^ #  "weight: 4.711939363460562" ;
+
+LEXICON V4aPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:yind^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V4aConj ;
+
+LEXICON V4aConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@m^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V4bPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V4bConj ;
+
+LEXICON V4bConj
+[Irr]:+ninj^ #  "weight: 4.711939363460562" ; 
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@[Imp]:@R.TENSE.NP@0^ #  "weight: 2.6723201402884977" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+
+LEXICON V5aPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V5bPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
+0:0 V5bConj ;
+
+LEXICON V5bConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~i^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+[Irr]:yinj^ #  "weight: 4.711939363460562" ;
+
+LEXICON V5cPostBase
+[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~ey^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
+[Imp]:0^ #  "weight: 2.6723201402884977" ;
+[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V6aPostBase
+[RR]:ngerre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@nj^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngeni^ #  "weight: 3.5563347601140856" ;
+[Imp]:ngimen^ #  "weight: 2.6723201402884977" ;
+[Irr]:ngemeninj^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V7aPostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@0^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
+[Imp]:n^ #  "weight: 2.6723201402884977" ;
+[Irr]:wirrinj^ #  "weight: 4.711939363460562" ;
+
+LEXICON V8PostBase  
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;  
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@y^ #  "weight: 3.5563347601140856" ;
+[Imp]:~un^ #  "weight: 2.6723201402884977" ;
+[Irr]:~uwirrinj^ #  "weight: 4.711939363460562" ; 
+
+
+LEXICON V9PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@an^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@i^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@anj^ #  "weight: 3.5563347601140856" ;
+[Imp]:a^ #  "weight: 2.6723201402884977" ;
+[Irr]:~angemeninj^ #  "weight: 4.711939363460562" ; 
+
+LEXICON V10PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:men^ #  "weight: 2.6723201402884977" ;
+[Irr]:=imeninj^ #  "weight: 4.711939363460562" ;
+[Irr]:~imeninj^ #  "weight: 4.711939363460562" ;
+
+
+LEXICON V11PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@men^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@meni^ #  "weight: 3.5563347601140856" ;
+[Imp]:mimen^ #  "weight: 2.6723201402884977" ;
+[Irr]:meninj^ #  "weight: 4.711939363460562" ;
+[RR]:merre^ RRConj  "weight: 4.596944583723264" ;
+[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
+
+LEXICON ReVerbs
+@R.TENSE.NP@re[NonPst]:@R.TENSE.NP@(r)e^ #  "weight: 2.4315184283770575" ;                            ! go
+@R.TENSE.P@re[PstPerf]:@R.TENSE.P@wam^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@re[PstImperf]:@R.TENSE.P@(r)ey^ #  "weight: 3.5563347601140856" ;
+re[Imp]:(r)ay^ #  "weight: 12.952324478976898" ;
+re[Irr]:(r)ayinj^ #  "weight: 12.952324478976898" ;
+
+LEXICON NonverbalPostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:nin^ #  "weight: 2.6723201402884977" ;
+[Irr]:niwirrinj^ #  "weight: 4.711939363460562" ;
+
+LEXICON IrregularVerbsIntr
+@R.TENSE.NP@bengmid[NonPst]:@R.TENSE.NP@bengmiddan^ #  "weight: 12.952324478976898" ;                ! forget
+@R.TENSE.P@bengmid[PstPerf]:@R.TENSE.P@bengmiddanj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@bengmid[PstImperf]:@R.TENSE.P@bengmiddangeni^ #  "weight: 12.952324478976898" ;
+bengmid[Imp]:bengmiddangimen^ #  "weight: 12.952324478976898" ;
+bengmid[Irr]:bengmiddangemeninj^ #  "weight: 12.952324478976898" ;
+
+@R.TENSE.NP@bore[NonPst]:@R.TENSE.NP@bore^ #  "weight: 12.952324478976898" ;                          ! flow (water)
+@R.TENSE.P@bore[PstPerf]:@R.TENSE.P@bowam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@bore[PstImperf]:@R.TENSE.P@borey^ #  "weight: 12.952324478976898" ;
+bore[Imp]:boray^ #  "weight: 12.952324478976898" ;
+bore[Irr]:borayinj^ #  "weight: 12.952324478976898" ;
+
+@R.TENSE.NP@dungre[NonPst]:@R.TENSE.NP@dungre^ #  "weight: 12.952324478976898" ;                     ! movement of the sun
+@R.TENSE.P@dungre[PstPerf]:@R.TENSE.P@dungwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@dungre[PstImperf]:@R.TENSE.P@dungrey^ #  "weight: 12.952324478976898" ;
+dungre[Imp]:dungray^ #  "weight: 12.952324478976898" ;
+dungre[Irr]:dungrayinj^ #  "weight: 12.952324478976898" ;
+
+@R.TENSE.NP@kakre[NonPst]:@R.TENSE.NP@kakre^ #  "weight: 12.952324478976898" ;                       ! travel at night
+@R.TENSE.P@kakre[PstPerf]:@R.TENSE.P@kakwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@kakre[PstImperf]:@R.TENSE.P@kakrey^ #  "weight: 12.952324478976898" ;
+kakre[Imp]:kakray^ #  "weight: 12.952324478976898" ;
+kakre[Irr]:kakrayinj^ #  "weight: 12.952324478976898" ;
+
+@R.TENSE.NP@kurlbare[NonPst]:@R.TENSE.NP@kurlbare^ #  "weight: 12.952324478976898" ;                  ! travel at night
+@R.TENSE.P@kurlbare[PstPerf]:@R.TENSE.P@kurlbawam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@kurlbare[PstImperf]:@R.TENSE.P@kurlbarey^ #  "weight: 12.952324478976898" ;
+kurlbare[Imp]:kurlbaray^ #  "weight: 12.952324478976898" ;
+kurlbare[Irr]:kurlbarayinj^ #  "weight: 12.952324478976898" ;
+
+@R.TENSE.NP@wohre[NonPst]:@R.TENSE.NP@wohre^ #  "weight: 12.952324478976898" ;                        ! wander, walk around
+@R.TENSE.P@wohre[PstPerf]:@R.TENSE.P@wohwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@wohre[PstImperf]:@R.TENSE.P@wohrey^ #  "weight: 12.952324478976898" ;
+wohre[Imp]:wohray^ #  "weight: 12.952324478976898" ;
+wohre[Irr]:wohrayinj^ #  "weight: 12.952324478976898" ;
+
+LEXICON IrregularVerbsTrns
+@R.TENSE.NP@mulewan[NonPst]:@R.TENSE.NP@mulewan^ #  "weight: 12.952324478976898" ;                    ! inform
+@R.TENSE.P@mulewan[PstPerf]:@R.TENSE.P@mulewam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@mulewan[PstImperf]:@R.TENSE.P@mulewani^ #  "weight: 12.952324478976898" ;
+
+LEXICON RRConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+[Imp]:~emen^ #  "weight: 2.6723201402884977" ;
+[Irr]:~imeninj^ #  "weight: 4.711939363460562" ;
+

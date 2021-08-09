@@ -1,0 +1,92 @@
+source kunwok.foma
+define ANALYZER;
+define LEXICON ANALYZER.l.f;
+
+
+define NoisyPhones  b -> [ b | bb ] .o.
+                    ɲ -> [ nj ].o.
+                    ŋ -> [ ng ].o.
+                    n -> [ n ].o.
+                    t -> [ d ].o.
+                    d -> [ t | d ].o.
+                    ʈ -> [ rd | rdd ].o.
+                    ɻ -> [ rd | rdd ].o.
+                    ɳ -> [ rn ].o.
+                    ɭ -> [ rl ].o.
+                    l -> [ l ].o.
+                    r -> [ rr ].o.
+                    ɹ -> [ r ].o.
+                    ɟ -> [ dj | ddj ].o.
+                    m -> [ m ].o.
+                    ɪ -> [ i ].o.
+                    ɛ -> [ e ].o.
+                    ʔ -> [ h ].o.
+                    a -> [ a ].o.
+                    ɔ -> [ a | o ].o.
+                    ɐ -> [ a ].o.
+                    j -> [ y ].o.
+                    o -> [ o ].o.
+                    ʊ -> [ u ].o.
+                    i -> [ i ];
+
+## Normally, these are defined at runtime. We handwave and assume these FSTs for testing
+define PHONESTR [ k ɔ ŋ a d k a r i j m ɛ j ɛ k a r i b e k a n i ŋ a r a k a r b ɔ ɟ a k ŋ a r a ŋ u l u m ɛ ŋ ];
+define LEXEMES [ X k a rr i X k a rr i X ]; # a series of morphs, in order, delineated by X 
+define LEXEMESB [ k a rr i ];
+
+#############################
+# Word spotting algorithm
+###############################
+
+# Build Lexeme transducer: Lexemes are represented as an FST which allows any char between lexemes in order
+define LexemePattern [[LEXEMES .o. [X -> ?*]].i].u;
+
+# Define useful edit distancs FSTs
+define Edit1 [?* [?:0|0:?] ?*]^<2;
+define Edit2 [?* [?:0|0:?] ?*]^<3;
+define Edit3 [?* [?:0|0:?] ?*]^<4;
+define Edit4 [?* [?:0|0:?] ?*]^<5;
+
+# Define constraint tag set 
+define TAGS [ "^A0" | "^A1" | "^A2" | "^A3" | "^A4" | "^D0" | "^D1" ];
+
+# First: GENERATION 
+# turn phone stream into FSA of all possible orthographic realizations
+define OrthStrs [PHONESTR .o. NoisyPhones];
+
+
+# Second: ALIGNMENT CONSTRAINTS
+define Edit0Align [[?]* LexemePattern [?]*][0:"^A0"]; 
+define Edit1Align [[?]* [ Edit1 .o. LexemePattern] [?]*][0:"^A1"];
+define Edit2Align [[?]* [ Edit2 .o. LexemePattern] [?]*][0:"^A2"];
+define AlignedOrth [OrthStrs .o. [ Edit0Align | Edit1Align | Edit2Align ]];
+
+# Third: WORD DISCOVERY CONSTRAINTS
+define Edit0Discover [[?:0]* LEXICON [?:0]*][TAGS][0:"^D0"];
+define Edit1Discover [[?:0]* [Edit1 .o. LEXICON] [?:0]*][TAGS][0:"^D1"];
+define Edit2Discover [[?:0]* [Edit2 .o. LEXICON] [?:0]*][TAGS][0:"^D2"];
+define DiscoverWords [AlignedOrth .o. [ Edit0Discover | Edit1Discover | Edit2Discover]];
+
+define FilterA0D0 [[?]* "^A0" "^D0"];
+define FilterA0D1 [[?]* "^A0" "^D1"];
+define FilterA0D2 [[?]* "^A0" "^D2"];
+define FilterA1D0 [[?]* "^A1" "^D0"];
+define FilterA1D1 [[?]* "^A1" "^D1"];
+define FilterA1D2 [[?]* "^A1" "^D2"];
+define FilterA2D0 [[?]* "^A2" "^D0"];
+define FilterA2D1 [[?]* "^A2" "^D1"];
+define FilterA2D2 [[?]* "^A2" "^D2"];
+
+
+ # Out of all discoverable words, filter down to ones anchored at a lexeme
+define AnchoredWords DiscoverWords .o. [?* LEXEMESB ?*];
+
+# Use priority union to get the results with the lowest edit distance penalties
+define filtered [[AnchoredWords .o. FilterA0D0] .P. 
+                [AnchoredWords .o. FilterA1D0] .P. 
+                [AnchoredWords .o. FilterA0D1] .P. 
+                [AnchoredWords .o. FilterA1D1] .P. 
+                [AnchoredWords .o. FilterA1D2] .P. 
+                [AnchoredWords .o. FilterA2D1] ];
+
+regex filtered;

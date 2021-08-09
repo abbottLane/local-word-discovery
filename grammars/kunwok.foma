@@ -1,0 +1,106 @@
+read lexc class.verb.lexc
+define VerbLexicon; 
+
+read lexc class.nouns.lexc
+define NounLexicon;
+
+read lexc class.adj.adv.lexc
+define AdjAdvLexicon;
+
+read lexc class.func.lexc
+define FuncLexicon;
+
+# Vowels
+define V [ a | e | i | o | u ];
+
+# Consonents
+define C [ b | m | w | k | g | d | n | l | r | j | y | h ];
+define bilabialStops ["b" | "bb"];
+define bilabialNasals ["m"];
+define bilabialSemivowel ["w"];
+define velarStops ["k" | "kk" | "g"];
+define velarNasal ["ng"];
+define apicoStops ["d" | "dd" | "rd" | "rdd"];
+define apicoNasals ["n" | "rn"];
+define apicoLateral ["l" | "rl"];
+define apicoRhotic ["rr" | "r"];
+define palatalStops ["dj" | "djdj"];
+define palatalNasals ["nj"];
+define palatalSemivowels ["y"];
+define glottalStop ["h"];
+define flap ["d" | "rr"];
+
+define PhoneticVariation flap -> flap .o.
+                         apicoRhotic -> apicoRhotic .o.
+                         apicoNasals -> apicoNasals .o.
+                         apicoLateral -> apicoLateral .o.
+                         apicoStops -> apicoStops .o. 
+                         velarStops -> velarStops .o. 
+                         palatalStops -> palatalStops .o.
+                         bilabialStops -> bilabialStops;
+
+
+# Flag Diacritics
+define FLAGS [
+    ("@R.TENSE.P@") | 
+    ("@P.TENSE.P@") | 
+    ("@R.TENSE.NP@") |
+    ("@P.TENSE.NP@") |
+    ("@P.VALENCE.TRNS@") |
+    ("@R.VALENCE.TRNS@") |
+    ("@P.VALENCE.INTR@") |
+    ("@R.VALENCE.INTR@") ];
+
+# Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+# Define regular vowel changes
+define DeletePrecedingVowel V -> 0 || _ "^" FLAGS * "~" .o.
+                            "~" -> 0;
+
+# Define regular vowel changes
+define DeleteFollowingVowel V -> 0 || FLAGS * "^" "=" _ .o.
+                            "=" -> 0 ;
+
+# Directional phonological changes
+define DirPhonChanges "(ku)" -> 0 || V "^" _ m .o.
+                      "(ku)" -> k u || FLAGS * "^" _ m .o.
+                      "(ku)" -> 0 || _ ;
+
+# FlapVowelChanges
+define FlapChange "(rr)" -> d ;
+
+# Biyameni -> Biyami
+define NasalConsChange e -> 0 || _ "^" FLAGS * "+" .o.
+                       n -> 0 || "^" "+" _       .o.
+                       "+" -> 0;
+
+# 'r' can change depending on its environment
+define RAllophony "(r)" -> 0 || _ "^" FLAGS * "^" "(r)" .o.
+                  "(r)" -> 0 || _ "^" FLAGS * "^" r       .o.
+                  "(r)" -> 0 || l _ .o.
+                  "(r)" -> r;
+
+define VerbGrammar  VerbLexicon              .o.
+                    DeletePrecedingVowel .o.
+                    DeleteFollowingVowel .o.
+                    DirPhonChanges       .o.
+                    FlapChange           .o.
+                    NasalConsChange      .o.
+                    RAllophony .o.
+                    Cleanup;
+
+define NounGrammar NounLexicon .o.
+                   FlapChange           .o.
+                   NasalConsChange      .o.
+                   RAllophony .o.
+                   Cleanup;
+
+define AdjAdvGrammar AdjAdvLexicon .o.
+                     FlapChange           .o.
+                     NasalConsChange      .o.
+                     RAllophony .o.
+                     Cleanup;
+
+
+regex FuncLexicon | AdjAdvGrammar | NounGrammar | VerbGrammar ;

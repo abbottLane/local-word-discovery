@@ -1,0 +1,1386 @@
+Multichar_Symbols
+ rr rd rdd dj bb kk dd djdj
+ ng rn rl nj
+ [N] [V] [NonPst] [PstPerf] [PstImperf] [Irr] [Imp]
+ [3pl.3pl] [3pl.3sg] [3pl.2] [3pl.1]
+ [3sg.1] [3sg.2] [3sg.3sg] [3sg.3pl]
+ [2sg.1] [2sg.3]
+ [2pl.1] [2pl.3sg] [2pl.3pl]
+ [1pl.2] [1pl.3sg] [1pl.3pl]
+ [1sg.2] [1sg.3]
+ @R.VALENCE.INTR@ @R.TENSE.NP@
+ @P.VALENCE.INTR@ @P.TENSE.NP@
+ @R.VALENCE.TRNS@ @R.TENSE.P@
+ @P.VALENCE.TRNS@ @P.TENSE.P@
+ @P.PERS.T@ @R.PERS.T@
+ @P.VALENCE.AUGM@ @R.VALENCE.AUGM@
+ @P.TYPE.N@ @R.TYPE.N@
+ @P.TYPE.V@ @R.TYPE.V@
+ (ku) (rr) (r) (~~)
+ 
+
+LEXICON Root
+@P.TYPE.V@ TSOPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   General Incorporable Nouns                !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NounBase
+0:barrarn^ PostNominal ; 
+0:berd^ PostNominal ;
+0:bim^ PostNominal ;
+0:bili^ PostNominal ;
+0:birli^ PostNominal ;
+0:bo^ PostNominal ;
+0:boy^ PostNominal ;                                            ! antbed
+0:bodahkenboy^ PostNominal ;
+0:bolh^ PostNominal ;
+0:bolk^ PostNominal ;
+0:bong^ PostNominal ;
+0:bule^ PostNominal ;
+0:bunj^ PostNominal ;
+0:dabu^ PostNominal ;
+0:dalk^ PostNominal ;
+0:deleng^ PostNominal ;
+0:djalk^ PostNominal ;
+0:djalkno^ PostNominal ;
+0:dolng^ PostNominal ;
+0:dule^ PostNominal ;
+0:dulk^ PostNominal ;
+0:(rr)ulk^ PostNominal ;
+0:dung^ PostNominal ;
+0:(rr)ung^ PostNominal ;
+0:dorrh^ PostNominal ;
+0:djorrh^ PostNominal ;
+0:djurle^ PostNominal ;
+0:djurrk^ PostNominal ;
+0:kabo^ PostNominal ;
+0:galh^ PostNominal ;
+0:galhno^ PostNominal ;
+0:kanj^ PostNominal ;
+0:kunj^ PostNominal ;                                   ! kangaroo
+0:karre^ PostNominal ;
+0:kayinj^ PostNominal ;
+0:korle^ PostNominal ;                                        ! bamboo spear
+0:go^ PostNominal ;
+0:gono^ PostNominal ;
+0:ngolek^ PostNominal ;                                      ! breath
+0:kod^ PostNominal ;
+0:kole^ PostNominal ;
+0:golk^ PostNominal ;
+0:karrk^ PostNominal ;
+0:korrk^ PostNominal ;
+0:kuk^ PostNominal ;
+0:kurlah^ PostNominal ;
+0:kurlk^ PostNominal ;
+0:labbal^ PostNominal ;                                      ! billabong
+0:lod^ PostNominal ;
+0:madj^ PostNominal ;
+0:mala^ PostNominal ;
+0:marrwe^ PostNominal ;
+0:malayi^ PostNominal ;
+0:mayhmayh^ PostNominal ;                                   ! birds
+0:me^ PostNominal ;
+0:moken^ PostNominal ;
+0:mudda^ PostNominal ;
+0:ngale^ PostNominal ;
+0:ngey^ PostNominal ;
+0:bolkngey^ PostNominal ;
+0:ngui^ PostNominal ;
+0:red^ PostNominal ;
+0:rerrng^ PostNominal ;
+0:njilk^ PostNominal ;
+0:rak^ PostNominal ;
+0:rud^ PostNominal ;
+0:rurrk^ PostNominal ;
+0:wabban^ PostNominal ;
+0:wardde^ PostNominal ;
+0:wok^ PostNominal ;
+0:yahwurd^ PostNominal ;
+0:yau^ PostNominal ;
+0:yaw^ PostNominal ;
+0:yerrng^ PostNominal ;
+0:yiwk^ PostNominal ;
+
+LEXICON PostNominal
+@R.TYPE.V@ BPINPreBase ;
+@R.TYPE.N@ # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   PRONOMINALS                       !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON TSOPreBase 
+!!   Singular - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ SingleIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ SingleIntransNonPastTSO ;
+!!  Dual - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ DualIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ DualIntransNonPastTSO ;
+!!  Trial - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ TrialIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ TrialIntransNonPastTSO ;
+!!  Plural - Intransitives !!
+@P.VALENCE.INTR@@P.TENSE.P@ PluralIntransPastTSO ;
+@P.VALENCE.INTR@@P.TENSE.NP@ PluralIntransNonPastTSO ; 
+
+!!  Transitives - 3 Single obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3pObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3pObjTSO ; 
+!! Transitives - 3 Dual Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3pDualObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3pDualObjTSO ; 
+!! Transitives - 3 Plural Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast3PlObjTSO ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast3PlObjTSO ; 
+!! Transitives - 2 Person Obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast2Obj ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast2Obj ; 
+!! Transitives - 1 person obj !!
+@P.VALENCE.TRNS@@P.TENSE.P@ TransPast1Obj ; 
+@P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast1Obj ; 
+
+LEXICON SingleIntransPastTSO
+[V][1sg.past]:nga^ DirPreBase ;
+[V][2sg.past]:yi^ DirPreBase ;
+[V][3sg.past]:0^ DirPreBase ;
+[V][3sg.past]:bi^ DirPreBase ;
+
+LEXICON SingleIntransNonPastTSO
+[V][1sg.nonpast]:nga^ DirPreBase ;
+[V][2sg.nonpast]:yi^ DirPreBase ;
+[V][3sg.nonpast]:ka^ DirPreBase ;
+
+LEXICON DualIntransPastTSO
+[V][12m.past]:ngar(r)^ DirPreBase ;
+[V][1ua.excl.past]:ngane^ DirPreBase ;
+[V][2ua.past]:ngune^ DirPreBase ;
+[V][3ua.past]:bene^ DirPreBase ;
+
+LEXICON DualIntransNonPastTSO
+[V][12m.nonpast]:ngar(r)^ DirPreBase ;
+[V][1ua.excl.nonpast]:ngane^ DirPreBase ;
+[V][2ua.nonpast]:ngune^ DirPreBase ;
+[V][3ua.nonpast]:kabene^ DirPreBase ;
+
+LEXICON TrialIntransPastTSO
+[V][12ua.past]:kane^ DirPreBase ;
+
+LEXICON TrialIntransNonPastTSO
+[V][12ua.nonpast]:kane^ DirPreBase ;
+
+LEXICON PluralIntransPastTSO
+[V][1pl.excl.past]:ngarri^ DirPreBase ;
+[V][1pl.incl.past]:karri^ DirPreBase ;
+[V][2pl.past]:ngurri^ DirPreBase ;
+[V][3pl.past]:birri^ DirPreBase ;
+
+LEXICON PluralIntransNonPastTSO
+[V][1pl.excl.nonpast]:ngarri^ DirPreBase ;
+[V][1pl.incl.nonpast]:karri^ DirPreBase ;
+[V][2pl.nonpast]:ngurri^ DirPreBase ;
+[V][3pl.nonpast]:kabirri^ DirPreBase ;
+
+LEXICON TransPast3pObjTSO
+[V][1sg.3sg.past]:nga^ DirPreBase ;
+[V][2sg.3sg.past]:yi^ DirPreBase ;
+[V][3sg.3sg.past]:0^ DirPreBase ;
+[V][3sg.3Hsg.past]:bi^ DirPreBase ;
+[V][12m.3sg.past]:ngarr^ DirPreBase ;
+[V][2ua.3sg.past]:ngune^ DirPreBase ;
+[V][1ua.excl.3sg.past]:ngane^ DirPreBase ;
+[V][3ua.3sg.past]:bene^ DirPreBase ;
+[V][12ua.3sg.past]:kane^ DirPreBase ;
+[V][1pl.excl.3sg.past]:ngarri^ DirPreBase ;
+[V][1pl.incl.3sg.past]:karri^ DirPreBase ;
+[V][2pl.3sg.past]:ngurri^ DirPreBase ;
+[V][3pl.3sg.past]:birri^ DirPreBase ;
+
+LEXICON TransNonPast3pObjTSO
+[V][1sg.3sg.nonpast]:nga^ DirPreBase ;
+[V][2sg.3sg.nonpast]:yi^ DirPreBase ;
+[V][3sg.3sg.nonpast]:ka^ DirPreBase ;
+[V][3sg.3Hsg.nonpast]:kabi^ DirPreBase ;
+[V][12m.3sg.nonpast]:ngarr^ DirPreBase ;
+[V][1ua.excl.3sg.nonpast]:ngane^ DirPreBase ;
+[V][2ua.3sg.nonpast]:ngune^ DirPreBase ;
+[V][3ua.3sg.nonpast]:kabene^ DirPreBase ;
+[V][12ua.3sg.nonpast]:kane^ DirPreBase ;
+[V][1pl.excl.3sg.nonpast]:ngarri^ DirPreBase ;
+[V][1pl.incl.3sg.nonpast]:karri^ DirPreBase ;
+[V][2pl.3sg.nonpast]:ngurri^ DirPreBase ;
+[V][3pl.3sg.nonpast]:kabirri^ DirPreBase ;
+
+LEXICON TransPast3pDualObjTSO
+[V][1sg.3ua.past]:ngabenbene^ DirPreBase ;
+[V][2sg.3ua.past]:yibenbene^ DirPreBase ;
+[V][3sg.3ua.past]:benbene^ DirPreBase ;
+[V][3sg.3ua.past]:benmene^ DirPreBase ;
+[V][12m.3ua.past]:ngarrbenbene^ DirPreBase ;
+[V][3ua.3ua.past]:bindi^ DirPreBase ;
+[V][2ua.3ua.past]:ngunebenbene^ DirPreBase ;
+[V][2ua.3ua.past]:ngurrbenbene^ DirPreBase ;
+[V][1ua.excl.3ua.past]:nganebenbene^ DirPreBase ;
+[V][1ua.excl.3ua.past]:ngarrbenbene^ DirPreBase ;
+[V][12ua.3ua.past]:kanebenbene^ DirPreBase ;
+[V][12ua.3ua.past]:karrbenbene^ DirPreBase ;
+[V][1pl.excl.3ua.past]:ngarribenbene^ DirPreBase ;
+[V][1pl.excl.3ua.past]:ngarrbenbene^ DirPreBase ;
+[V][1pl.incl.3ua.past]:karribenbene^ DirPreBase ;
+[V][1pl.incl.3ua.past]:karrbenbene^ DirPreBase ;
+[V][2pl.3ua.past]:ngurribenbene^ DirPreBase ;
+[V][2pl.3ua.past]:ngurrbenbene^ DirPreBase ;
+[V][3pl.3ua.past]:bindi^ DirPreBase ;
+
+LEXICON TransNonPast3pDualObjTSO
+[V][1sg.3ua.nonpast]:ngabenbene^ DirPreBase ;
+[V][2sg.3ua.nonpast]:yibenbene^ DirPreBase ;
+[V][3sg.3ua.nonpast]:kabenbene^ DirPreBase ;
+[V][12m.3ua.nonpast]:ngarrbenbene^ DirPreBase ;
+[V][3ua.3ua.nonpast]:kabindi^ DirPreBase ;
+[V][2ua.3ua.nonpast]:ngunebenbene^ DirPreBase ;
+[V][2ua.3ua.nonpast]:ngurrbenbene^ DirPreBase ;
+[V][1ua.excl.3ua.nonpast]:nganebenbene^ DirPreBase ;
+[V][1ua.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase ;
+[V][12ua.3ua.nonpast]:kanebenbene^ DirPreBase ;
+[V][12ua.3ua.nonpast]:karrbenbene^ DirPreBase ;
+[V][1pl.excl.3ua.nonpast]:ngarribenbene^ DirPreBase ;
+[V][1pl.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase ;
+[V][1pl.incl.3ua.nonpast]:karribenbene^ DirPreBase ;
+[V][1pl.incl.3ua.nonpast]:karrbenbene^ DirPreBase ;
+[V][2pl.3ua.nonpast]:ngurribenbene^ DirPreBase ;
+[V][2pl.3ua.nonpast]:ngurrbenbene^ DirPreBase ;
+[V][3pl.3ua.nonpast]:kabindi^ DirPreBase ;
+
+LEXICON TransPast3PlObjTSO
+[V][1sg.3pl.past]:ngaben^ DirPreBase ;
+[V][2sg.3pl.past]:yiben^ DirPreBase ;
+[V][3sg.3pl.past]:ben^ DirPreBase ;
+[V][12m.3pl.past]:ngarrben^ DirPreBase ;
+[V][3ua.3pl.past]:bindi^ DirPreBase ;
+[V][2ua.3pl.past]:nguneben^ DirPreBase ;
+[V][2ua.3pl.past]:ngurrben^ DirPreBase ;
+[V][1ua.excl.3pl.past]:nganeben^ DirPreBase ;
+[V][1ua.excl.3pl.past]:ngarrben^ DirPreBase ;
+[V][12ua.3pl.past]:kaneben^ DirPreBase ;
+[V][12ua.3pl.past]:karrben^ DirPreBase ;
+[V][1pl.excl.3pl.past]:ngarriben^ DirPreBase ;
+[V][1pl.excl.3pl.past]:ngarrben^ DirPreBase ;
+[V][1pl.incl.3pl.past]:karriben^ DirPreBase ;
+[V][1pl.incl.3pl.past]:karrben^ DirPreBase ;
+[V][2pl.3pl.past]:ngurriben^ DirPreBase ;
+[V][2pl.3pl.past]:ngurrben^ DirPreBase ;
+[V][3pl.3pl.past]:bindi^ DirPreBase ;
+
+LEXICON TransNonPast3PlObjTSO
+[V][1sg.3pl.nonpast]:ngaben^ DirPreBase ;
+[V][2sg.3pl.nonpast]:yiben^ DirPreBase ;
+[V][3sg.3pl.nonpast]:kaben^ DirPreBase ;
+[V][12m.3pl.nonpast]:ngarrben^ DirPreBase ;
+[V][3ua.3pl.nonpast]:kabindi^ DirPreBase ;
+[V][2ua.3pl.nonpast]:nguneben^ DirPreBase ;
+[V][2ua.3pl.nonpast]:ngurrben^ DirPreBase ;
+[V][1ua.excl.3pl.nonpast]:nganeben^ DirPreBase ;
+[V][1ua.excl.3pl.nonpast]:ngarrben^ DirPreBase ;
+[V][12ua.3pl.nonpast]:kaneben^ DirPreBase ;
+[V][12ua.3pl.nonpast]:karrben^ DirPreBase ;
+[V][1pl.excl.3pl.nonpast]:ngarriben^ DirPreBase ;
+[V][1pl.excl.3pl.nonpast]:ngarrben^ DirPreBase ;
+[V][1pl.incl.3pl.nonpast]:karriben^ DirPreBase ;
+[V][1pl.incl.3pl.nonpast]:karrben^ DirPreBase ;
+[V][2pl.3pl.nonpast]:ngurriben^ DirPreBase ;
+[V][2pl.3pl.nonpast]:ngurrben^ DirPreBase ;
+[V][3pl.3pl.nonpast]:kabindi^ DirPreBase ;
+
+LEXICON TransPast2Obj
+[V][3sg.2.past]:ngun^ DirPreBase ;
+[V][1sg.2ua.past]:benbene^ DirPreBase ;
+[V][3sg.2ua.past]:ngunbene^ DirPreBase ;
+[V][1sg.2.past]:0^ DirPreBase ;
+[V][3pl.2pl.past]:ngundi^ DirPreBase ;
+[V][1pl.2.past]:ngundi^ DirPreBase ;
+[V][1pl.2pl.past]:bi^ DirPreBase ;
+
+LEXICON TransNonPast2Obj
+[V][3sg.2.nonpast]:ngun^ DirPreBase ;
+[V][1sg.2ua.nonpast]:benbene^ DirPreBase ;
+[V][3sg.2ua.nonpast]:ngunbene^ DirPreBase ;
+[V][1sg.2.nonpast]:0^ DirPreBase ;
+[V][3pl.2pl.nonpast]:ngundi^ DirPreBase ;
+[V][1pl.2.nonpast]:ngundi^ DirPreBase ;
+[V][1pl.2pl.nonpast]:bi^ DirPreBase ;
+
+LEXICON TransPast1Obj
+[V][2sg.1.past]:kan^ DirPreBase ;
+[V][3sg.1pl.past]:kan^ DirPreBase ;
+[V][3sg.1.past]:ngan^ DirPreBase ;
+[V][2sg.1ua.past]:kanbene^ DirPreBase ;
+[V][3sg.1ua.past]:kanbene^ DirPreBase ;
+[V][3sg.1ua.past]:nganbene^ DirPreBase ;
+[V][2pl.1.past]:kandi^ DirPreBase ;
+[V][3pl.1ua.past]:kandi^ DirPreBase ;
+[V][3pl.1sg.past]:ngandi^ DirPreBase ;
+[V][3pl.1ua.past]:ngandi^ DirPreBase ;
+
+LEXICON TransNonPast1Obj
+[V][2sg.1.nonpast]:kan^ DirPreBase ;
+[V][3sg.1pl.nonpast]:kan^ DirPreBase ;
+[V][3sg.1.nonpast]:ngan^ DirPreBase ;
+[V][2sg.1ua.nonpast]:kanbene^ DirPreBase ;
+[V][3sg.1ua.nonpast]:kanbene^ DirPreBase ;
+[V][3sg.1ua.nonpast]:nganbene^ DirPreBase ;
+[V][2pl.1.nonpast]:kandi^ DirPreBase ;
+[V][3pl.1ua.nonpast]:kandi^ DirPreBase ;
+[V][3pl.1sg.nonpast]:ngandi^ DirPreBase ;
+[V][3pl.1ua.nonpast]:ngandi^ DirPreBase ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   PREBASE SLOTS                     !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON DirPreBase
+[DIR.towards]:(ku)m^ AspPreBase ;
+[DIR.away]:bal^ AspPreBase ;
+0:0 AspPreBase ;
+
+LEXICON AspPreBase
+[IMM]:h^ Misc1PreBase ;
+0:0 Misc1PreBase ;
+
+LEXICON Misc1PreBase
+[ADV.again]:yawoyh^ Misc1PreBase ;              ! again
+[ADV.again]:yawoh^ Misc1PreBase ;               ! again
+[ADV.together]:djorrk^ Misc1PreBase ;           ! together
+[ADV.together]:djarrk^ Misc1PreBase ;           ! together
+[ADV.again][ADV.together]:yawoyhdjarrk^ Misc1PreBase; ! again together
+[ADV.a.bit]:woh^ Misc1PreBase ;                 ! a bit
+[ADV.at.night]:kak^ Misc1PreBase ;              ! at night
+[ADV.differently]:barrkid^ Misc1PreBase ;       ! differently
+[ADV.properly]:wernh^ Misc1PreBase ;            ! properly
+[ADV.vigorously]:ngudj^ Misc1PreBase ;          ! vigorously
+[ADV.in.fear]:kele^ Misc1PreBase ;              ! in fear
+[ADV.wrong]:warrebu^ Misc1PreBase ;             ! wrong
+[ADJ.wounded]:ngoreng^ Misc1PreBase ;           ! do V while wounded
+[ADJ.similar]:rohrouk^ Misc1PreBase ;           ! similar
+[ADJ.similar]:rohrok^ Misc1PreBase ;            ! similar (alternate spelling)
+[ADJ.cooked]:djoleng^ Misc1PreBase ;
+[ASP.now]:bad^ Misc1PreBase ;                   ! now
+[ASP.now][ADV.again]:badyawoyh^ Misc1PreBase ;       ! now again
+[ASP.now][ADV.again]:badyawoh^ Misc1PreBase ;       ! now again
+[ASP.before]:yingkih^ Misc1PreBase ;            ! before
+[ASP.almost]:kuyin^ Misc1PreBase ;              ! almost
+[ASP.nearly]:barlanh^ Misc1PreBase ;            ! nearly
+[QUANT.each]:bebbeh^ Misc1PreBase ;             ! bebbeh
+[QUANT.only]:djal^ Misc1PreBase ;               ! only
+[QUANT.only][ADV.a.bit]:djalwoh^ Misc1PreBase ;      ! only a bit
+[QUANT.many]:mirnde^ Misc1PreBase ;             ! many
+0:0 BenefactPreBase ;
+
+LEXICON BenefactPreBase                         ! benefactive infix makes the verb transitive
+0:0 Misc2PreBase ;
+@P.VALENCE.AUGM@[BEN]:@P.VALENCE.AUGM@marne^ Misc2PreBase ;
+
+LEXICON Misc2PreBase
+[QUANT.only]:djal^ AspPreBase2 ;
+[QUANT.close.up]:darnh^ GINPreBase ;
+[QUANT.small]:yaw^ AspPreBase2 ;
+[QUANT.each]:bebbeh^ AspPreBase2 ;             ! bebbeh
+[QUANT.many]:mirnde^ AspPreBase2 ;             ! many
+0:0 GINPreBase ;
+
+LEXICON AspPreBase2
+[IMM]:h^ GINPreBase ;
+0:0 GINPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   INCORPORATED NOUNS                !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON GINPreBase
+[GIN]:0 NounBase ;
+0 BPINPreBase ;
+
+LEXICON BPINPreBase ! names also fall into this category: any attributes of the person.
+[BPIN]:balem^ AdjPreBase ;
+[BPIN]:bard^ AdjPreBase ;
+[BPIN]:berd^ AdjPreBase ;
+[BPIN]:berl^ AdjPreBase ;
+[BPIN]:berre^ AdjPreBase ;
+[BPIN]:bodme^ AdjPreBase ;
+[BPIN]:bid^ AdjPreBase ;
+[BPIN]:bininj^ AdjPreBase ;
+[BPIN]:dad^ AdjPreBase ;
+[BPIN]:dang^ AdjPreBase ;
+[BPIN]:dedj^ AdjPreBase ;
+[BPIN]:denge^ AdjPreBase ;
+[BPIN]:rrenge^ AdjPreBase ;
+[BPIN]:dile^ AdjPreBase ;
+[BPIN]:djen^ AdjPreBase ;                                          ! tongue
+[BPIN]:djikka^ AdjPreBase ;
+[BPIN]:kanem^ AdjPreBase ;
+[BPIN]:keb^ AdjPreBase ;
+[BPIN]:kodj^ AdjPreBase ;
+[BPIN]:kom^ AdjPreBase ;
+[BPIN]:kord^ AdjPreBase ;
+[BPIN]:kuk^ AdjPreBase ;
+[BPIN]:kurlah^ AdjPreBase ;
+[BPIN]:kurlh^ AdjPreBase ;
+[BPIN]:milh^ AdjPreBase ;
+[BPIN]:mim^ AdjPreBase ;
+[BPIN]:murrng^ AdjPreBase ;
+[BPIN]:njam^ AdjPreBase ;
+[BPIN]:nuk^ AdjPreBase ;
+[BPIN]:rrulkki^ AdjPreBase ;                                    ! internal.sick
+[BPIN]:yidme^ AdjPreBase ;
+0:0 SPAPreBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   POST-NOMINAL SLOTS                !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON AdjPreBase
+[ADJ.tight]:djokko^ SPAPreBase ;
+[ADJ.big]:kimuk^ SPAPreBase ;
+[QUANT.many]:wern^ SPAPreBase ;
+0:0 SPAPreBase ;
+
+LEXICON SPAPreBase
+0:0 COMPreBase ;    ! Spatial slot in Evans' grammar had no examples in Kunwinjku, so this is a pass-through for now
+
+LEXICON COMPreBase
+0:0 VerbValencyCheck ;
+@P.VALENCE.AUGM@[COM]:@P.VALENCE.AUGM@yi^ VerbValencyCheck ;
+
+LEXICON VerbValencyCheck
+@R.VALENCE.AUGM@ AllVerbs ;
+@R.VALENCE.INTR@ IntransitiveVerbs ;
+@R.VALENCE.TRNS@ TransitiveVerbs ; 
+
+LEXICON AllVerbs
+0:0 IntransitiveVerbs ;
+0:0 TransitiveVerbs ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   VERB BASES - Inransitives         !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON IntransitiveVerbs
+
+0:0 IrregularVerbsIntr ;                                ! there are a couple irregular intransitive^ Verbs to treat explicitly 
+[VerbRootGuess][GUESS]:[VerbRootGuess] anyVerbPostBase ;
+babang:babang^ V1PostBase ;
+bakme:bakme^ V1PostBase ;                                      ! break (intr)
+balewo:balewo^ V3cPostBase ;                                    ! clean
+balhme:balhme^ V1PostBase ;                                     ! block
+bal:bal^ ReVerbs;
+bame:bame^ V1PostBase ;
+bang:bang^ V11PostBase ;                                      ! become aggressive or violent    
+barlid:barlid^ V9PostBase ;
+barlida:barlida^ V6aPostbase; 
+barlme:barlme^ V1PostBase ;
+barlungme:barlungme^ V1PostBase ;
+barndi:barndi^ V7aPostBase ;                                    ! climb (hill)
+barrhbu:barrhbu^ V4bPostBase ;
+barrhme:barrhme^ V1PostBase ;
+baru:baru^ V4bPostBase ;                                       ! rub
+bebme:bebme^ V1PostBase ;                                      ! appear, arrive 2. go out come out 
+bekka:bekka^ V3aPostBase ;                                     ! listen, hear, feel, touch, (sense)
+bekkarre:bekkarre^ V10PostBase ;
+beleyerrka:beleyerrka^ V3aPostBase ;
+belngda:belngda^ V6aPostbase;                                   ! subside, deflate, go flat
+bengdayhme:bengdayhme^ V1PostBase ;                             ! remember, realize
+bengdi:bengdi^ V7aPostBase ;                                    ! sit waiting for word, for something to happen
+bengka:bengka^ V3aPostBase ;                                    ! understand, comprehend
+bengkoka:bengkoka^ V3aPostbase;                                 ! be confused , get lost
+bengmayahme:bengmayahme^ V1PostBase ;                           ! 
+bengwarr:bengwarr^ V11PostBase ;                                ! go crazy, develop dementia, become mentally unstable
+bidjibme:bidjibme^ V1PostBase ;                                 ! turn, screw, spin, wind
+birrhme:birrhme^ V1PostBase ;                                   ! sweep, rake up, clear the ground
+bobidbu:bobidbu^ V4bPostBase ;
+bodahkendo:bodahkendo^ V5aPostBase ;                            ! fill a container with liquid, refuel vehicle
+bodda:bodda^ V6aPostbase;                                       ! crouch down, hunch over, bend
+bodowe:bodowe^ V2PostBase ;
+bolbme:bolbme^ V1PostBase ;                                     ! become accustomed to
+bolkdowe:bolkdowe^ V2PostBase ;
+bolkmadde:bolkmadde^ V5bPostBase ;
+bolkngeyyo:bolkngeyyo^ V8PostBase ;
+bo:bo^ ReVerbs;                                             ! flow 
+borlbme:borlbme^ V1PostBase ;                                   ! learn, 2. get used to
+borledme:borledme^ V1PostBase ;                                 ! rotate, turn around
+borrkke:borrkke^ V2PostBase ;                                   ! dance
+borrkkirri:borrkkirri^ V7aPostbase;                             ! jump around playfull, frolic 
+borrme:borrme^ V1PostBase ;
+boyboyyo:boyboyyo^ V8PostBase ;
+bu:bu^ V4bPostBase ;                                           ! hit, kill (intr)
+bukme:bukme^ V3dPostBase ;                                     ! dry up
+burlurlhme:burlurlhme^ V1PostBase;                             ! Swell up
+burnbu:burnbu^ V4bPostBase ;
+burre:burre^ V10PostBase ;                                     ! fight
+burriwe:burriwe^ V2PostBase ;                                  ! throw, chuck, push down, throw away (INTR)
+da:da^ V6aPostBase ;                                           ! stand, come live in a place
+dadjme:dadjme^ V1PostBase ;                                    ! cut, 2 cease, stop
+dahkendi:dahkendi^ V7aPostBase ;
+dahkendo:dahkendo^ V5aPostBase ;                               ! place in a container
+daleh:daleh^ V11PostBase ;                                     ! dry up, get dry
+dangbalhme:(rr)angbalhme^ V1PostBase ;                         ! close door, close window, shut mouth
+dange:dange^ V10Postbase;                                      ! stand, come to live in a place, be in a sibling relationship
+dangwerre:dangwerre^ V10PostBase ;                             ! argue with each other
+darlka:darlka^ V3aPostBase ;                                   ! swim
+darrhme:darrhme^ V1PostBase;                                   ! Poke out
+dayo:dayo^ V8Postbase;                                         ! lie in the sun
+dedjdjingma:dedjdjingma^ V5cPostBase ;
+dedjdo:dedjdo^ V5aPostBase ;                                   ! copulate (vulg)
+deldelme:deldelme^ V1PostBase ;
+denghme:denghme^ V1PostBase ;
+derrehme:derrehme^ V1PostBase ;                                ! move, make forward progress
+di:(rr)i^ V7aPostBase ;                                        ! be, be standing
+di:di^ V7aPostBase ;                                           ! be, be standing
+dilebu:dilebu^ V4bPostBase ;                                   ! urinate
+dilhme:dilhme^ V1PostBase ;
+dimhme:dimhme^ V1PostBase ;
+dingihdi:dingihdi^ V7aPostBase ;
+dirri:dirri^ V7aPostBase ;                                      ! play
+djabd:djabd^ V9PostBase ;
+djabda:djabda^ V6aPostBase ;                                    ! stick up
+djabdi:djabdi^ V7aPostBase ;
+djadku:djakdu^ V5aPostBase ;                                    ! rain fall down, fall down (rain)
+djal:djal^ ReVerbs; 
+djamunme:djamunme^ V1PostBase ;
+djandi:djandi^ V7aPostbase; 
+djangdi:djangdi^ V7aPostBase ;
+djangka:djangka^ V3aPostbase;                                   ! Go hunting
+djangwe:djangwe^ V2PostBase ;
+djardahme:djardahme^ V1PostBase ;
+djekme:djekme^ V1PostBase ;                                     ! laugh
+djerrkda:djerrkda^ V6aPostbase; 
+djihbu:djihbu^ V4bPostBase ;                                    ! sneeze
+djobke:djobke^ V2PostBase ;                                     ! cut (intr)
+djobme:djobme^ V1PostBase ;                                     ! cut (intr)
+djohme:djohme^ V1PostBase ;                                     ! cough
+djolengme:djolengme^ V1PostBase ;                               ! get cooked
+djongburre:djongburre^ V10PostBase ;                            ! get dressed
+djord:djord^ V11PostBase ;                                      ! grow up
+djorlkme:djorlkme^ V1PostBase ;
+djudme:djudme^ V1PostBase ;                                     ! stick in
+djuhme:djuhme^ V1PostBase ;                                     ! be in water, get into water, shower, bathe
+djurrhbume:djurrhbume^ V1PostBase ;
+djurrkdjurrkme:djurrkdjurrkme^ V1PostBase ;
+djurrkwo:djurrkwo^ V3cPostBase ;                                  ! get excited, be enthousiastic
+dokme:(rr)okme^ V1PostBase ;                             ! get going, set off, 2. go ahead, go first
+dolhme:(rr)olhme^ V1PostBase ;
+dolka:(rr)olka^ V3aPostBase ;                            ! get up
+dolkka:(rr)olkka^ V3aPostBase ;                                    ! jump up, rise up, fly
+dombu:(rr)ombu^ V4aPostBase ;                            ! extinguish, put out
+dowe:(rr)owe^ V2PostBase ;                               ! be sick, die, break down
+dowe:dowe^ V2PostBase ;                                       ! be sick, die
+dowerre:dowerre^ V10PostBase ;
+dowime:dowime^ V1PostBase ;                                     ! 
+dowkme:dowkme^ V1PostBase ;
+dubbe:dubbe^ V1PostBase ;                                      ! block
+dubbedo:dubbedo^ V5aPostbase;                             ! be blocked, stuck, unable to pass
+dubberra:dubberra^ V10PostBase ;
+dudjendi:dudjendi^ V7aPostBase ;
+duhme:duhme^ V1PostBase ;
+dukkayindi:dukkayindi^ V7aPostBase ;
+dulkkimanka:(rr)ulkimanka^ V3aPostBase ;
+dulubu:(rr)ulubu^ V4aPostBase ;                          ! shoot, spear, penetrate, puncture, 2. flow into, intersect INTR
+dungbang:dungbang^ V11PostBase ;
+dungbidbu:dungbidbu^ V4bPostBase ;
+dung:dung^ ReVerbs; 
+dungwarre:dungwarre^ V11PostBase ;
+dungyibme:dungyibme^ V1PostBase ;
+durnde:durnde^ V5bPostBase ;                             ! return, go back
+durnde:rdurnde^ V5bPostBase ;                                   ! return, go back (alternate pelling)
+durnde:rrurnde^ V5bPostBase ;                                   ! return, go back (alternate spelling)
+durre:durre^ V10PostBase ;                               ! abuse or curse each other
+durrkmirri:(rr)urrkmirri^ V7aPostBase ;  ! work
+gerremadbu:gerremadbu^ V4aPostBase ;                     ! wait for something to cook
+ka:ka^ V3aPostBase ;                                     ! take, carry along
+kak:kak^ ReVerbs;                                    ! travel at night
+kangebarrhme:kangebarrhme^ V1PostBase;
+kare:kare^ V11PostBase ;                                 ! become old
+karrikme:karrikme^ V1PostBase ;
+karrme:karrme^ V1PostBase ;                              ! have, own posess, 2. keep, 3. hold onto, 4. have offspring, 5. win
+karu:karu^ V5aPostBase ;                                      ! dig (intr)
+kawo:kawo^ V3cPostBase ;                                      ! disturb
+kayhme:kayhme^ V1PostBase ;                                     ! call out, yell
+kele:kele^ V11PostBase ;                                ! be afraid
+kelewawme:kelewawme^ V1PostBase; 
+kerlk:kerlk^ V11PostBase ;
+kerlkda:kerlkda^ V6aPostbase;                            ! become soft
+kerremadbu:kerremadbu^ V4aPostBase ;                     ! wait for something to cook (alternate spelling)
+kewkme:kewkme^ V1PostBase; 
+keyo:keyo^ V8PostBase ;                                  ! lie down
+kimuk:kimuk^ V10PostBase ;                               ! get big
+kodjbordehme:kodjbordehme^ V1PostBase ;
+kodjbulume:kodjbulume^ V1PostBase ;                      ! have grey hair
+kodjdjobme:kodjdjobme^ V1PostBase ;
+kodjdukme:kodjdukme^ V1PostBase; 
+kodjngalme:kodjngalme^ V1PostBase ;
+kodjukme:kodjdukme^ V1PostBase ;
+kolu:kolu^ V5aPostBase ;                                ! go down, descend, 2. return after ceremony
+kombukdowe:kombukdowe^ V2PostBase ;
+kongibu:kongibu^ V4bPostBase ;                          ! feel compassion
+kukborledme:kukborledme^ V1PostBase ;
+kukyime:kukyime^ V1PostBase ;
+kunidi:kunidi^ V7aPostBase ;
+kurduyime:kurduyime^ V1PostBase ;
+kurlba:kurlba^ ReVerbs;                             ! bleed
+kurre:kurre^ V10PostBase ;                              ! decieve, trick
+kuwa:kuwa^ V4aPostBase ;
+lad:lad^ V11PostBase ;                                  ! become hot
+lirrhmerre:lirrhmerre^ V10PostBase ;                    ! scratch oneself
+lobme:lobme^ V1PostBase ;                               ! drive, run, function
+lobme:rlobme^ V1PostBase ;
+lorrhmiyo:lorrhmiyo^ V8Postbase; 
+lurlme:lurlme^ V1PostBase ;
+ma:ma^ V5cPostBase ;                                    ! get, obtain, collect (INTR)
+madbu:madbu^ V4bPostBase ;                              ! wait around
+mahme:mahme^ V1PostBase ;
+mak:mak^ V11PostBase ;                                  ! become good
+manka:manka^ V3aPostBase ;                              ! fall, land
+marnedi:marnedi^ V7aPostBase ;                          ! pray
+marnenalkbu:marnenalkbu^ V4bPostBase ;
+marre:marre^ V10PostBase ;                              ! marry
+marrmarr:marrmarr^ V11PostBase ;
+marrwe:marrwe^ V2PostBase ;
+mayahme:mayahme^ V1PostBase ;                           ! get lost, become confused, 2. be unaware
+medda:medda^ V6aPostbase;                               ! turn head, turn around
+melme:melme^ V1PostBase ;
+menmenyime:menmenyime^ V1PostBase ;
+merre:merre^ V10PostBase ;
+mikme:mikme^ V1PostBase ;
+mimbi:mimbi^ V7aPostBase    ;                            ! alive
+mimbime:mimbime^ V4bPostBase ;                          ! be alive
+mimke:mimke^ V2PostBase ;
+mirrhmirrhme:mirrhmirrhme^ V1PostBase ;                 ! get sharp, get hot
+modme:modme^ V1PostBase ;
+mokdowe:mokdowe^ V5bPostbase;                           ! to have a sore heal
+mok:mok^ V11PostBase;                                   ! develop a sore, get an infection
+moname:moname^ V1PostBase ;                             ! assemble
+morneni:morneni^ V7aPostBase ;
+na:na^ V3bPostBase ;                                    ! see (trns)
+nalkbu:nalkbu^ V4bPostbase; 
+ngadduhke:ngadduhke^ V2Postbase;                        ! make trouble, start a fight
+ngadjihbu:ngadjihbu^ V4bPostbase; 
+ngakme:ngakme^ V1PostBase ;
+ngalkbu:ngalkbu^ V4bPostBase ;                                   ! cry, weep
+ngalme:ngalme^ V1PostBase ;
+ngamka:ngamka^ V3bPostBase ;                                    ! swim 
+ngarrnghma:ngarrnghma^ V5cPostbase; 
+ngayke:ngayke^ V2Postbase; 
+ngehme:ngehme^ V1PostBase ;                                     ! take a breath
+ngeybu:ngeybu^ V4bPostBase ;                                    ! be named
+ngeydi:ngeydi^ V7aPostBase ;
+ngeyhme:ngeyhme^ V1PostBase;                            ! moan
+ngeyyo:ngeyyo^ V8PostBase ;
+ngi:ngi^ V11PostBase ;                                       ! go inside
+ngime:ngime^ V1PostBase ;                                      ! enter
+ngiwkme:ngiwkme^ V1PostBase ;
+ngokda:ngokda^ V6aPostbase;                                     ! become dark, nightfall
+ngokme:ngokme^ V1PostBase ;                                     ! bark (of dogs) (evans grammar spelling)
+ngolekwarre:ngolekwarre^ V11PostBase ;
+ngomka:ngomka^ V3bPostBase ;                                    ! swim 
+ngu:ngu^ V3IrrPostBase ;                                     ! eat (intrans)
+ngud:ngud^ V11PostBase ;                                      ! be quiet
+ngudjwarre:ngudjwarre^ V11PostBase ;
+ngukde:ngukde^ V5bPostBase ;                                    ! defecate
+ngurdme:ngurdme^ V1PostBase ;
+ngurdulme:ngurdulme^ V1PostBase ;
+nguybu:nguybu^ V4bPostbase; 
+ni:ni^ V7aPostBase ;                                        ! be, be sitting, 2. stay, live, be
+ningihni:ningihni^ V7aPostBase ;
+njaknjakme:njaknjakme^ V1PostBase; 
+njokme:njokme^ V1PostBase ;                                     ! bark (of dogs)
+njudjme:njudme^ V1PostBase ;                                     !
+nud:nud^ V11PostBase ;
+rayekme:rayekme^ V11PostBase;                               ! to harden, solidify, turn to stone
+0:0^ ReVerbs;                                               ! re  - to go
+rerrka:rerrka^ V3aPostBase ;
+rlobme:rlobme^ V1PostBase; 
+rohrokme:rohrokme^ V1PostBase ;                                   ! try out, attempt, have a go, 2. investigate, 3. estimate, 4. count, 5. group together
+roka:roka^ V3aPostBase ;
+rra:rra^ V6aPostBase ;                                       ! stand, come live in a place
+ru:ru^ V5aPostBase ;                                        ! be hot, burn, 2. cook, 3 ripen        
+wabme:wabme^ V1PostBase ;
+wage:wage^ V2PostBase ;                                       ! crawl, walk
+wakbu:wakbu^ V4bPostBase ;                                     ! pass around, turn, circle
+wake:wake^ V2PostBase ;                                       ! crawl, walk
+wakwa:wakwa^ V4aPostBase ;                                     ! be unaware, not know, forget to undertake
+wareyo:wareyo^ V8PostBase ;
+warlbu:warlbu^ V4bPostBase ;                                    ! hunt, gather
+warnamyo:warnamyo^ V8PostBase ;
+warre:warre^ V11PostBase ;                                     ! go bad
+warrewo:warrewo^ V3cPostBase ;                                   ! make a mistake
+warrhme:warrhme^ V1PostBase ;
+wayhme:wayhme^ V1PostBase ;                                     ! call out 
+wayini:wayini^ V7aPostBase ;                                    ! sing
+weldi:weldi^ V7aPostBase ;
+weleberrkmen:weleberrk^ V11PostBase;                       ! droop, sag, wrinkle
+welebme:welebme^ V1PostBase; 
+welewelme:welewelme^ V1PostBase ;
+welhwelhme:welhwelhme^ V1PostBase ;                                 ! hang (intr)
+wern:wern^ V11PostBase ;
+wirdme:wirdme^ V1PostBase; 
+wohna:wohna^ V3bPostBase ;
+woh:woh^ ReVerbs;                                       ! wander, walk around
+wokdi:wokdi^ V7aPostBase ;                                     ! be speaking
+wokna:wokna^ V3bPostBase ;                                     ! speak, talk, make sound
+wokngi:wokngi^ V11PostBase ;
+wolebuk:wolebuk^ V11PostBase ;
+wolebukkiyo:wolebukkiyo^ V8PostBase ;
+worrhme:worrhme^ V1PostBase ;                                    ! to make a fire (intr)
+worrk:worrk^ V11PostBase ;                                     ! be full of food
+worromka:worromka^ V3aPostBase ;
+woybukwo:woybukwo^ V3cPostBase ;
+wulhke:wulhke^ V2PostBase ;                                     ! start a fire (INTR)
+wurdme:wurdma^ V5cPostBase ;
+wurlebme:wurlebme^ V1PostBase ;                                   ! swim, take a bath, shower
+wurlhme:wurlhme^ V1PostBase ;                                    ! flare up
+yak:yak^ V11PostBase ;                                       ! finish, run out
+yarlarrme:yarlarrme^ V1PostBase ;
+yawa:yawa^ V4aPostBase ;                                      ! seek
+yayme:yayme^ V1PostBase ;                                      ! feel itchy
+yeme:yeme^ V1PostBase ;
+yerrka:yerrka^ V3aPostBase ;                                    ! sit
+yerrkme:yerrkme^ V1PostBase ;
+yibme:yibme^ V1PostBase ;                                       ! sink
+yiddu:yiddu^ V5aPostbase;                                       ! get angry
+yidduwe:yidduwe^ V2PostBase ;                                   ! get angry, speak harshly
+yikadjurre:yikadjurre^ V10PostBase ;
+yime:yime^ V1PostBase ;                                       ! say, call ,do, act
+yimerra:yimerra^ V10PostBase ;
+yimerrange:yimerrange^ V10PostBase ;                                ! turn into
+yirdebme:yirdebme^ V1PostBase ;
+yirrhma:yirrhma^ V5cPostBase ;                                   ! pull out
+yirriyo:yirriyo^ V8PostBase ;
+yirrme:yirrme^ V1PostBase ;                                     ! brush
+yo:yo^ V8PostBase ;                                         ! lie
+yonge:yonge^ V3dPostbase; 
+yongen:yo^ V6aPostBase ;
+yorrme:yorrme^ V1PostBase;
+yowyowme:yowyowme^ V1PostBase; 
+yudyudme:yudyudme^ V1PostBase; 
+
+LEXICON TransitiveVerbs
+
+0:0 IrregularVerbsTrns ;                ! there are a couple irregular transitive verbs to treat explicitly 
+[VerbRootGuess][GUESS]:[VerbRootGuess]^ anyVerbPostBase ;
+babbulibu:babbulibu V4bPostBase ;
+babma:babma V5cPostBase ;
+baddje:baddje^ V5bPostBase ;                                    ! bash
+badjdje:badjdje^ V5bPostBase ;
+bakke:bakke^ V2PostBase ;                                       ! break, transgress (trns)
+balakbun:balakbu^ V4bPostBase ;
+balewo:balewo^ V3cPostBase ;                                    ! clean (something)
+balhme:balhme^ V1PostBase ;
+barlke:barlke^ V2PostBase ;                                     ! fill
+barnname:barnname^ V1PostBase ;
+barrhbarrhma:barrhbarrhma^ V5cPostBase ;
+barrhke:barrhke^ V2PostBase ;
+bawo:bawo^ V3cPostBase ;                                        ! leave, give up (something)        
+bayahme:bayahme^ V1PostBase ;
+baye:baye^ V2PostBase ;                                         ! bite, 2. cause illness, fright
+bebke:bebke^ V2PostBase ;                                       ! reveal, bring out, take out, 2. produce children
+bebme:bebme^ V1PostBase ;                                       ! come out of (trns)
+bedjekme:bedjekme^ V1PostBase ;
+behke:behke^ V2PostBase ;
+bekka:bekka^ V3aPostBase ;                                      ! listen, hear, feel, touch, (sense) (transitive)
+belbme:belbme^ V1PostBase ;
+belenghme:belenghme^ V1PostBase ;
+belewo:belewo^ V3cPostbase; 
+bengbu:bengbu^ V4bPostBase ;                                    ! disturb with noise, offend
+bengdayhke:bengdayhke^ V2PostBase ;                             ! notify remind, let someone know
+bengka:bengka^ V3aPostbase; 
+bengmayahke:bengmayahke^ V2PostBase ;
+bengmidjda:bengmidjda^ V6aPostbase; 
+bengwarrewo:bengwarrewo^ V3cPostBase ;
+berddjobke:berddjobke^ V2PostBase ;
+bernelka:bernelka^ V3aPostBase ;
+berrebbun:berrebbu^ V4bPostbase;                                ! promise
+bidbu:bidbu^ V4bPostBase ;                                      ! climb up, get into/onto, rise, enter ceremony (intrans)
+bidbuyhwe:bidbuyhwe^ V2PostBase ;
+biddjuyme:biddjuyme^ V1PostBase ;
+bidjibme:bidjibme^ V1PostBase ;
+bidyikarrme:bidyikarrme^ V1PostBase ;
+bimbu:bimbu^ V4bPostBase ;                                     ! draw, paint, write
+bimma:bimma^ V5cPostBase ;
+bimna:bimna^ V3bPostBase ;
+bimngeybu:bimngeybu^ V4bPostBase ;
+birlika:birlika^ V3aPostBase ;
+birrka:birrka^ V3aPostBase ;
+biwke:biwke^ V2PostBase ;                                      !
+bokde:bokde^ V10Postbase; 
+bokinje:bokinje^ V2PostBase ;
+bokka:bokka^ V3aPostBase ;                                     ! track
+bolhkadju:bolhkadju^ V5aPostBase ;
+bolka:bolka^ V3aPostBase ;
+bolkbawo:bolkbawo^ V3cPostBase ;
+bolkbu:bolkbu^ V4bPostBase ;
+bolkma:bolkma^ V5cPostbase; 
+bolkna:bolkna^ V3bPostBase ;
+bolknahna:bolknahna^ V3bPostBase ;
+bongu:bongu^ V4bPostBase ;
+bonome:bonome^ V1PostBase ;
+borledke:borledke^ V2PostBase ;                                   ! turn over, change
+borna:borna^ V2PostBase ;                                      ! beget (eg a child)
+borna:borna^ V3bPostBase ;
+borndu:borndu^ V5aPostBase ;
+borolhme:borolhme^ V1PostBase; 
+borrkbu:borrkbu^ V4bPostBase ;
+borrkwa:borrkwa^ V4aPostbase;
+bowe:bowe^ V2PostBase ;                                       ! 
+bu:bu^ V4bPostBase ;                                        ! hit, kill
+buhme:buhme^ V1PostBase ;                                      ! blow. play didjeridu, 2. be blown on
+bukirribu:bukirribu^ V4bPostBase ;                                 ! dream of
+bukka:bukka^ V3aPostBase ;                                     ! show, teach, demonstrate
+bukme:bukme^ V11PostBase ;
+bularrbu:bularrbu^ V4bPostBase ;
+bunjhma:bunjhma^ V5cPostBase ;                                   ! kiss (smth)
+burdebme:burdebme^ V1PostBase ;
+burlume:burlume^ V1PostBase ;
+burrbu:burrbu^ V4bPostBase ;                                    ! understand, know, think (something)
+burriwe:burriwe^ V2PostBase ;                                    ! throw, chuck, push down, throw away
+burriweke:burriweke^ V2PostBase ;                                  ! throw, chuck, push down, throw away
+burrkna:burrkna^ V3bPostBase ;                                   ! recognise, understand
+dabke:dabke^ V2PostBase ;
+dadjke:dadjke^ V2PostBase ;                                     ! cut, slice, 2. divide, draw dividing line, 3. cut off, inturrupt 
+dadju:dadju^ V5aPostBase ;
+dahkendo:dahkendo^ V5aPostBase ;
+dahme:dahme^ V1PostBase ;
+dakurrme:dakurrme^ V1PostBase ;
+dangbalhme:dangbalhme^ V1PostBase ;
+danjbu:(rr)anjbu^ V4bPostBase ;                          ! spear
+darlkke:darlkke^ V2PostBase ;                                    ! crack
+dawe:dawe^ V5bPostbase; 
+dedjbu:dedjbu^ V4bPostBase ;
+dedjmelme:dedjmelme^ V1PostBase;
+delkke:delkke^ V2PostBase ;
+delme:(rr)elme^ V1PostBase ;                             ! throw
+denghke:denghke^ V2PostBase ;
+derrehke:derrehke^ V2PostBase ;                                   ! move, shift
+djabname:djabname^ V1PostBase ;
+djalkma:djalkma^ V5cPostBase ;
+djambarrhma:djambarrhma^ V5cPostBase ;
+djangka:djangka^ V3aPostBase ;                                   ! hunt
+djare:djare NonverbalPostBase ;                                      ! want
+djarebu:djarebu^ V4bPostBase ;                                   ! cause desire
+djarewo:djarewo^ V3cPostBase ;                                   ! be hungry for [sthg]
+djarlkkenname:djarlkkenname^ V1PostBase ;
+djarrangbu:djarrangbu^ V4bPostBase ;                                ! sort
+djarrangbu:djarrngbu^ V4bPostBase ;                                 ! choose
+djawa:djawa^ V4aPostBase ;                                     ! ask
+djawayhme:djawayhme^ V1PostBase ;
+djedme:djedme^ V1PostBase ;
+djikkawo:djikkawo^ V3cPostBase ;
+djirdma:djirdma^ V5cPostBase ;                                   ! steal
+djirridjbu:djirridjbu^ V4bPostBase ;
+djirrkka:djirrkka^ V3aPostbase; 
+djobke:djobke^ V2PostBase ;                                     ! cut, 2. draw line
+djokkohmika:djokkohmika^ V3aPostbase; 
+djongbu:djongbu^ V4bPostBase ;
+djordmiwe:djordmiwe^ V2PostBase ;
+djorndo:djorndo^ V5aPostBase ;                                   ! pound
+djorrngme:djorrngme^ V1PostBase ;
+djowkke:djowkke^ V2PostBase ;                                    ! cross over
+djudbakke:djudbakke^ V2PostBase ;
+djudme:djudme^ V1PostBase ;                                     ! stick in
+djuhke:djuhke^ V2PostBase ;                                     ! immerse in water, splash
+djumdo:djumdo^ V5aPostBase ;
+djunjwe:djunjwe^ V2PostBase ;
+djurrka:djurrkka^ V3aPostBase ;
+djurrkka:djurrkka^ V3aPostbase; 
+djurrkma:djurrkma^ V5cPostBase ;                                  ! pull
+djuyme:djuyme^ V1PostBase ;
+do:do^ V5aPostBase ;                                        ! strike
+dokmiwe:dokmiwe^ V2PostBase ;
+dombu:dombu^ V4bPostbase; 
+dorname:dorname^ V1PostBase ;
+dorrorrke:dorrorrke^ V2PostBase ;
+dowkke:dowkke^ V2PostBase ;
+du:du^ V5aPostBase ;                                        ! swear at
+dudje:(rr)udje^ V2PostBase ;                             ! bury, plant
+dudma:dudma^ V5cPostBase ;
+duhke:duhke^ V2PostBase ;
+dukka:(rr)ukka^ V3aPostBase ;                            ! tie up, wrap up, put handcuffs on
+dukkan:dukkan^ V3aPostBase ;
+dulubu:dulubu^ V4bPostBase ;                                    ! shoot, spear, penetrate, puncture, 2. flow into, intersect
+dundiwe:dundiwe^ V5bPostBase ;                   ! cause to return, go back
+durndiwe:durndiwe^ V5bPostBase ;                   ! cause to return, go back
+durnme:durnme^ V1PostBase; 
+durrkma:durrkma^ V5cPostBase ;
+durrkme:durrkme^ V1PostBase ;
+gerremadbu:gerremadbu^ V4aPostBase ;                ! wait for something to cook
+gowe:gowe^ V2PostBase ;                                       ! to trick (trns)
+gurrme:gurrme^ V1PostBase ;                                     ! put down
+ka:ka^ V3aPostBase ;                                        ! take, carry along
+kabu:kabu^ V4bPostBase ;                                      ! nurse
+kadju:kadju^ V5aPostBase ;                     ! follow
+kalika:kalika^ V3aPostBase ;                                    ! have sex with
+kan:kan^ V3aPostBase ;
+kardma:kardma^ V5cPostBase ;                    ! snare, catch
+kariburriwe:kariburriwe^ V2PostBase ;                                ! knock down
+karrme:karrme^ V1PostBase ;                                     ! have, own posess, 2. keep, 3. hold onto, 4. have offspring, 5. win (trns)
+karu:karu^ V5aPostBase ;                      ! dig
+kawo:kawo^ V3cPostBase ;
+kayhme:kayhme^ V1PostBase ;                                     ! call out, yell
+kebka:kebka^ V3aPostbase; 
+kebngu:kebngu^ V3IrrPostBase; 
+kelehme:kelehme^ V1PostBase ;
+kengeme:kengeme^ V1PostBase ;
+kerremadbu:kerremadbu^ V4aPostBase ;                ! wait for something to cook (alternate spelling)
+kerribu:kerribu^ V4bPostBase ;                   ! roast
+kidjikme:kidjikme^ V1PostBase; 
+kilekme:kilekme^ V1PostBase ;
+kima:kima^ V5cPostBase ;
+kimukmen:kimuk^ V11PostBase; 
+kinje:kinje^ V2PostBase ;                                      ! cook, burn, light up
+kodjdjobke:kodjdjobke^ V2PostBase ;                                 ! 
+koluyhwe:koluyhwe^ V2PostBase ;
+kombakke:kombakke^ V2Postbase; 
+kongibu:kongibu^ V4bPostBase ;
+kowe:kowe^ V2PostBase ;
+kukburrbu:kukburrbu^ V4bPostBase ;
+kukburriwe:kukburriwe^ V2PostBase ;
+kukburriweke:kukburriweke^ V2PostBase ;                               ! throw down, 2. hit an animal while hunting
+kukka:kukka^ V3aPostbase; 
+kukkan:kukkan^ V3aPostBase ;
+kukwarrewo:kukwarrewo^ V3cPostBase ;
+kurduna:kurduna^ V3bPostBase ;
+kurrme:kurrme^ V1PostBase ;                                     ! put, place
+kurrurrubun:kurrurrubu^ V4bPostBase ;
+kuykme:kuykme^ V1PostBase ;
+lakkayenwo:lakkayenwo^ V3cPostBase ;
+lirrhme:lirrhme^ V1PostBase ;
+lowkma:lowkma^ V5cPostBase ;
+ma:ma^ V5cPostBase ;                        ! get, obtain, collect
+madbu:madbu^ V4bPostBase ;                     ! wait around
+madde:madde^ V5bPostbase; 
+malaka:malaka^ V3aPostbase; 
+malelma:malelma^ V5cPostBase ;
+manjbekka:manjbekka^ V3aPostBase ;
+manjbu:manjbu^ V4bPostBase ;
+manjngu:manjngu^ V3IrrPostBase; 
+marnbu:marnbu^ V4aPostBase ;                                    ! make, build, do, complete, fix, heal, organize, arrange
+marnebebme:marnebebme^ V1PostBase ;
+marnedjare:marnedjare NonverbalPostBase ;                                 ! love, desire
+marneyime:marneyime^ V1PostBase ;
+marrhma:marrhma^ V5cPostBase ;                   ! open (smth)
+marrkma:marrkma^ V5cPostBase ;
+mayhke:mayhke^ V2PostBase ;
+melme:melme^ V1PostBase ;                                      ! press
+menmenbengka:menmenbengka^ V3aPostBase ;
+midbu:midbu^ V4bPostBase ;
+mika:mika^ V3aPostbase; 
+milemarnbu:milemarnbu^ V4bPostBase ;
+milu:milu^ V5aPostBase ;
+mirnhke:mirnhke^ V2PostBase ;                                    ! bend (something)
+moname:moname^ V1PostBase ;                                     ! assemble
+monbuhme:monbuhme^ V1PostBase ;
+morneka:morneka^ V3aPostBase ;
+mornema:mornema^ V5cPostBase ;
+moyhm:moyhm^ V5cPostBase ;                     ! get
+moyhma:moyhma^ V5cPostBase ;
+mudbu:mudbu^ V4bPostBase ;
+mulewa:mulewa^ V4aPostBase ;
+munkekadju:munkekadju^ V5aPostBase ;
+mundika:mundika^ V3aPostBase ;
+munkewe:munkewe^ V2PostBase ;                                    ! send
+na:na^ V3bPostBase ;                                        ! see (trns)
+nahnan:nahna^ V3bPostBase ;                                     ! look after, care for
+name:name^ V1PostBase ;                                       ! make
+ngadbu:ngadbu^ V4bPostBase ;
+ngadje:ngadje^ V5bPostBase ;
+ngaduhge:ngaduhge^ V2PostBase ;                                   ! fire up, alternate spelling
+ngaduhke:ngaduhke^ V2PostBase ;                                   ! fire up
+ngakke:ngakke^ V2PostBase ;
+ngalke:ngalke^ V2PostBase ;                                     ! find
+ngarrkma:ngarrkma^ V5cPostbase; 
+ngayawkme:ngayawkme^ V1PostBase ;
+ngehke:ngehke^ V2PostBase ;
+ngerrehme:ngerrehme^ V1PostBase ;                                  ! run over
+ngeybu:ngeybu^ V4bPostBase ;
+ngimewo:ngimewo^ V3cPostBase ;                                   ! put (something)
+ngimihwe:ngimihwe^ V5bPostbase; 
+ngimowo:ngimowo^ V3cPostbase; 
+ngirrbu:ngirrbu^ V4bPostBase ;
+ngirrihme:ngirrihme^ V1PostBase ;
+ngorrka:ngorrka^ V3bPostBase ;                                   ! carry on shoulders 
+ngorrma:ngorrma^ V5cPostBase ;
+ngorrme:ngorrme^ V5aPostBase ;                   ! pick up on shoulders
+ngorrowke:ngorrowke^ V2Postbase; 
+ngu:ngu^ V3IrrPostBase ;                                     ! eat (something)
+ngudjbawo:ngudjbawo^ V3cPostBase ;
+ngudjkadju:ngudjkadju^ V5aPostBase ;
+ngukde:ngukde^ V5bPostBase ;
+ngunjdjikka:ngunjdjikka^ V3aPostBase ;
+ngurdke:ngurdke^ V2PostBase ;                                    ! stop
+njabke:njabke^ V2Postbase; 
+njirrke:njirrke^ V2Postbase; 
+njonjme:njonjme^ V1PostBase; 
+njonjwo:njonjwo^ V3cPostbase; 
+nome:nome^ V1PostBase ;                                       ! smell
+rawo:rawo^ V3dPostBase ;                                      ! combine, mix, add
+rayekwo:rayekwo^ V3cPostbase; 
+rohrokme:rohrokme^ V1PostBase ;
+rokayhwo:rokayhwo^ V3cPostbase; 
+royhme:royhme^ V1PostBase ;
+rrundiwe:rrundiwe^ V5bPostBase ;                  ! cause to return, go back
+rrurndiwe:rrurndiwe^ V5bPostBase ;                 ! cause to return, go back
+wabun:wabu^ V4bPostBase ;
+warlbu:warlbu^ V4aPostBase ;                                    ! hunt, gather
+warlkka:warlkka^ V3aPostBase ;                                   ! hide (something)
+warnamkurrme:warnamkurrme^ V1PostBase ;
+warrewo:warrewo^ V3cPostBase ;                                   ! ruin, damage
+warrhke:warrhke^ V2PostBase ;                                    ! drop
+warrke:warrke^ V2PostBase ;                                     ! drop TRNS
+wayhke:wayhke^ V2PostBase ;                                     ! lift
+we:we^ V2PostBase ;
+wehme:wehme^ V1PostBase ;
+welengname:welengname^ V1PostBase ;
+wernwo:wernwo^ V3cPostBase ;
+werrhme:werrhme^ V1PostBase ;
+weyka:weyka^ V3aPostBase ;
+widjung:widju^ V5aPostbase;
+widnan:widna^ V3bPostBase ;                                     ! hate, dislike
+wilkde:wilkde^ V5bPostBase ;
+wilkde:wilkde^ V7aPostBase ;
+wilkdi:wilkdi^ V7aPostBase ;                                ! put in ashes
+winhme:winhme^ V1PostBase ;
+wirlarrkngukde:wirlarrkngukde^ V5bPostBase; 
+wirrkme:wirrkme^ V1PostBase ;                               ! scratch
+wo:wo^ V3cPostBase ;                                        ! give
+wodbu:wodbu^ V4bPostBase ;
+wodjorrhme:wodjorrhme^ V1PostBase; 
+wokma:wokma^ V5cPostBase ;
+wokmadbu:wokmadbu^ V4bPostBase ;
+wolka:wolka^ V3aPostBase ;
+wolngwo:wolngwo^ V3cPostBase ;                              ! smoke, cure (bark), heat up
+worrhme:worrhme^ V1PostBase ;
+worrumbokka:worrumbokka^ V3aPostBase ;
+wukme:wukme^ V1PostBase ;                                   ! swallow
+wungme:wungme^ V1PostBase ;                                 ! suck, 2. inhale, smoke
+wurlebke:wurlebke^ V2PostBase ;                             ! wash, take someone to swim
+wurlhke:wurlhke^ V2PostBase ;                               ! start a fire, ignite, 2. switch a light on
+wurrkme:wurrkme^ V1PostBase ;
+yakarrbun:yakarrbu^ V4bPostBase ;
+yakbu:yakbu^ V4bPostBase ;                                  ! empty out
+yakwo:yakwo^ V3cPostBase ;                                  ! finish
+yame:yame^ V1PostBase ;                                     ! spear
+yarlarrke:yarlarrke^ V2PostBase ;
+yawa:yawa^ V4aPostBase ;                                    ! search for, look for
+yawkan:yawka^ V3aPostBase ;
+yerrke:yerrke^ V2PostBase ;                                 ! detach, pull off, undo
+yerrkke:yerrkke^ V2PostBase ;
+yibbun:yibbu^ V4bPostBase ;
+yibke:yibke^ V2PostBase ;
+yibme:yibme^ V1PostBase ;                                   ! sink (TRNS)
+yika:yika^ V3aPostBase ;
+yika:yika^ V3bPostBase ;
+yilka:yilka^ V3aPostBase ;
+yilkbu:yilkbu^ V4bPostBase ;
+yirrkebakke:yirrkebakke^ V2PostBase ;
+yirrme:yirrme^ V1PostBase ;
+yolyolme:yolyolme^ V1PostBase ;
+yolyolme:yolyolme^ V1PostBase ;                              ! tell a story, talk about
+yorrke:yorrke^ V2Postbase;                                   ! gather a group
+yurrhke:yurrhke^ V2PostBase ;
+yurrmiwo:yurrmiwo^ V3cPostBase ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   VERB BASES - Transitives          !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                     !!
+!!   TAM INFLECTION, VERB POST-BASE    !!
+!!                                     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON anyVerbPostBase
+0:0 V1PostBase ;
+0:0 V2PostBase ;
+0:0 V3aPostBase ;
+0:0 V3bPostBase ;
+0:0 V3cPostBase ;
+0:0 V3dPostBase ;
+0:0 V4aPostBase ;
+0:0 V4bPostBase ;
+0:0 V5aPostBase ;
+0:0 V5bPostBase ;
+0:0 V5cPostBase ;
+0:0 V6aPostBase ;
+0:0 V7aPostBase ;
+0:0 V8PostBase ;
+0:0 V9PostBase ;
+0:0 V10PostBase ;
+0:0 V11PostBase ;
+0:0 ReVerbs ;
+0:0 NonverbalPostBase ;
+
+LEXICON V1PostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:~iyindi^ PERSISTSConj ;   
+0:0 V1Conj ;
+
+LEXICON V1Conj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@~i^ # ;
+[Imp]:n^ # ;
+[Irr]:+ninj^ # ;
+[Irr]:ninj^ # ;
+
+LEXICON V2PostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:~indi^ PERSISTSConj ;
+0:0 V2Conj ;
+
+LEXICON V2Conj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:men^ # ;
+[Irr]:meninj^ # ; 
+
+LEXICON V3aPostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:yindi^ PERSISTSConj ;
+0:0 V3aConj ;
+
+LEXICON V3aConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ; 
+[Irr]:yi^ # ; 
+
+LEXICON V3bPostBase
+[RR]:rre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ;
+[Irr]:yi^ # ; 
+
+LEXICON V3cPostBase
+[RR]:rre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ;
+[Irr]:yi^ # ; 
+
+LEXICON V3dPostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:yindi^ PERSISTSConj ;
+0:0 V3dConj ;
+
+LEXICON V3dConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ; 
+[Irr]:yi^ # ; 
+
+LEXICON V3IrrPostBase
+[RR]:rre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@neng^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:0^ # ;
+[Irr]:yi^ # ;
+
+LEXICON V4aPostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:yind^ PERSISTSConj ;
+0:0 V4aConj ;
+
+LEXICON V4aConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@m^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ; 
+[Irr]:yi^ # ; 
+
+LEXICON V4bPostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:yindi^ PERSISTSConj ;
+0:0 V4bConj ;
+
+LEXICON V4bConj
+[Irr]:+ninj^ # ; 
+[Irr]:yi^ # ; 
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.NP@[Imp]:@R.TENSE.NP@0^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+
+LEXICON V5aPostBase
+[RR]:rre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ # ;
+[Imp]:0^ # ;
+[Irr]:yinj^ # ; 
+
+LEXICON V5bPostBase
+[RR]:rre^ RRConj ;
+[PERSIST]:~indi^ PERSISTSConj ;
+0:0 V5bConj ;
+
+LEXICON V5bConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~i^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ # ;
+[Imp]:0^ # ;
+[Irr]:yi^ # ; 
+[Irr]:yinj^ # ;
+
+LEXICON V5cPostBase
+[RR]:rre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~ey^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ # ;
+[Imp]:0^ # ;
+[Irr]:yi^ # ; 
+
+LEXICON V6aPostBase
+[RR]:ngerre^ RRConj ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nj^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@nj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngeni^ # ;
+[Imp]:ngimen^ # ;
+[Irr]:ngemeninj^ # ; 
+
+LEXICON V7aPostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@0^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ # ;
+[Imp]:n^ # ;
+[Irr]:wirrinj^ # ;
+
+LEXICON V8PostBase  
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ # ;
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ # ;  
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@y^ # ;
+[Imp]:~un^ # ;
+[Irr]:~uwirrinj^ # ; 
+
+
+LEXICON V9PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@an^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@i^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@anj^ # ;
+[Imp]:a^ # ;
+[Irr]:~angemeninj^ # ; 
+
+LEXICON V10PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:men^ # ;
+[Irr]:=imeninj^ # ;
+[Irr]:~imeninj^ # ;
+
+
+LEXICON V11PostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@men^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@meni^ # ;
+[Imp]:mimen^ # ;
+[Irr]:meninj^ # ;
+[RR]:merre^ RRConj ;
+[PERSIST]:yindi^ PERSISTSConj ;
+
+LEXICON ReVerbs
+@R.TENSE.NP@re[NonPst]:@R.TENSE.NP@(r)e^ # ;                            ! go
+@R.TENSE.P@re[PstPerf]:@R.TENSE.P@wam^ # ;
+@R.TENSE.P@re[PstImperf]:@R.TENSE.P@(r)ey^ # ;
+re[Imp]:(r)ay^ # ;
+re[Irr]:(r)ayinj^ # ;
+
+LEXICON NonverbalPostBase
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:nin^ # ;
+[Irr]:niwirrinj^ # ;
+
+LEXICON IrregularVerbsIntr
+@R.TENSE.NP@bengmid[NonPst]:@R.TENSE.NP@bengmiddan^ # ;                ! forget
+@R.TENSE.P@bengmid[PstPerf]:@R.TENSE.P@bengmiddanj^ # ;
+@R.TENSE.P@bengmid[PstImperf]:@R.TENSE.P@bengmiddangeni^ # ;
+bengmid[Imp]:bengmiddangimen^ # ;
+bengmid[Irr]:bengmiddangemeninj^ # ;
+
+@R.TENSE.NP@bore[NonPst]:@R.TENSE.NP@bore^ # ;                          ! flow (water)
+@R.TENSE.P@bore[PstPerf]:@R.TENSE.P@bowam^ # ;
+@R.TENSE.P@bore[PstImperf]:@R.TENSE.P@borey^ # ;
+bore[Imp]:boray^ # ;
+bore[Irr]:borayinj^ # ;
+
+@R.TENSE.NP@dungre[NonPst]:@R.TENSE.NP@dungre^ # ;                     ! movement of the sun
+@R.TENSE.P@dungre[PstPerf]:@R.TENSE.P@dungwam^ # ;
+@R.TENSE.P@dungre[PstImperf]:@R.TENSE.P@dungrey^ # ;
+dungre[Imp]:dungray^ # ;
+dungre[Irr]:dungrayinj^ # ;
+
+@R.TENSE.NP@kakre[NonPst]:@R.TENSE.NP@kakre^ # ;                       ! travel at night
+@R.TENSE.P@kakre[PstPerf]:@R.TENSE.P@kakwam^ # ;
+@R.TENSE.P@kakre[PstImperf]:@R.TENSE.P@kakrey^ # ;
+kakre[Imp]:kakray^ # ;
+kakre[Irr]:kakrayinj^ # ;
+
+@R.TENSE.NP@kurlbare[NonPst]:@R.TENSE.NP@kurlbare^ # ;                  ! travel at night
+@R.TENSE.P@kurlbare[PstPerf]:@R.TENSE.P@kurlbawam^ # ;
+@R.TENSE.P@kurlbare[PstImperf]:@R.TENSE.P@kurlbarey^ # ;
+kurlbare[Imp]:kurlbaray^ # ;
+kurlbare[Irr]:kurlbarayinj^ # ;
+
+@R.TENSE.NP@wohre[NonPst]:@R.TENSE.NP@wohre^ # ;                        ! wander, walk around
+@R.TENSE.P@wohre[PstPerf]:@R.TENSE.P@wohwam^ # ;
+@R.TENSE.P@wohre[PstImperf]:@R.TENSE.P@wohrey^ # ;
+wohre[Imp]:wohray^ # ;
+wohre[Irr]:wohrayinj^ # ;
+
+LEXICON IrregularVerbsTrns
+@R.TENSE.NP@mulewan[NonPst]:@R.TENSE.NP@mulewan^ # ;                    ! inform
+@R.TENSE.P@mulewan[PstPerf]:@R.TENSE.P@mulewam^ # ;
+@R.TENSE.P@mulewan[PstImperf]:@R.TENSE.P@mulewani^ # ;
+
+LEXICON RRConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ # ;
+[Imp]:~emen^ # ;
+[Irr]:~imeninj^ # ;
+
+LEXICON PERSISTSConj
+@R.TENSE.NP@[NonPst]:@R.TENSE.NP@~i^ # ;
+@R.TENSE.P@[PstPerf]:@R.TENSE.P@~anj^ # ;
+@R.TENSE.P@[PstImperf]:@R.TENSE.P@~i^ # ;
+[Imp]:~imen^ # ;
+[Irr]:~angimeninj^ # ;

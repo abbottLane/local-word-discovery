@@ -1,0 +1,175 @@
+Multichar_Symbols
+ rr rd rdd dj bb kk dd djdj
+ ng rn rl rr nj
+ [ADJ] [ADJ.loc] [ADJ.pred]
+ @P.TYPE.N@ @R.TYPE.N@
+ (ku) (rr) (r) (~~)
+ 
+LEXICON Root
+[PRON]:0 Pronouns ;
+[PRON.rel]:0 RelPronouns ;
+[PRON.refl]:0 ReflPronouns ;
+[QUANT]:0 Quant ;
+[PREP]:0 Prep ;
+[PRON.poss]:0 PossPronouns ;
+[PART]:0 Particles ;
+[NEG]:0 NegationParticles ;
+[LOC]:0 Locatives ;
+[DEM.loc]:0 DemonstrativeLocatives ;
+[DEM]:0 Demonstratives ;
+[INTERJ]:0 Interjections ;
+[IDEOPHONE]:0 Ideophones ;
+[CONJ]:0 Conjunctions ;
+0:0 Interrogatives ;
+
+LEXICON Conjunctions
+0:ba # ;
+0:badbu # ;
+0:bu # ;
+0:dja # ;
+0:la # ;
+0:mak # ;
+0:wanjh # ;
+0:yika # ;
+0:yikahwi # ;
+0:yiman # ;
+
+LEXICON Demonstratives 
+0:bukka # ;
+0:kunekke # ;
+0:kunu # ;
+0:makka # ;
+0:manekke # ;
+0:mani # ;
+0:namekke # ;
+0:ngalbu # ;
+
+LEXICON DemonstrativeLocatives
+0:kondah # ;
+0:kamekke # ;
+
+LEXICON Ideophones
+0:dilh # ;
+0:kurruwirluk # ;
+
+LEXICON Interjections
+0:aba # ;
+0:adjuh # ;
+0:awurd # ;
+0:bawh # ;
+0:bobo # ;
+0:bonj # ;
+0:burrkyak # ;
+0:kab # ;
+0:kah # ;
+0:kare # ;
+0:karrimen # ;
+0:kayakki # ;
+0:kek # ;
+0:ken # ;
+0:kornbayeng # ;
+0:kub # ;
+0:larrk # ;
+0:ma # ;
+0:med # ;
+0:ngakukwarre # ;
+0:ngamed # ;
+0:nja # ;
+0:njamed # ;
+0:njonj # ;
+0:nuk # ;
+0:warddaw # ;
+0:waw # ;
+0:wurra # ;
+0:ya # ;
+0:yoh # ;
+0:yowayh # ;
+
+LEXICON Interrogatives
+[INTERROG.what]:njale # ;
+[INTERROG.why]:njalekenh # ;
+[INTERROG.who.2sg]:yingale # ;
+[INTERROG.which.III]:manngale # ;
+[INTERROG.which.IV]:kunngale # ;
+[INTERROG.which.I]:nangale # ;
+[INTERROG.which.II]:ngalngale # ;
+
+LEXICON Locatives
+0:bewh # ;
+0:kakbi # ;
+0:karrikad # ;
+0:kore # ;
+0:koyek # ;
+0:kuberrk # ;
+0:kubodme # ;
+0:kudjakku # ;
+0:kudjarrirn # ;
+0:kukadjid # ;
+0:kukun # ;
+0:kurih # ;
+0:kurorre # ;
+0:kururrk # ;
+0:kuwardderurrk # ;
+0:nabeh # ;
+0:walem # ;
+
+LEXICON NegationParticles
+0:minj # ;
+0:yuwn # ;
+
+LEXICON Particles
+0:djaying # ;
+0:warrekah # ;
+0:yimankek # ;
+
+LEXICON Prep
+0:dorrengh #;
+
+LEXICON PossPronouns
+0:kadberre # ;
+0:karrewoneng # ;
+0:ke # ;
+0:ngadberre # ;
+0:ngalengarre # ;
+0:ngardduk # ;
+0:ngarrku # ;
+0:ngudberre # ;
+0:ngudda # ;
+0:ngurrewoneng # ;
+0:nuye # ;
+
+LEXICON Pronouns ! Unattached Pronouns
+0:kuni # ;
+0:baleh # ;
+0:bedberre # ;
+0:bedda # ;
+0:bedman # ;
+0:berrewoneng # ;
+0:nahni # ;
+0:nakka # ;
+0:ngad # ;
+0:ngalekke # ;
+0:ngaleng # ;
+0:ngali # ;
+0:ngalkka # ;
+0:ngaye # ;
+0:ngudda # ;
+0:njale # ;
+0:njalehnjale # ;
+0:nungan # ;
+0:nungka # ;
+
+LEXICON Quant
+0:moken # ;
+
+LEXICON ReflPronouns
+0:ngadman # ;
+0:ngalengman # ;
+0:ngayeman # ;
+0:ngudman # ;
+0:yingan # ;
+
+LEXICON RelPronouns ! relative pronouns
+0:kunubewu # ;
+0:manbu # ;
+0:nawu # ;
