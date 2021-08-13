@@ -1,13 +1,13 @@
-read lexc class.verb.lexc
+read lexc grammars/class.verb.lexc
 define VerbLexicon; 
 
-read lexc class.nouns.lexc
+read lexc grammars/class.nouns.lexc
 define NounLexicon;
 
-read lexc class.adj.adv.lexc
+read lexc grammars/class.adj.adv.lexc
 define AdjAdvLexicon;
 
-read lexc class.func.lexc
+read lexc grammars/class.func.lexc
 define FuncLexicon;
 
 # Vowels

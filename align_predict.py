@@ -1,14 +1,18 @@
 import hfst
 import re
 
+from libhfst import HfstBasicTransducer, HfstTransducer
+
 def load_file_lines(filepath):
     lines = []
     with open(filepath, 'r') as f:
         lines = f.readlines()
-    return lines
+    return [x.rstrip() for x in lines]
 
 MULTI_CHAR_GRAPHEMES = load_file_lines('resources/multichar_graphemes.txt')
 PHONE2ORTH_RULES = load_file_lines('resources/phone_to_orth.txt')
+LOCAL_LEXICON = set(load_file_lines('resources/local_wordlist.txt'))
+GLOBAL_LEXICON = [x.split()[0] for x in load_file_lines('resources/global_wordlist.txt')]
 
 def main(phone_str, lexemes):
     tokd_lexemes = tokenize_lexemes(lexemes)
@@ -22,8 +26,8 @@ def main(phone_str, lexemes):
 
     # turn phone_str and lexemes into FST strs
     phone_str_fst = hfst.regex('[ ' + ' '.join([x for x in phone_str]) + ' ]')
-    lexemes_fst = hfst.regex('[ X ' + ' X'.join(tokd_lexemes.split('  ')) + ' X ]')
-    print("LEXEMES_WORDS: " + '[ X ' + ' X'.join(tokd_lexemes.split('  ')) + ' X ]')
+    lexemes_fst = hfst.regex('[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
+    print("LEXEMES_WORDS: " + '[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
 
     # Build Lexeme transducer: Lexemes are represented as an FST which allows any char between lexemes in order
     # define LexemePattern [[LEXEMES .o. [X -> ?*]].i].u;
@@ -37,6 +41,7 @@ def main(phone_str, lexemes):
     # define Edit2 [?* [?:0|0:?] ?*]^<3;
     edit1 = hfst.regex('[?* [?:0|0:?] ?*]^<2')
     edit2 = hfst.regex('[?* [?:0|0:?] ?*]^<3')
+
 
     ######################
     ##   GENERATION     ##
@@ -58,6 +63,8 @@ def main(phone_str, lexemes):
     edit0_align = hfst.regex('[?]*')
     edit0_align.concatenate(lexeme_pattern)
     edit0_align.concatenate(hfst.regex('[?]*'))
+    edit0_align.concatenate(hfst.regex('["^"]*'))
+    edit0_align.concatenate(hfst.regex('[0:""]'))
 
     edit1_align = hfst.regex('[?]*')
     edit1.compose(lexeme_pattern)
@@ -91,6 +98,8 @@ def main(phone_str, lexemes):
     edit0discover.concatenate(analyzer_fst)
     edit0discover.concatenate(hfst.regex('[?:0]*'))
     edit0discover.concatenate(hfst.regex('["^"]*'))
+    edit0discover.concatenate(hfst.regex('[0:""]'))
+
 
     edit1discover = hfst.regex('[?:0]*')
     edit1.compose(analyzer_fst)
@@ -113,41 +122,60 @@ def main(phone_str, lexemes):
     discover_words = aligned_orth
     
     ################################################
-    # FILTER down to results anchored at a lexeme ##
+    # FILTER                                     ##
     ################################################
+    ### 1: Results should be anchored at a known lexeme (Anchored)
     # define AnchoredWords DiscoverWords .o. [?* LEXEMESB ?*];
-    discover_words.compose(hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]'))
-    print("DISCOVER_WORDS: " + '[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]')
-    # discover_words.output_project()
-    discover_words.minimize()
-    discover_words.determinize()
+    # discover_words.compose(hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]'))
+    anchored = hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]')
+    discover_anchored = HfstTransducer(discover_words)
+    discover_anchored.compose(anchored)
 
-    results = discover_words.extract_paths(max_cycles=1, output='dict')
+    ### 2: Results are found in the local lexicon (Topical)
+    topical = hfst.regex('[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ']')
+    # print("TOPICAL: " + '[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ']')
+    discover_topical = HfstTransducer(discover_words)
+    discover_topical.compose(topical)
+
+    ### 3: Results are found in the Global Lexicon (Attested)
+    attested = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(GLOBAL_LEXICON)[:100]).split('  ')) + ']')
+    discover_attested = HfstTransducer(discover_words)
+    discover_attested.compose(attested)
+
+    ### 4: Results are a minimum edit distance (Phonotactically Plausible)
+    # todo: normalized edit dist 1-4 based on length of string
+
+    # Priority union the filters
+    priority_unions = discover_anchored
+    priority_unions.priority_union(discover_attested)
+    priority_unions.priority_union(discover_topical)
+
+    priority_unions.minimize()
+    priority_unions.determinize()
+
+    results = priority_unions.extract_paths(max_cycles=1, output='dict')
+
+    deduped_results = set()
     for inp, outlist in results.items():
-        print(re.sub('@_EPSILON_SYMBOL_@', '', inp))
+        # print(re.sub('@_EPSILON_SYMBOL_@', '', inp))
         for out in outlist:
-            print('\t' + re.sub('@_EPSILON_SYMBOL_@', '', str(out)))
-
-    #################################################################################
-    ## PRIORITY UNION to get the results with the lowest edit distance penalties   ##
-    #################################################################################
-    # define filtered [[AnchoredWords .o. FilterA0D0] .P. [AnchoredWords .o. FilterA1D0] .P. 
-    #                 [AnchoredWords .o. FilterA0D1] .P. 
-    #                 [AnchoredWords .o. FilterA1D1] .P. 
-    #                 [AnchoredWords .o. FilterA1D2] .P. 
-    #                 [AnchoredWords .o. FilterA2D1] ];
+            deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out)))
+    
+    print(deduped_results)
 
     ## TODO: implement the filter
-  
+  # Filter preferences: IN_LOCAL LEXICON > IN WIDER LEXICON > MIN_EDIT_DIST > MAX_LEN
+
+
     
 def tokenize_lexemes(lexemes):
     matches = re.findall('|'.join(MULTI_CHAR_GRAPHEMES) + "|.", " ".join(lexemes))
-    return ' '.join(matches)
+    return ' '.join([x.lstrip() for x in matches])
 
 
 if __name__== "__main__":
 
-    # phone_str = "kɔŋadkarijmɛjɛkaribekanikabiribimbomŋarakarbɔɟakŋaraŋulumɛŋ"
-    phone_str = "ŋawokdibriwambunngan"
-    lexemes = ['wok', "wam"]
+    phone_str = "kɔŋadkarijmɛjɛkaribekanikabiribimbomŋarakarbɔɟakŋaraŋulumɛŋ"
+    # phone_str = "ŋawokdibriwambunngangangume"
+    lexemes = ['karri', "karri", "bim"]
     main(phone_str, lexemes)
