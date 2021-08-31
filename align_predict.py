@@ -15,6 +15,10 @@ LOCAL_LEXICON = set(load_file_lines('resources/local_wordlist.txt'))
 GLOBAL_LEXICON = [x.split()[0] for x in load_file_lines('resources/global_wordlist.txt')]
 
 def main(phone_str, lexemes):
+    # Filter Global Lexicon to only those entries which are anchored; makes network compilation tractable.
+    contains_lexeme_pattern = re.compile('\w*' + '|'.join([x for x in lexemes]) + '\w*')
+    filtered_global_lexicon = [w for w in GLOBAL_LEXICON if re.findall(contains_lexeme_pattern, w)]
+    
     tokd_lexemes = tokenize_lexemes(lexemes)
 
     stream = hfst.HfstInputStream('grammars/kunwok.hfst')
@@ -27,7 +31,7 @@ def main(phone_str, lexemes):
     # turn phone_str and lexemes into FST strs
     phone_str_fst = hfst.regex('[ ' + ' '.join([x for x in phone_str]) + ' ]')
     lexemes_fst = hfst.regex('[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
-    print("LEXEMES_WORDS: " + '[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
+    # print("LEXEMES_WORDS: " + '[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
 
     # Build Lexeme transducer: Lexemes are represented as an FST which allows any char between lexemes in order
     # define LexemePattern [[LEXEMES .o. [X -> ?*]].i].u;
@@ -100,7 +104,6 @@ def main(phone_str, lexemes):
     edit0discover.concatenate(hfst.regex('["^"]*'))
     edit0discover.concatenate(hfst.regex('[0:""]'))
 
-
     edit1discover = hfst.regex('[?:0]*')
     edit1.compose(analyzer_fst)
     edit1discover.concatenate(edit1)
@@ -120,7 +123,10 @@ def main(phone_str, lexemes):
     
     aligned_orth.compose(edit0discover)
     discover_words = aligned_orth
-    
+
+    hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon)
+
+def hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon):
     ################################################
     # FILTER                                     ##
     ################################################
@@ -128,45 +134,45 @@ def main(phone_str, lexemes):
     # define AnchoredWords DiscoverWords .o. [?* LEXEMESB ?*];
     # discover_words.compose(hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]'))
     anchored = hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]')
-    discover_anchored = HfstTransducer(discover_words)
-    discover_anchored.compose(anchored)
+    # discover_anchored = HfstTransducer(discover_words)
+    # discover_anchored.compose(anchored)
 
     ### 2: Results are found in the local lexicon (Topical)
-    topical = hfst.regex('[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ']')
-    # print("TOPICAL: " + '[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ']')
-    discover_topical = HfstTransducer(discover_words)
-    discover_topical.compose(topical)
+    topical = hfst.regex('[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ' ["^"]*]')
+    # discover_topical = HfstTransducer(discover_words)
+    # discover_topical.compose(topical)
 
     ### 3: Results are found in the Global Lexicon (Attested)
-    attested = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(GLOBAL_LEXICON)[:100]).split('  ')) + ']')
-    discover_attested = HfstTransducer(discover_words)
-    discover_attested.compose(attested)
-
+    attested = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(filtered_global_lexicon)).split('  ')) + ' ["^"]*]')
+    
     ### 4: Results are a minimum edit distance (Phonotactically Plausible)
-    # todo: normalized edit dist 1-4 based on length of string
+    edit1filter = hfst.regex('[[?-"^"]* ["^":0]^<2 ]')
+    edit2filter = hfst.regex('[[?-"^"]* ["^":0]^<3 ]')
+    edit3filter = hfst.regex('[[?-"^"]* ["^":0]^<4 ]')
+    edit4filter = hfst.regex('[[?-"^"]* ["^":0]^<5 ]')
+    
+    # Lenient composition filters
+    discover_words.lenient_composition(anchored)
+    discover_words.lenient_composition(attested)
+    discover_words.lenient_composition(topical) # this gives one result: the one from topical)
+    discover_words.lenient_composition(edit1filter) # this gives one result: the one from topical)
+    discover_words.lenient_composition(edit2filter) # this gives one result: the one from topical)
+    discover_words.lenient_composition(edit3filter) # this gives one result: the one from topical)
+    discover_words.lenient_composition(edit4filter) # this gives one result: the one from topical)
 
-    # Priority union the filters
-    priority_unions = discover_anchored
-    priority_unions.priority_union(discover_attested)
-    priority_unions.priority_union(discover_topical)
-
-    priority_unions.minimize()
-    priority_unions.determinize()
-
-    results = priority_unions.extract_paths(max_cycles=1, output='dict')
+    # discover_anchored.compose(priority_unions)
+    discover_words.minimize()
+    discover_words.determinize()
+    
+    results = discover_words.extract_paths(max_cycles=1, output='dict')
 
     deduped_results = set()
     for inp, outlist in results.items():
-        # print(re.sub('@_EPSILON_SYMBOL_@', '', inp))
         for out in outlist:
             deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out)))
     
-    print(deduped_results)
-
-    ## TODO: implement the filter
-  # Filter preferences: IN_LOCAL LEXICON > IN WIDER LEXICON > MIN_EDIT_DIST > MAX_LEN
-
-
+    print(list(deduped_results))
+    print(len(list(deduped_results)))
     
 def tokenize_lexemes(lexemes):
     matches = re.findall('|'.join(MULTI_CHAR_GRAPHEMES) + "|.", " ".join(lexemes))
@@ -175,7 +181,7 @@ def tokenize_lexemes(lexemes):
 
 if __name__== "__main__":
 
-    phone_str = "kɔŋadkarijmɛjɛkaribekanikabiribimbomŋarakarbɔɟakŋaraŋulumɛŋ"
+    phone_str = "kɔŋadkarijmɛjɛkaribekanikabiribimbumŋarakarbɔɟakŋaraŋulumɛŋ"
     # phone_str = "ŋawokdibriwambunngangangume"
-    lexemes = ['karri', "karri", "bim"]
+    lexemes = ['karri', 'karri', 'bim']
     main(phone_str, lexemes)

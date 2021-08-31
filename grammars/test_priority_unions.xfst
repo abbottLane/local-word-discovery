@@ -1,0 +1,12 @@
+define ANCHORED [b i rr i m e b i m b u n | k a rr i h y o | k a rr i y i m e | b i m d i | k a b i rr i b i m b u n | ka rr i b e kk a n i];
+define ATTESTED [k a rr i h y o | k a rr i y i m e | ng a d | k a b i rr i b i m b u n | ka rr i b e kk a n i];
+define TOPICAL [k a rr i y i m e | ng a d];
+define EDIT1 [ k a rr i h y o | ng a d |  k a b i rr i b i m b u n | ka rr i b e kk a n i];
+define EDIT2 [ k a rr i y i m e | ng a d |  k a b i rr i b i m b u n | ka rr i b e kk a n i];
+define EDIT3 []; 
+
+define GEN "hello":[b i rr i m e b i m b u n | k a rr i h y o | k a rr i y i m e | ng a d | b i m d i | k a b i rr i b i m b u n | ka rr i b e kk a n i];
+
+
+regex GEN .O. ANCHORED .O. ATTESTED .O. TOPICAL .O. EDIT1;
+
