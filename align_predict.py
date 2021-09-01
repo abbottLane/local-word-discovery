@@ -1,6 +1,6 @@
 import hfst
 import re
-
+import argparse
 from libhfst import HfstBasicTransducer, HfstTransducer
 
 def load_file_lines(filepath):
@@ -14,14 +14,14 @@ PHONE2ORTH_RULES = load_file_lines('resources/phone_to_orth.txt')
 LOCAL_LEXICON = set(load_file_lines('resources/local_wordlist.txt'))
 GLOBAL_LEXICON = [x.split()[0] for x in load_file_lines('resources/global_wordlist.txt')]
 
-def main(phone_str, lexemes):
+def main(phone_str, lexemes, grammar):
     # Filter Global Lexicon to only those entries which are anchored; makes network compilation tractable.
     contains_lexeme_pattern = re.compile('\w*' + '|'.join([x for x in lexemes]) + '\w*')
     filtered_global_lexicon = [w for w in GLOBAL_LEXICON if re.findall(contains_lexeme_pattern, w)]
     
     tokd_lexemes = tokenize_lexemes(lexemes)
 
-    stream = hfst.HfstInputStream('grammars/kunwok.hfst')
+    stream = hfst.HfstInputStream(grammar)
     analyzer_fst = None
     if not stream.is_eof():
         analyzer_fst = stream.read()
@@ -124,9 +124,6 @@ def main(phone_str, lexemes):
     aligned_orth.compose(edit0discover)
     discover_words = aligned_orth
 
-    hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon)
-
-def hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon):
     ################################################
     # FILTER                                     ##
     ################################################
@@ -154,13 +151,12 @@ def hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon)
     # Lenient composition filters
     discover_words.lenient_composition(anchored)
     discover_words.lenient_composition(attested)
-    discover_words.lenient_composition(topical) # this gives one result: the one from topical)
-    discover_words.lenient_composition(edit1filter) # this gives one result: the one from topical)
-    discover_words.lenient_composition(edit2filter) # this gives one result: the one from topical)
-    discover_words.lenient_composition(edit3filter) # this gives one result: the one from topical)
-    discover_words.lenient_composition(edit4filter) # this gives one result: the one from topical)
+    discover_words.lenient_composition(topical) 
+    discover_words.lenient_composition(edit1filter) 
+    discover_words.lenient_composition(edit2filter)
+    discover_words.lenient_composition(edit3filter)
+    discover_words.lenient_composition(edit4filter)
 
-    # discover_anchored.compose(priority_unions)
     discover_words.minimize()
     discover_words.determinize()
     
@@ -172,7 +168,6 @@ def hfst_constraint_logic(discover_words, tokd_lexemes, filtered_global_lexicon)
             deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out)))
     
     print(list(deduped_results))
-    print(len(list(deduped_results)))
     
 def tokenize_lexemes(lexemes):
     matches = re.findall('|'.join(MULTI_CHAR_GRAPHEMES) + "|.", " ".join(lexemes))
@@ -180,8 +175,9 @@ def tokenize_lexemes(lexemes):
 
 
 if __name__== "__main__":
-
-    phone_str = "kɔŋadkarijmɛjɛkaribekanikabiribimbumŋarakarbɔɟakŋaraŋulumɛŋ"
-    # phone_str = "ŋawokdibriwambunngangangume"
-    lexemes = ['karri', 'karri', 'bim']
-    main(phone_str, lexemes)
+    parser = argparse.ArgumentParser(description="FST-based Local Word Discovery")
+    parser.add_argument('-l', '--lexemes', nargs='+', type=str)
+    parser.add_argument('-p', '--phones', type=str)
+    parser.add_argument('-g', '--grammar', type=str)
+    args = parser.parse_args()
+    main(args.phones, args.lexemes, args.grammar)
