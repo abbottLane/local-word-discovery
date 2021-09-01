@@ -16,6 +16,6 @@ Usage:
     - resources/local_wordlist.txt: contains a list of words relevant to the current project or document. Discovered words which are also found to be locally relevant have precedence over other discovered words.
     - resources/global_wordlist.txt: contains a list of words attested in the language. This can be a txt file dump of some large corpus. The purpose of this is to prioritize words which are attested in the language, above those which may only be theoretically morphotactically valid.
 
--Finally, the FST requires some basic knowledge about the language we are working with.
+- Finally, the FST requires some basic knowledge about the language we are working with.
     - resources/multichar_graphemes.txt: provides a list of multicharacter graphemes in your language. This allows the FST to segment orthography properly so that graphemes can be mapped to phones.
     - phone_to_orth.txt: a canonical mapping of phones to graphemes. One-to-many mappings are allowed here, but not strictly necessary.
