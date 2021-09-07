@@ -10,5 +10,5 @@ tests:
 	python align_predict.py -l kabirri -p kabiribɔʃmɛbuɟtmɛniman -g grammars/kunwok.hfst
 	python align_predict.py -l kabirri kabirri bed -p kabiriturkmarɛɲkabiriutuɟmanmɛbɛtbɛrɛ -g grammars/kunwok.hfst
 	python align_predict.py -l kun bukkan kabirri -p nimɛkunmajliimanikikamɛtibukanbulantaɛbɛniɲkabirɹɔwɔrɛ -g grammars/kunwok.hfst
-	python align_predict.py -l bukbukkan bolkme -p kabɛnbubukanbamanmɛkabirituɟɛŋbɔkabiribɔlkmɛbɔ -g grammars/kunwok.hfst
+	python align_predict.py -l bukbukkan bolbme -p kabɛnbubukanbamanmɛkabirituɟɛŋbɔkabiribɔlkmɛbɔ -g grammars/kunwok.hfst
 	

@@ -60,7 +60,7 @@ def main(phone_str, lexemes, grammar):
     #####################################
     ##     ALIGNMENT CONSTRAINTS       ##
     ##################################### 
-    # define Edit0Align [[?]* LexemePattern [?]*]; 
+    # define Edit0Align [[?]* LexemePattern [?]*]["^"]*; 
     # define Edit1Align [[?]* [ Edit1 .o. LexemePattern] [?]*][0:"^"];
     # define Edit2Align [[?]* [ Edit2 .o. LexemePattern] [?]*][0:"^"][0:"^"];
     # define AlignedOrth [OrthStrs .o. [ Edit0Align | Edit1Align | Edit2Align ]];
@@ -68,7 +68,6 @@ def main(phone_str, lexemes, grammar):
     edit0_align.concatenate(lexeme_pattern)
     edit0_align.concatenate(hfst.regex('[?]*'))
     edit0_align.concatenate(hfst.regex('["^"]*'))
-    edit0_align.concatenate(hfst.regex('[0:""]'))
 
     edit1_align = hfst.regex('[?]*')
     edit1.compose(lexeme_pattern)
@@ -93,7 +92,7 @@ def main(phone_str, lexemes, grammar):
     ###################################
     # WORD DISCOVERY CONSTRAINTS     ##
     ###################################
-    # define Edit0Discover [[?:0]* LEXICON [?:0]*];
+    # define Edit0Discover [[?:0]* LEXICON [?:0]*]["^"]*;
     # define Edit1Discover [[?:0]* [Edit1 .o. LEXICON] [?:0]*][0:"^"];
     # define Edit2Discover [[?:0]* [Edit2 .o. LEXICON] [?:0]*][0:"^"][0:"^"];
     # define DiscoverWords [AlignedOrth .o. [ Edit0Discover | Edit1Discover | Edit2Discover]];
@@ -102,7 +101,6 @@ def main(phone_str, lexemes, grammar):
     edit0discover.concatenate(analyzer_fst)
     edit0discover.concatenate(hfst.regex('[?:0]*'))
     edit0discover.concatenate(hfst.regex('["^"]*'))
-    edit0discover.concatenate(hfst.regex('[0:""]'))
 
     edit1discover = hfst.regex('[?:0]*')
     edit1.compose(analyzer_fst)
@@ -124,21 +122,26 @@ def main(phone_str, lexemes, grammar):
     aligned_orth.compose(edit0discover)
     discover_words = aligned_orth
 
+    # results = discover_words.extract_paths(max_cycles=1, max_number=400, output='dict')
+
+    # deduped_results = set()
+    # for inp, outlist in results.items():
+    #     for out in outlist:
+    #         deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out[0])))
+    
+    # print(list(deduped_results))
+    # print('########################################################')
+
     ################################################
     # FILTER                                     ##
     ################################################
     ### 1: Results should be anchored at a known lexeme (Anchored)
-    # define AnchoredWords DiscoverWords .o. [?* LEXEMESB ?*];
-    # discover_words.compose(hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]'))
+    # define AnchoredWords [?* LEXEMESB ?*];
     anchored = hfst.regex('[?* [' + ' | '.join(list(set(tokd_lexemes.split('  ')))) + '] ?*]')
-    # discover_anchored = HfstTransducer(discover_words)
-    # discover_anchored.compose(anchored)
-
+    
     ### 2: Results are found in the local lexicon (Topical)
     topical = hfst.regex('[' + ' | '.join(tokenize_lexemes(LOCAL_LEXICON).split('  ')) + ' ["^"]*]')
-    # discover_topical = HfstTransducer(discover_words)
-    # discover_topical.compose(topical)
-
+    
     ### 3: Results are found in the Global Lexicon (Attested)
     attested = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(filtered_global_lexicon)).split('  ')) + ' ["^"]*]')
     
@@ -150,8 +153,8 @@ def main(phone_str, lexemes, grammar):
     
     # Lenient composition filters
     discover_words.lenient_composition(anchored)
-    discover_words.lenient_composition(attested)
-    discover_words.lenient_composition(topical) 
+    discover_words.lenient_composition(topical)
+    discover_words.lenient_composition(attested) 
     discover_words.lenient_composition(edit1filter) 
     discover_words.lenient_composition(edit2filter)
     discover_words.lenient_composition(edit3filter)
@@ -165,7 +168,7 @@ def main(phone_str, lexemes, grammar):
     deduped_results = set()
     for inp, outlist in results.items():
         for out in outlist:
-            deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out)))
+            deduped_results.add(re.sub('@_EPSILON_SYMBOL_@', '', str(out[0])))
     
     print(list(deduped_results))
     
@@ -175,9 +178,14 @@ def tokenize_lexemes(lexemes):
 
 
 if __name__== "__main__":
-    parser = argparse.ArgumentParser(description="FST-based Local Word Discovery")
-    parser.add_argument('-l', '--lexemes', nargs='+', type=str)
-    parser.add_argument('-p', '--phones', type=str)
-    parser.add_argument('-g', '--grammar', type=str)
-    args = parser.parse_args()
-    main(args.phones, args.lexemes, args.grammar)
+    # parser = argparse.ArgumentParser(description="FST-based Local Word Discovery")
+    # parser.add_argument('-l', '--lexemes', nargs='+', type=str)
+    # parser.add_argument('-p', '--phones', type=str)
+    # parser.add_argument('-g', '--grammar', type=str)
+    # args = parser.parse_args()
+    # main(args.phones, args.lexemes, args.grammar)
+
+    test_phones = 'kbiriturkmarɛɲkabiriutuɟmanmɛbɛtbɛrɛ'
+    test_lexemes = ['kabirri', 'kabirri', 'bed']
+    test_grammar = 'grammars/kunwok.hfst'
+    main(test_phones, test_lexemes, test_grammar)
