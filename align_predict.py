@@ -153,8 +153,8 @@ def main(phone_str, lexemes, grammar):
     
     # Lenient composition filters
     discover_words.lenient_composition(anchored)
-    discover_words.lenient_composition(topical)
-    discover_words.lenient_composition(attested) 
+    discover_words.lenient_composition(attested)
+    discover_words.lenient_composition(topical) 
     discover_words.lenient_composition(edit1filter) 
     discover_words.lenient_composition(edit2filter)
     discover_words.lenient_composition(edit3filter)
@@ -178,14 +178,14 @@ def tokenize_lexemes(lexemes):
 
 
 if __name__== "__main__":
-    # parser = argparse.ArgumentParser(description="FST-based Local Word Discovery")
-    # parser.add_argument('-l', '--lexemes', nargs='+', type=str)
-    # parser.add_argument('-p', '--phones', type=str)
-    # parser.add_argument('-g', '--grammar', type=str)
-    # args = parser.parse_args()
-    # main(args.phones, args.lexemes, args.grammar)
+    parser = argparse.ArgumentParser(description="FST-based Local Word Discovery")
+    parser.add_argument('-l', '--lexemes', nargs='+', type=str)
+    parser.add_argument('-p', '--phones', type=str)
+    parser.add_argument('-g', '--grammar', type=str)
+    args = parser.parse_args()
+    main(args.phones, args.lexemes, args.grammar)
 
-    test_phones = 'kbiriturkmarɛɲkabiriutuɟmanmɛbɛtbɛrɛ'
-    test_lexemes = ['kabirri', 'kabirri', 'bed']
-    test_grammar = 'grammars/kunwok.hfst'
-    main(test_phones, test_lexemes, test_grammar)
+    # test_phones = 'kbiriturkmarɛɲkabiriutuɟmanmɛbɛtbɛrɛ'
+    # test_lexemes = ['kabirri', 'kabirri', 'bed']
+    # test_grammar = 'grammars/kunwok.hfst'
+    #main(test_phones, test_lexemes, test_grammar)
