@@ -152,7 +152,7 @@ ng ng ng ng ka ng
 
 k ɔ n ʔ t a l ɑ b a l n u
 konhda labbarlno
-
+NONE
 
 m a n t i b ɛ n k a n b u k u n b u l k ɛ ŋ a r i b ɛ n k u n b u ŋ a r i ɟ u r ʔ m ɛ k ɔ n ʔ t a
 ngandibengkan bu kunbudji ngarribenwon bu ngarridjuhme konhda
@@ -256,7 +256,7 @@ yiman kayime
 
 n a w u t i ɟ ə b ɛ t b ɛ r ɛ
 nawu [teacher] bedberre
-
+NONE
 
 k ɔ ʔ t a ŋ m a k u k a j i ɔ
 konhda mako kahyo
@@ -501,4 +501,3 @@ kore ng ka re ng ka
 k w ɔ ɟ ɟ a n b i j i b ɔ l m j a r w u r u ʈ
 kodjdjan biyibokenh wurdurd
 NONE
-
