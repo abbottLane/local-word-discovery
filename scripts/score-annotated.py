@@ -1,11 +1,40 @@
 import json
 import re
+import matplotlib.pyplot as plt
+import numpy as np
 
 def main():
     data = read_data(dir='annotated.json')
     scores = score_data(data)
     calculate_stats(scores)
+
+    total_predictions = 0
+    for k,v in scores.items():
+        nump= v['num_predictions'] 
+        if not nump:
+            nump=0
+        total_predictions += nump 
+    print("AVG # predictions: ", total_predictions/len(scores))
     write_data(scores, 'scored.json')
+
+    # Plot the document-level data
+    x = list(scores.keys())
+
+    y = [scores[k]['num_predictions'] for k,v in scores.items()]
+    y= [x if x != None else 0 for x in y ]
+    z = [scores[k]['partial_match'] for k,v in scores.items()]
+    k = [scores[k]['exact_match'] for k,v in scores.items()]
+
+    subcategorybar(x[99:], [y[99:],z[99:],k[99:]])
+    plt.show()
+
+def subcategorybar(X, vals, width=0.9):
+    n = len(vals)
+    _X = np.arange(len(X))
+    for i in range(n):
+        plt.bar(_X - width/1. + i/float(n)*width, vals[i], 
+                width=width/float(n), align="edge")   
+    plt.xticks(_X, X, rotation=45)
 
 def read_data(dir):
     with open(dir, 'r') as f:

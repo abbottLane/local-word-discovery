@@ -95,6 +95,9 @@ def discover(ddata):
         gold_orth = data['orth']
         present_lexemes =data['knowns'].split()
 
+        if data['knowns'][0] == "NONE":
+            data['knowns'] = []  
+
         start = timer()
         # results = predict(phone_str=phone_str, lexemes=present_lexemes, grammar='grammars/kunwok.hfst')
         print(os.getcwd())

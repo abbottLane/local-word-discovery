@@ -15,6 +15,9 @@ LOCAL_LEXICON = set(load_file_lines('resources/local_wordlist.txt'))
 GLOBAL_LEXICON = sorted([x.split() for x in load_file_lines('resources/global_wordlist.txt')], key=lambda x: x[0])
 
 def predict(phone_str, lexemes, grammar):
+    if len(lexemes) == 0: 
+        return []
+
     # Filter Global Lexicon to only those entries which are anchored; makes network compilation tractable.
     contains_lexeme_pattern = re.compile('\w*' + '|'.join(lexemes) + '\w*')
     filtered_global_lexicon = list([w for w in GLOBAL_LEXICON if re.findall(contains_lexeme_pattern, w[0])])
@@ -35,7 +38,6 @@ def predict(phone_str, lexemes, grammar):
     # turn phone_str and lexemes into FST strs
     phone_str_fst = hfst.regex('[ ' + ' '.join([x for x in phone_str]) + ' ]')
     lexemes_fst = hfst.regex('[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
-    # print("LEXEMES_WORDS: " + '[ X ' + ' X '.join(tokd_lexemes.split('  ')) + ' X ]')
 
     # Build Lexeme transducer: Lexemes are represented as an FST which allows any char between lexemes in order
     # define LexemePattern [[LEXEMES .o. [X -> ?*]].i].u;
@@ -153,10 +155,10 @@ def predict(phone_str, lexemes, grammar):
     # ### 3: Results are found in the Global Lexicon (10% Attested)
     attested_10 = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(filtered_10)).split('  ')) + ' ["^"]*]')
 
-    # ### 4: Results are found in the Global Lexicon (10% Attested)
+    # ### 4: Results are found in the Global Lexicon (20% Attested)
     attested_20 = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(filtered_20)).split('  ')) + ' ["^"]*]')
 
-    # ### 5: Results are found in the Global Lexicon (10% Attested)
+    # ### 5: Results are found in the Global Lexicon (30% Attested)
     attested_30 = hfst.regex('[' + ' | '.join(tokenize_lexemes(list(filtered_30)).split('  ')) + ' ["^"]*]')
 
     ### 4: Results are a minimum edit distance (Phonotactically Plausible)
@@ -168,13 +170,11 @@ def predict(phone_str, lexemes, grammar):
     
     # Lenient composition filters
     discover_words.lenient_composition(anchored)
-    discover_words.lenient_composition(attested_30)
     discover_words.lenient_composition(attested_20)
     discover_words.lenient_composition(attested_10)
-    discover_words.lenient_composition(edit3filter)
+    discover_words.lenient_composition(topical) 
     discover_words.lenient_composition(edit2filter)
     discover_words.lenient_composition(edit1filter)
-    discover_words.lenient_composition(topical) 
 
 
     discover_words.minimize()
