@@ -1,0 +1,63 @@
+# Set up Lexicons and Mappings as FSTs
+define LEXICON [ k u m e kk e | ng a rr i b o m | n a m e kk e | ng a d b e rr e | k a rr i dj a rr k d u rr k m i rr i];
+define PHONESTR [k u m k ɛ b ɛ n k a r k a m b ɛ ŋ r b ɔ m u b u ŋ ŋ ɔ n ɲ a m ɛ ɛ k a b u r k m a ŋ a t b ɛ r ɛ k u k u];
+define LEXEMES [X k u X ng a rr i X ng a d X];
+define LEXEMESB [k u | ng a rr i | ng a d];
+define TOPICAL [b i m | k u kk u | b i m b o m];
+define ATTESTED [k u m e kk e | ng a rr i b o m | ng a d b e rr e];
+define NOISYPHONES  b -> [ b | bb ] .o.
+                    ɲ -> [ nj ] .o.
+                    ŋ -> [ ng ] .o.
+                    n -> [ n ] .o.
+                    t -> [ d ] .o.
+                    k -> [ k | kk ] .o.
+                    d -> [ t | d ] .o.
+                    ʈ -> [ rd | rdd ] .o.
+                    ɻ -> [ rd | rdd ] .o.
+                    ɳ -> [ rn ] .o.
+                    ɭ -> [ rl ] .o.
+                    l -> [ l ] .o.
+                    r -> [ rr ] .o.
+                    ɹ -> [ r ] .o.
+                    ɟ -> [ dj | ddj ] .o.
+                    m -> [ m ] .o.
+                    ɪ -> [ i ] .o.
+                    ɛ -> [ e | i ] .o.
+                    ʔ -> [ h ] .o.
+                    a -> [ a | i ] .o.
+                    ɔ -> [ a | o] .o. 
+                    ɐ -> [ a ] .o.
+                    j -> [ y ] .o.
+                    o -> [ o ] .o.
+                    u -> [ u ] .o.
+                    ʊ -> [ u ] .o.
+                    i -> [ i ];
+
+
+define LexemePattern [[LEXEMES .o. [X -> ?*]].i].u;
+
+define Edit1 [?* [?:0|0:?] ?*]^<2;
+define Edit2 [?* [?:0|0:?] ?*]^<3;
+
+define OrthStrs  [PHONESTR .o. NOISYPHONES];
+define Edit0Align [[?]* LexemePattern [?]*]["^"]*; 
+define Edit1Align [[?]* [ Edit1 .o. LexemePattern] [?]*][0:"^"];
+define Edit2Align [[?]* [ Edit2 .o. LexemePattern] [?]*][0:"^"][0:"^"];
+define AlignedOrth [OrthStrs .o. [ Edit0Align | Edit1Align | Edit2Align ]];
+
+define Edit0Discover [[?:0]* LEXICON [?:0]*]["^"]*;
+define Edit1Discover [[?:0]* [Edit1 .o. LEXICON] [?:0]*][0:"^"];
+define Edit2Discover [[?:0]* [Edit2 .o. LEXICON] [?:0]*][0:"^"][0:"^"];
+define DiscoverWords [AlignedOrth .o. [ Edit0Discover | Edit1Discover | Edit2Discover]];
+
+define AnchoredWords [?* LEXEMESB ?*];
+define TopicalWords [?* TOPICAL ?*];
+define AttestedWords [?* ATTESTED ?*];
+define edit1Words [[?-"^"]* ["^"]^<2 ];
+define edit2Words [[?-"^"]* ["^"]^<3 ];
+
+regex DiscoverWords  .O. AnchoredWords
+                     .O. AttestedWords
+                     .O. TopicalWords
+                     .O. edit2Words
+                     .O. edit1Words;

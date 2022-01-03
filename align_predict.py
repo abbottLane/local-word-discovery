@@ -212,14 +212,21 @@ if __name__== "__main__":
         with open(DATA, "r") as f:
             lines = f.readlines()
 
-        for idx in range(0, len(lines), 4):
+        annotations = {}
+        for idx in range(0, len(lines), 4): # every 4th line is a new phone string in the data file we use here
             phones =   lines[idx].rstrip()
             orthography = lines[idx+1].rstrip()
             lexemes = []
             print(phones)
-            inp = input('Give lexemes in order:')
-            lexemes = inp.rstrip().split()
-            predict(phones, lexemes, 'grammars/kunwok.hfst')
+            inp = ""
+            while inp != "q":
+                inp = input('Give lexemes in order:')
+                if inp == 'q':
+                    break
+                annotations[idx] = inp
+                lexemes = inp.rstrip().split()
+                predict(phones, lexemes, 'grammars/kunwok.hfst')
+        print("ANNOTATIONS: ", annotations)
     else:
         predict(args.phones, args.lexemes, args.grammar)
 
